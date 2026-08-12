@@ -1,0 +1,33 @@
+# ==============================================================================
+# Xenotrix Technologies - Official Search Engine & LLM Crawler Directives
+# Website: https://xenotrix.in
+# ==============================================================================
+
+# Search Engine Crawlers
+User-agent: Googlebot
+User-agent: Bingbot
+User-agent: DuckDuckBot
+User-agent: YandexBot
+User-agent: Baiduspider
+User-agent: Slurp
+Allow: /
+
+# LLM & AI Search Engine Crawlers
+User-agent: GPTBot
+User-agent: ChatGPT-User
+User-agent: ClaudeBot
+User-agent: Claude-Web
+User-agent: PerplexityBot
+User-agent: Google-Extended
+User-agent: Applebot-Extended
+User-agent: CCBot
+User-agent: Amazonbot
+Allow: /
+
+# Global Fallback Rules
+User-agent: *
+Allow: /
+
+# Sitemaps and AI Machine-Readable Manifests
+Sitemap: https://xenotrix.in/sitemap.xml
+Sitemap: https://xenotrix.in/llms.txt
