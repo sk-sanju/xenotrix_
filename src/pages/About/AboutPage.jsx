@@ -1,67 +1,94 @@
 import React from 'react';
 import { SEO } from '../../components/common/SEO';
-import { motion } from 'framer-motion';
-import { COMPANY_INFO, PRINCIPLES, FOUNDERS } from '../../data/companyData';
-import { Terminal, ShieldCheck, Cpu, Code2, Users, ArrowRight, Sparkles, CheckCircle2 } from 'lucide-react';
+import { COMPANY_INFO, WHY_XENOTRIX } from '../../data/companyData';
+import { Terminal, ShieldCheck, Cpu, Code2, Users, ArrowRight, Sparkles, CheckCircle2, Globe2, MapPin } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export const AboutPage = () => {
   return (
     <>
       <SEO
-        title="About Xenotrix Technologies — Founders & Leadership"
-        description="Xenotrix Technologies was co-founded in 2025 by Sanjay S, Abi C R, and Hari Govind in Thrissur, Kerala, India to build intelligent digital infrastructure."
+        title="About Xenotrix Technologies — Company Profile & Leadership"
+        description="Xenotrix Technologies develops software products, digital platforms and intelligent technology solutions. Co-founded in 2025 by Sanjay S, Abi C R, and Hari Govind."
       />
-      <div className="pt-32 pb-28 bg-[#050505] relative overflow-hidden">
-        
-        {/* Header Hero */}
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+      <div className="pt-32 pb-28 bg-[#05070D] relative overflow-hidden min-h-screen">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16 relative z-10">
           
+          {/* Header Hero */}
           <div className="space-y-6 max-w-4xl">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/[0.03] border border-white/10 text-xs font-mono text-cyan-400">
-              <Terminal className="w-3.5 h-3.5" />
-              <span>ABOUT XENOTRIX TECHNOLOGIES</span>
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-cyan-950/80 border border-cyan-800/40 text-xs font-mono text-cyan-300">
+              <Sparkles className="w-3.5 h-3.5" />
+              <span>CORPORATE PROFILE // EST. 2025</span>
             </div>
 
-            <h1 className="font-display font-extrabold text-4xl sm:text-6xl md:text-7xl text-white tracking-tight uppercase leading-[0.95]">
-              WE'RE BUILDING THE TECHNOLOGY COMPANY WE WANTED TO WORK WITH.
+            <h1 className="font-display font-extrabold text-4xl sm:text-6xl lg:text-7xl text-white tracking-tight leading-[1.02]">
+              Building Technology That <br />
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-cyan-200 to-cyan-400">
+                Moves Businesses Forward.
+              </span>
             </h1>
 
-            <p className="text-base sm:text-xl text-zinc-400 leading-relaxed font-normal">
-              Co-founded in 2025 by Sanjay S, Abi C R, and Hari Govind in Thrissur, Kerala, Xenotrix Technologies was established to deliver enterprise engineering rigor, AI-first architecture, and commercial growth for businesses worldwide.
+            <p className="text-base sm:text-xl text-zinc-300 leading-relaxed font-normal">
+              {COMPANY_INFO.description}
             </p>
+          </div>
+
+          {/* Corporate Stats / Facts Strip */}
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-4">
+            <div className="p-6 rounded-2xl bg-[#090D18] border border-white/10 space-y-1">
+              <div className="text-xs font-mono text-zinc-400 uppercase">HEADQUARTERS</div>
+              <div className="text-xl font-bold text-white">Thrissur, Kerala</div>
+              <div className="text-xs text-cyan-400 font-mono">India (HQ)</div>
+            </div>
+            <div className="p-6 rounded-2xl bg-[#090D18] border border-white/10 space-y-1">
+              <div className="text-xs font-mono text-zinc-400 uppercase">OPERATING MODEL</div>
+              <div className="text-xl font-bold text-white">Global Remote</div>
+              <div className="text-xs text-cyan-400 font-mono">Distributed Teams</div>
+            </div>
+            <div className="p-6 rounded-2xl bg-[#090D18] border border-white/10 space-y-1">
+              <div className="text-xs font-mono text-zinc-400 uppercase">PROPRIETARY SAAS</div>
+              <div className="text-xl font-bold text-white">6 Platforms</div>
+              <div className="text-xs text-cyan-400 font-mono">Active Ecosystem</div>
+            </div>
+            <div className="p-6 rounded-2xl bg-[#090D18] border border-white/10 space-y-1">
+              <div className="text-xs font-mono text-zinc-400 uppercase">SYSTEM RUNTIME</div>
+              <div className="text-xl font-bold text-emerald-400">99.98%</div>
+              <div className="text-xs text-zinc-500 font-mono">Monitored SLA</div>
+            </div>
           </div>
 
           {/* Founders & Leadership Section */}
           <div className="pt-8 border-t border-white/10 space-y-10">
             <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
               <div>
-                <span className="text-xs font-mono text-cyan-400 uppercase">FOUNDING TEAM & LEADERSHIP</span>
-                <h2 className="font-display font-extrabold text-3xl sm:text-4xl text-white uppercase mt-1">
-                  MEET THE CO-FOUNDERS
+                <span className="text-xs font-mono text-cyan-400 uppercase tracking-wider font-semibold">
+                  FOUNDING LEADERSHIP & ARCHITECTS
+                </span>
+                <h2 className="font-display font-extrabold text-3xl sm:text-4xl text-white mt-1">
+                  Meet the Co-Founders
                 </h2>
               </div>
               <p className="text-xs sm:text-sm text-zinc-400 max-w-md">
-                Led by software engineers and product strategists committed to technical excellence and real business outcomes.
+                Led by systems engineers and product strategists committed to software rigor, clean architecture, and commercial impact.
               </p>
             </div>
 
             {/* 3 Co-Founders Cards */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {FOUNDERS.map((founder, idx) => (
+              {COMPANY_INFO.founders.map((founder, idx) => (
                 <div
                   key={idx}
-                  className="p-8 rounded-2xl bg-[#0A0A0D] border border-white/10 hover:border-cyan-500/40 transition-all duration-300 space-y-6 flex flex-col justify-between group"
+                  className="p-8 rounded-3xl bg-[#090D18] border border-white/10 hover:border-cyan-500/30 transition-all duration-300 space-y-6 flex flex-col justify-between group shadow-xl"
                 >
                   <div className="space-y-5">
-                    {/* Initials / Avatar Badge */}
+                    {/* Avatar Initials Badge */}
                     <div className="flex items-center justify-between">
                       <div className={`w-14 h-14 rounded-2xl bg-gradient-to-br ${founder.color} p-[1px]`}>
-                        <div className="w-full h-full bg-[#050505] rounded-[15px] flex items-center justify-center font-display font-extrabold text-lg text-white">
+                        <div className="w-full h-full bg-[#05070D] rounded-[15px] flex items-center justify-center font-display font-extrabold text-lg text-white">
                           {founder.initials}
                         </div>
                       </div>
-                      <span className="text-[10px] font-mono px-2.5 py-1 rounded bg-white/[0.04] border border-white/10 text-cyan-400">
+                      <span className="text-[10px] font-mono px-2.5 py-1 rounded-full bg-cyan-950/80 text-cyan-300 border border-cyan-800/40 uppercase">
                         CO-FOUNDER
                       </span>
                     </div>
@@ -75,9 +102,9 @@ export const AboutPage = () => {
                       </div>
                     </div>
 
-                    <div className="space-y-2 pt-2 border-t border-white/5">
-                      <div className="text-[10px] font-mono text-zinc-500 uppercase">Focus & Domain</div>
-                      <p className="text-xs text-zinc-300 font-medium leading-relaxed">
+                    <div className="space-y-1.5 pt-2 border-t border-white/5">
+                      <div className="text-[10px] font-mono text-cyan-400 uppercase font-semibold">Technical Domain</div>
+                      <p className="text-xs text-zinc-200 font-medium leading-relaxed">
                         {founder.focus}
                       </p>
                     </div>
@@ -92,7 +119,7 @@ export const AboutPage = () => {
                     {founder.skills.map((skill, sIdx) => (
                       <span
                         key={sIdx}
-                        className="text-[10px] font-mono px-2 py-0.5 rounded bg-white/[0.03] border border-white/5 text-zinc-400"
+                        className="text-[10px] font-mono px-2 py-0.5 rounded bg-white/[0.04] border border-white/5 text-zinc-300"
                       >
                         {skill}
                       </span>
@@ -103,58 +130,48 @@ export const AboutPage = () => {
             </div>
           </div>
 
-          {/* Core Philosophy Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pt-12 border-t border-white/10">
-            <div className="p-8 rounded-2xl bg-[#0A0A0D] border border-white/10 space-y-4">
-              <h3 className="font-display font-bold text-2xl text-white">Who We Are</h3>
-              <p className="text-sm text-zinc-400 leading-relaxed">
-                Headquartered in Thrissur, Kerala, Xenotrix Technologies is an AI-first digital agency and software engineering firm building scalable web applications, mobile platforms (Flutter), AI workflow agents, and commercial SaaS products.
-              </p>
+          {/* Differentiators Grid */}
+          <div className="pt-12 border-t border-white/10 space-y-8">
+            <div className="space-y-2">
+              <span className="text-xs font-mono text-cyan-400 uppercase tracking-wider font-semibold">
+                OUR ENGINEERING DNA
+              </span>
+              <h2 className="font-display font-extrabold text-3xl sm:text-4xl text-white">
+                Core Principles Behind Every Line of Code
+              </h2>
             </div>
 
-            <div className="p-8 rounded-2xl bg-[#0A0A0D] border border-white/10 space-y-4">
-              <h3 className="font-display font-bold text-2xl text-white">How We Work</h3>
-              <p className="text-sm text-zinc-400 leading-relaxed">
-                We operate with an agile-first, asynchronous engineering practice—rigorous code reviews, automated CI/CD pipelines, clear milestone roadmaps, and direct developer collaboration.
-              </p>
-            </div>
-          </div>
-
-          {/* Principles Section */}
-          <div className="pt-12 space-y-8">
-            <h2 className="font-display font-extrabold text-3xl text-white uppercase border-b border-white/10 pb-4">
-              OUR GUIDING PRINCIPLES
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {PRINCIPLES.map((p) => (
-                <div key={p.number} className="p-6 rounded-xl bg-[#111116] border border-white/5 space-y-2">
-                  <div className="text-xs font-mono text-cyan-400">{p.number} // PRINCIPLE</div>
-                  <h4 className="font-display font-bold text-lg text-white">{p.title}</h4>
-                  <p className="text-xs text-zinc-400 leading-relaxed">{p.description}</p>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {WHY_XENOTRIX.map((p, idx) => (
+                <div key={idx} className="p-6 rounded-2xl bg-[#090D18] border border-white/8 space-y-3">
+                  <div className="text-xs font-mono text-cyan-400 font-bold">{p.number} // PRINCIPLE</div>
+                  <h3 className="font-bold text-lg text-white">{p.title}</h3>
+                  <p className="text-xs text-zinc-300 leading-relaxed">{p.description}</p>
                 </div>
               ))}
             </div>
           </div>
 
           {/* Contact Banner */}
-          <div className="pt-16 border-t border-white/10">
-            <div className="p-8 rounded-2xl bg-[#0A0A0D] border border-white/10 flex flex-col md:flex-row items-center justify-between gap-6">
-              <div className="space-y-2">
-                <h3 className="font-display font-bold text-2xl text-white">Partner With Xenotrix Founders</h3>
-                <p className="text-xs sm:text-sm text-zinc-400">Speak directly with our co-founders and senior solution leads about your project goals.</p>
-              </div>
-              <Link
-                to="/contact"
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white text-black font-semibold text-xs hover:bg-cyan-300 transition-colors shrink-0"
-              >
-                <span>Schedule a Scoping Call</span>
-                <ArrowRight className="w-4 h-4" />
-              </Link>
+          <div className="p-8 sm:p-12 rounded-3xl bg-[#090D18] border border-white/12 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div className="space-y-2">
+              <h3 className="font-display font-bold text-2xl sm:text-3xl text-white">
+                Partner Directly With Our Founding Leads
+              </h3>
+              <p className="text-sm text-zinc-300">
+                Discuss system architecture, platform blueprints, or custom AI development with our team.
+              </p>
             </div>
+            <Link
+              to="/contact"
+              className="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-white text-zinc-950 font-bold text-sm hover:bg-cyan-300 hover:text-black transition-all shrink-0"
+            >
+              <span>Schedule Technical Consultation</span>
+              <ArrowRight className="w-4 h-4" />
+            </Link>
           </div>
 
         </div>
-
       </div>
     </>
   );

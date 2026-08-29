@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ChevronDown, HelpCircle } from 'lucide-react';
+import { ChevronDown, HelpCircle, Sparkles } from 'lucide-react';
 import { FAQS } from '../../data/companyData';
 
 export const FAQAccordion = () => {
@@ -11,18 +11,21 @@ export const FAQAccordion = () => {
   };
 
   return (
-    <section className="py-28 bg-[#0A0A0D] border-b border-white/10 relative overflow-hidden">
+    <section className="py-28 bg-[#070A10] border-t border-white/10 relative overflow-hidden">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-16">
         
         {/* Header */}
         <div className="text-center space-y-4">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white/[0.04] border border-white/10 text-xs font-mono text-cyan-400">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white/[0.04] border border-white/10 text-xs font-mono text-cyan-400 uppercase tracking-widest">
             <HelpCircle className="w-3.5 h-3.5" />
             <span>FREQUENTLY ASKED QUESTIONS</span>
           </div>
-          <h2 className="font-display font-extrabold text-3xl sm:text-5xl text-white tracking-tight uppercase">
-            CLEAR ANSWERS FOR ENTERPRISES
+          <h2 className="font-display font-extrabold text-3xl sm:text-5xl text-white tracking-tight">
+            Frequently Asked Questions
           </h2>
+          <p className="text-base sm:text-lg text-zinc-300 max-w-xl mx-auto">
+            Direct, transparent insights into our products, engineering approach, and client engagements.
+          </p>
         </div>
 
         {/* Accordion List */}
@@ -32,11 +35,11 @@ export const FAQAccordion = () => {
             return (
               <div
                 key={idx}
-                className="rounded-2xl bg-[#111116] border border-white/10 overflow-hidden transition-colors"
+                className="rounded-2xl bg-[#0B0F19] border border-white/10 overflow-hidden transition-all duration-200"
               >
                 <button
                   onClick={() => toggleAccordion(idx)}
-                  className="w-full p-6 text-left flex items-center justify-between gap-4 font-display font-semibold text-base sm:text-lg text-white hover:text-cyan-300 transition-colors focus:outline-none"
+                  className="w-full p-6 text-left flex items-center justify-between gap-4 font-display font-bold text-base sm:text-lg text-white hover:text-cyan-300 transition-colors focus:outline-none cursor-pointer"
                   aria-expanded={isOpen}
                 >
                   <span>{faq.q}</span>
@@ -53,9 +56,9 @@ export const FAQAccordion = () => {
                       initial={{ height: 0, opacity: 0 }}
                       animate={{ height: 'auto', opacity: 1 }}
                       exit={{ height: 0, opacity: 0 }}
-                      transition={{ duration: 0.3, ease: 'easeInOut' }}
+                      transition={{ duration: 0.2, ease: 'easeInOut' }}
                     >
-                      <div className="px-6 pb-6 text-xs sm:text-sm text-zinc-400 leading-relaxed border-t border-white/5 pt-4">
+                      <div className="px-6 pb-6 text-sm text-zinc-300 leading-relaxed border-t border-white/5 pt-4">
                         {faq.a}
                       </div>
                     </motion.div>

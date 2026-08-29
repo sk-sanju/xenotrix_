@@ -3,17 +3,17 @@ import { SEO } from '../../components/common/SEO';
 import { Hero } from '../../components/sections/Hero';
 import { TrustStrip } from '../../components/sections/TrustStrip';
 import { IntroStatement } from '../../components/sections/IntroStatement';
-import { WhatWeBuild } from '../../components/sections/WhatWeBuild';
 import { FeaturedProducts } from '../../components/sections/FeaturedProducts';
-import { WhyXenotrix } from '../../components/sections/WhyXenotrix';
-import { TechEcosystem } from '../../components/sections/TechEcosystem';
+import { WhatWeBuild } from '../../components/sections/WhatWeBuild';
+import { SolutionsSection } from '../../components/sections/SolutionsSection';
 import { IndustriesGrid } from '../../components/sections/IndustriesGrid';
+import { TechEcosystem } from '../../components/sections/TechEcosystem';
+import { WhyXenotrix } from '../../components/sections/WhyXenotrix';
+import { SelectedWorkSection } from '../../components/sections/SelectedWorkSection';
 import { ProcessTimeline } from '../../components/sections/ProcessTimeline';
-import { BeliefsSection } from '../../components/sections/BeliefsSection';
-import { VisionSection } from '../../components/sections/VisionSection';
+import { CorporateAboutSection } from '../../components/sections/CorporateAboutSection';
 import { FAQAccordion } from '../../components/sections/FAQAccordion';
-import { Link } from 'react-router-dom';
-import { ArrowRight } from 'lucide-react';
+import { FinalCTASection } from '../../components/sections/FinalCTASection';
 
 export const HomePage = () => {
   const schema = {
@@ -21,51 +21,71 @@ export const HomePage = () => {
     "@type": "Organization",
     "name": "Xenotrix Technologies",
     "url": "https://xenotrix.in",
-    "logo": "https://xenotrix.in/logo.png",
-    "description": "Building the digital infrastructure of tomorrow with intelligent software, AI systems, and SaaS platforms."
+    "logo": "https://xenotrix.in/assets/logo.jpeg",
+    "description": "Xenotrix Technologies builds software products, digital platforms and intelligent technology solutions that help businesses operate smarter, scale faster and grow with confidence.",
+    "founder": [
+      { "@type": "Person", "name": "Sanjay S" },
+      { "@type": "Person", "name": "Abi C R" },
+      { "@type": "Person", "name": "Hari Govind" }
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Thrissur",
+      "addressRegion": "Kerala",
+      "postalCode": "680001",
+      "addressCountry": "IN"
+    }
   };
 
   return (
     <>
       <SEO
-        title="Xenotrix Technologies — Building the Digital Infrastructure of Tomorrow"
-        description="Xenotrix Technologies builds intelligent software, AI systems, automation platforms and digital products for ambitious businesses."
+        title="Xenotrix Technologies — Building Products, Platforms & Digital Solutions"
+        description="Xenotrix Technologies builds proprietary software products (XenoCRM, XenoFin, XenoBiz, XenoClass, XenoHR, Xenotune) and custom AI, automation, and enterprise engineering solutions."
         schema={schema}
       />
-      <main>
+      <main className="overflow-x-hidden">
+        {/* 1. Hero Section */}
         <Hero />
+
+        {/* 2. Company Value Strip */}
         <TrustStrip />
+
+        {/* 3. Two Pillars: We Build Products / We Build For Businesses */}
         <IntroStatement />
-        <WhatWeBuild />
+
+        {/* 4. Products Ecosystem Showcase (All 6 Products) */}
         <FeaturedProducts />
-        <WhyXenotrix />
-        <TechEcosystem />
+
+        {/* 5. Technology Services (4 Major Pillars) */}
+        <WhatWeBuild />
+
+        {/* 6. Solutions Built Around Your Business */}
+        <SolutionsSection />
+
+        {/* 7. Technology Across Industries */}
         <IndustriesGrid />
+
+        {/* 8. Engineering With Modern Technology */}
+        <TechEcosystem />
+
+        {/* 9. Why Xenotrix (6 Differentiators) */}
+        <WhyXenotrix />
+
+        {/* 10. Selected Work / Case Studies */}
+        <SelectedWorkSection />
+
+        {/* 11. From Idea to Impact (Development Process) */}
         <ProcessTimeline />
-        <BeliefsSection />
-        <VisionSection />
+
+        {/* 12. Corporate About Xenotrix */}
+        <CorporateAboutSection />
+
+        {/* 13. Frequently Asked Questions */}
         <FAQAccordion />
 
-        {/* Bottom CTA Banner */}
-        <section className="py-24 bg-[#050505] border-t border-white/10 relative overflow-hidden">
-          <div className="max-w-5xl mx-auto px-4 text-center space-y-8 relative z-10">
-            <h2 className="font-display font-extrabold text-4xl sm:text-6xl text-white tracking-tight uppercase">
-              READY TO BUILD WHAT'S NEXT?
-            </h2>
-            <p className="text-base sm:text-lg text-zinc-400 max-w-xl mx-auto">
-              Schedule a technical scoping assessment with our engineering architecture team.
-            </p>
-            <div>
-              <Link
-                to="/contact"
-                className="inline-flex items-center gap-3 px-8 py-4 rounded-xl bg-gradient-to-r from-cyan-500 to-violet-600 text-white font-bold text-sm tracking-wide shadow-xl shadow-cyan-500/20 hover:scale-105 transition-transform"
-              >
-                <span>Start a Project Enquiry</span>
-                <ArrowRight className="w-4 h-4" />
-              </Link>
-            </div>
-          </div>
-        </section>
+        {/* 14. Final CTA Section */}
+        <FinalCTASection />
       </main>
     </>
   );

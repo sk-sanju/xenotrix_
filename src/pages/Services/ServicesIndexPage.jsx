@@ -1,70 +1,122 @@
 import React from 'react';
 import { SEO } from '../../components/common/SEO';
-import { SERVICES_DETAIL } from '../../data/companyData';
+import { SERVICE_CATEGORIES } from '../../data/companyData';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Code2, CheckCircle2 } from 'lucide-react';
+import { 
+  Code2, 
+  Cpu, 
+  Sparkles, 
+  TrendingUp, 
+  ArrowRight, 
+  Check, 
+  Layers,
+  Terminal
+} from 'lucide-react';
 
 export const ServicesIndexPage = () => {
+  const categoryIcons = [
+    Code2,
+    Cpu,
+    Sparkles,
+    TrendingUp
+  ];
+
   return (
     <>
       <SEO
-        title="Solutions & Engineering Capabilities — Xenotrix Technologies"
-        description="Explore Xenotrix Technologies solutions spanning Web Platforms, AI & ML, Automation, SaaS, Data Analytics, and Digital Growth."
+        title="Technology Services & Custom Engineering — Xenotrix Technologies"
+        description="Enterprise technology services: Custom Software Development, AI & Intelligence, Digital Experience & eCommerce, and Digital Transformation."
       />
-      <div className="pt-32 pb-28 bg-[#050505] relative overflow-hidden">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+      <div className="pt-32 pb-28 bg-[#05070D] relative overflow-hidden min-h-screen">
+        <div className="absolute top-1/4 right-1/4 w-[600px] h-[600px] bg-violet-600/5 rounded-full blur-[160px] pointer-events-none" />
+
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16 relative z-10">
           
+          {/* Header */}
           <div className="space-y-6 max-w-4xl">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-cyan-950/80 border border-cyan-800/40 text-xs font-mono text-cyan-300">
-              <Code2 className="w-3.5 h-3.5" />
-              <span>ENTERPRISE SOLUTIONS INDEX</span>
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-violet-950/80 border border-violet-800/40 text-xs font-mono text-violet-300">
+              <Cpu className="w-3.5 h-3.5" />
+              <span>ENTERPRISE ENGINEERING PILLARS</span>
             </div>
 
-            <h1 className="font-display font-extrabold text-4xl sm:text-6xl text-white tracking-tight uppercase">
-              ENGINEERING & SOFTWARE CAPABILITIES
+            <h1 className="font-display font-extrabold text-4xl sm:text-6xl lg:text-7xl text-white tracking-tight">
+              Technology Services Built Around <br />
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-violet-200 to-violet-400">
+                Real Business Needs.
+              </span>
             </h1>
 
-            <p className="text-base sm:text-xl text-zinc-400 leading-relaxed font-normal">
-              We design and deploy modern software platforms, AI systems, and automation infrastructure tailored to high-growth organizations.
+            <p className="text-base sm:text-xl text-zinc-300 leading-relaxed font-normal">
+              From full-stack product engineering to domain-specific AI automation, we design, engineer, and deploy scalable solutions for ambitious modern enterprises.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pt-8 border-t border-white/10">
-            {SERVICES_DETAIL.map((service) => (
-              <div
-                key={service.slug}
-                className="p-8 rounded-2xl bg-[#0A0A0D] border border-white/10 hover:border-cyan-500/40 transition-all duration-300 space-y-6 flex flex-col justify-between group"
-              >
-                <div className="space-y-4">
-                  <span className="text-xs font-mono text-cyan-400 uppercase">SOLUTION</span>
-                  <h3 className="font-display font-bold text-2xl text-white group-hover:text-cyan-300 transition-colors">
-                    {service.title}
-                  </h3>
-                  <p className="text-xs sm:text-sm text-zinc-400 leading-relaxed">
-                    {service.subtitle}
+          {/* 4 Pillars Matrix */}
+          <div className="space-y-12 pt-8 border-t border-white/10">
+            {SERVICE_CATEGORIES.map((cat, idx) => {
+              const Icon = categoryIcons[idx] || Code2;
+              return (
+                <div
+                  key={cat.id}
+                  className="p-8 sm:p-12 rounded-3xl bg-[#090D18] border border-white/12 shadow-2xl space-y-8"
+                >
+                  <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 border-b border-white/10 pb-6">
+                    <div className="flex items-center gap-4">
+                      <div className="p-3.5 rounded-2xl bg-violet-500/10 border border-violet-500/20 text-violet-400">
+                        <Icon className="w-8 h-8" />
+                      </div>
+                      <div>
+                        <span className="text-xs font-mono text-cyan-400 uppercase tracking-widest font-semibold">
+                          PILLAR 0{idx + 1} // {cat.category}
+                        </span>
+                        <h2 className="font-display font-extrabold text-2xl sm:text-3xl text-white mt-1">
+                          {cat.title}
+                        </h2>
+                      </div>
+                    </div>
+
+                    <Link
+                      to={`/services/${cat.slug}`}
+                      className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white text-zinc-950 font-bold text-xs hover:bg-cyan-300 hover:text-black transition-all shrink-0"
+                    >
+                      <span>Explore Pillar Capabilities</span>
+                      <ArrowRight className="w-4 h-4" />
+                    </Link>
+                  </div>
+
+                  <p className="text-sm sm:text-base text-zinc-300 max-w-3xl">
+                    {cat.description}
                   </p>
 
-                  <div className="space-y-2 pt-2">
-                    {service.capabilities.slice(0, 3).map((cap, cIdx) => (
-                      <div key={cIdx} className="flex items-center gap-2 text-xs text-zinc-300">
-                        <CheckCircle2 className="w-3.5 h-3.5 text-cyan-400 shrink-0" />
-                        <span>{cap}</span>
+                  {/* Sub-services */}
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    {cat.services.map((sub, sIdx) => (
+                      <div
+                        key={sIdx}
+                        className="p-5 rounded-2xl bg-[#0D121F] border border-white/6 hover:border-violet-500/30 transition-all space-y-2"
+                      >
+                        <h4 className="font-bold text-sm text-white">
+                          {sub.name}
+                        </h4>
+                        <p className="text-xs text-zinc-400 leading-relaxed">
+                          {sub.desc}
+                        </p>
                       </div>
                     ))}
                   </div>
-                </div>
 
-                <div className="pt-4 border-t border-white/5">
-                  <Link
-                    to={`/services/${service.slug}`}
-                    className="inline-flex items-center gap-2 text-xs font-semibold text-white group-hover:text-cyan-400 transition-colors"
-                  >
-                    <span>View Service Blueprint</span>
-                    <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                  </Link>
+                  {/* Architecture Badges */}
+                  <div className="pt-4 border-t border-white/5 flex flex-wrap items-center gap-2 text-xs font-mono text-zinc-400">
+                    <span className="text-zinc-500">TECH STACK:</span>
+                    {cat.tech.map((t, tIdx) => (
+                      <span key={tIdx} className="px-2.5 py-0.5 rounded bg-white/5 text-zinc-300 border border-white/5 text-[11px]">
+                        {t}
+                      </span>
+                    ))}
+                  </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
 
         </div>

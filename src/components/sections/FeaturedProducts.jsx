@@ -1,376 +1,262 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
-import { ArrowRight, CheckCircle2, MessageSquare, DollarSign, Users, Sparkles, Play, Pause, Volume2, ShieldCheck, Zap, Smartphone } from 'lucide-react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { 
+  ArrowRight, 
+  Layers, 
+  Sparkles, 
+  Check, 
+  Activity, 
+  ShieldCheck, 
+  ExternalLink,
+  Cpu,
+  BarChart3,
+  CreditCard,
+  GraduationCap,
+  Users,
+  Music,
+  Terminal,
+  Smartphone
+} from 'lucide-react';
 import { PRODUCTS } from '../../data/companyData';
 
 export const FeaturedProducts = () => {
-  // XenoCRM Interactive Mockup State
-  const [crmActiveTab, setCrmActiveTab] = useState('crm');
-  // Xenotune Interactive Mockup State
-  const [isPlayingAudio, setIsPlayingAudio] = useState(false);
-  const [audioMode, setAudioMode] = useState('Deep Focus');
+  const [selectedProduct, setSelectedProduct] = useState(PRODUCTS[0]);
+
+  const productIcons = {
+    xenocrm: BarChart3,
+    xenofin: CreditCard,
+    xenobiz: Smartphone,
+    xenoclass: GraduationCap,
+    xenohr: Users,
+    xenotune: Music
+  };
 
   return (
-    <section className="py-28 bg-[#0A0A0D] border-y border-white/10 relative overflow-hidden">
-      {/* Glow Effects */}
-      <div className="absolute top-1/3 left-0 w-96 h-96 bg-cyan-500/10 rounded-full blur-[140px] pointer-events-none" />
-      <div className="absolute bottom-10 right-0 w-96 h-96 bg-violet-600/10 rounded-full blur-[140px] pointer-events-none" />
+    <section id="products" className="py-28 bg-[#070A10] border-t border-white/10 relative overflow-hidden">
+      {/* Background Gradients */}
+      <div className="absolute top-1/3 left-0 w-[500px] h-[500px] bg-cyan-500/5 rounded-full blur-[140px] pointer-events-none" />
+      <div className="absolute bottom-10 right-0 w-[600px] h-[600px] bg-violet-600/5 rounded-full blur-[160px] pointer-events-none" />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-24">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Section Header */}
-        <div className="text-center space-y-4 max-w-3xl mx-auto">
-          <span className="text-xs font-mono text-cyan-400 tracking-widest uppercase">
-            FLAGSHIP SOFTWARE PLATFORMS
-          </span>
-          <h2 className="font-display font-extrabold text-3xl sm:text-5xl text-white tracking-tight uppercase">
-            BUILT BY XENOTRIX
-          </h2>
-          <p className="text-base text-zinc-400">
-            We don't just engineer for clients; we build and operate commercial SaaS and mobile platforms designed for high real-world utility.
-          </p>
-        </div>
-
-        {/* 3 Product Cards Overview Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {PRODUCTS.map((prod) => (
-            <div
-              key={prod.id}
-              className={`p-6 rounded-2xl bg-[#111116] border transition-all duration-300 space-y-5 flex flex-col justify-between group ${
-                prod.isUpcoming
-                  ? 'border-amber-500/40 hover:border-amber-400 shadow-xl shadow-amber-500/5'
-                  : 'border-white/10 hover:border-cyan-500/40'
-              }`}
-            >
-              <div className="space-y-4">
-                <div className="flex items-center justify-between">
-                  <span className="font-display font-bold text-2xl text-white group-hover:text-cyan-300 transition-colors">
-                    {prod.name}
-                  </span>
-                  <span
-                    className={`text-[10px] font-mono px-2 py-0.5 rounded border ${
-                      prod.isUpcoming
-                        ? 'bg-amber-950/80 text-amber-300 border-amber-800/40 animate-pulse'
-                        : 'bg-cyan-950/80 text-cyan-300 border-cyan-800/40'
-                    }`}
-                  >
-                    {prod.statusLabel || prod.badge}
-                  </span>
-                </div>
-
-                <p className="text-xs font-semibold text-cyan-200">
-                  {prod.tagline}
-                </p>
-
-                <p className="text-xs text-zinc-400 leading-relaxed">
-                  {prod.description}
-                </p>
-              </div>
-
-              <div className="pt-4 border-t border-white/5">
-                <Link
-                  to={prod.ctaLink}
-                  className={`inline-flex items-center gap-2 text-xs font-semibold transition-colors ${
-                    prod.isUpcoming ? 'text-amber-300 group-hover:text-amber-200' : 'text-white group-hover:text-cyan-400'
-                  }`}
-                >
-                  <span>{prod.isUpcoming ? 'Discover XenoBiz →' : `Explore ${prod.name} →`}</span>
-                </Link>
-              </div>
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+          <div className="space-y-4 max-w-2xl">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-950/60 border border-cyan-500/30 text-[11px] font-mono text-cyan-300 uppercase tracking-widest">
+              <Layers className="w-3.5 h-3.5" />
+              <span>PROPRIETARY SOFTWARE ECOSYSTEM</span>
             </div>
-          ))}
-        </div>
-
-        {/* Product 1 Showcase: XenoCRM */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
-          <div className="lg:col-span-5 space-y-6">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-cyan-950/80 border border-cyan-800/40 text-xs font-mono text-cyan-300">
-              <ShieldCheck className="w-3.5 h-3.5" />
-              <span>BUSINESS OPERATING SYSTEM</span>
-            </div>
-
-            <h3 className="font-display font-extrabold text-4xl text-white tracking-tight">
-              XenoCRM
-            </h3>
-
-            <p className="text-sm text-zinc-400 leading-relaxed">
-              The all-in-one business operating system for modern SMBs. Unify customer management, sales pipelines, WhatsApp automation, automated invoicing, inventory, and AI revenue scoring.
+            <h2 className="font-display font-extrabold text-3xl sm:text-5xl text-white tracking-tight">
+              Our Products
+            </h2>
+            <p className="text-base sm:text-lg text-zinc-300">
+              Technology products designed to simplify business, automate operations and create better digital experiences.
             </p>
-
-            <div className="grid grid-cols-2 gap-3 pt-2">
-              {[
-                "CRM & Sales Pipelines",
-                "WhatsApp API Inbox",
-                "Automated Billing Engine",
-                "Inventory & Fulfilment",
-                "AI Revenue Forecasting",
-                "Real-Time Audit Logs"
-              ].map((feat, idx) => (
-                <div key={idx} className="flex items-center gap-2 text-xs text-zinc-300">
-                  <CheckCircle2 className="w-3.5 h-3.5 text-cyan-400 shrink-0" />
-                  <span>{feat}</span>
-                </div>
-              ))}
-            </div>
-
-            <div className="pt-4 flex items-center gap-4">
-              <Link
-                to="/products/xenocrm"
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white text-black font-semibold text-xs hover:bg-cyan-300 transition-colors shadow-lg shadow-cyan-500/10"
-              >
-                <span>Explore XenoCRM</span>
-                <ArrowRight className="w-4 h-4" />
-              </Link>
-            </div>
           </div>
 
-          <div className="lg:col-span-7">
-            <div className="rounded-2xl bg-[#111116] border border-white/10 p-5 shadow-2xl space-y-4">
-              <div className="flex items-center justify-between border-b border-white/10 pb-3 text-xs font-mono">
-                <div className="flex items-center gap-2">
-                  <div className="w-3 h-3 rounded-full bg-red-500/80" />
-                  <div className="w-3 h-3 rounded-full bg-yellow-500/80" />
-                  <div className="w-3 h-3 rounded-full bg-emerald-500/80" />
-                  <span className="text-zinc-400 ml-2">xenocrm-app.internal // OS_V4.2</span>
-                </div>
-                <div className="flex items-center gap-2 text-cyan-400">
-                  <span className="w-2 h-2 rounded-full bg-cyan-400 animate-pulse" />
-                  <span className="text-[10px]">LIVE DEMO</span>
-                </div>
-              </div>
-
-              <div className="flex gap-2 overflow-x-auto pb-1 text-xs">
-                {[
-                  { id: 'crm', label: 'Sales Pipeline', icon: Users },
-                  { id: 'whatsapp', label: 'WhatsApp Inbox', icon: MessageSquare },
-                  { id: 'billing', label: 'Automated Billing', icon: DollarSign }
-                ].map((tab) => {
-                  const Icon = tab.icon;
-                  return (
-                    <button
-                      key={tab.id}
-                      onClick={() => setCrmActiveTab(tab.id)}
-                      className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg font-mono text-xs transition-colors ${
-                        crmActiveTab === tab.id
-                          ? 'bg-cyan-500/20 text-cyan-300 border border-cyan-500/40'
-                          : 'bg-white/[0.03] text-zinc-400 hover:text-white'
-                      }`}
-                    >
-                      <Icon className="w-3.5 h-3.5" />
-                      <span>{tab.label}</span>
-                    </button>
-                  );
-                })}
-              </div>
-
-              <div className="p-4 rounded-xl bg-black/50 border border-white/5 min-h-[220px]">
-                {crmActiveTab === 'crm' && (
-                  <div className="space-y-3 font-mono text-xs">
-                    <div className="flex items-center justify-between text-zinc-400 pb-2 border-b border-white/5">
-                      <span>LEAD / CLIENT</span>
-                      <span>PIPELINE STAGE</span>
-                      <span>ESTIMATED VALUE</span>
-                    </div>
-                    {[
-                      { client: "AeroDynamics Inc", stage: "Proposal Sent", val: "$45,000", status: "bg-cyan-500/20 text-cyan-300" },
-                      { client: "Nexus Health Systems", stage: "Discovery Call", val: "$28,000", status: "bg-violet-500/20 text-violet-300" },
-                      { client: "Vanguard Logistics", stage: "Closed Won", val: "$82,000", status: "bg-emerald-500/20 text-emerald-300" }
-                    ].map((row, rIdx) => (
-                      <div key={rIdx} className="flex items-center justify-between py-1.5 text-zinc-300 border-b border-white/[0.03]">
-                        <span className="font-semibold">{row.client}</span>
-                        <span className={`px-2 py-0.5 rounded text-[10px] ${row.status}`}>{row.stage}</span>
-                        <span className="text-white">{row.val}</span>
-                      </div>
-                    ))}
-                  </div>
-                )}
-
-                {crmActiveTab === 'whatsapp' && (
-                  <div className="space-y-2.5 font-sans text-xs">
-                    <div className="p-2.5 rounded-lg bg-zinc-900 border border-white/5 flex items-start gap-3">
-                      <div className="w-7 h-7 rounded-full bg-emerald-600/30 border border-emerald-500/40 text-emerald-400 flex items-center justify-center font-mono font-bold text-xs shrink-0">
-                        WA
-                      </div>
-                      <div className="space-y-1">
-                        <div className="flex items-center gap-2">
-                          <span className="font-semibold text-white">Client Inquiry #9402</span>
-                          <span className="text-[10px] text-zinc-500">14:22 PM</span>
-                        </div>
-                        <p className="text-zinc-300 text-xs">"Can we schedule an automated dispatch webhook for order #9812?"</p>
-                        <div className="text-[10px] text-cyan-400 font-mono pt-1">
-                          [AI Agent Auto-Responded: Booking Confirmed]
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                )}
-
-                {crmActiveTab === 'billing' && (
-                  <div className="space-y-3 font-mono text-xs">
-                    <div className="grid grid-cols-3 gap-2 text-center">
-                      <div className="p-2 rounded bg-zinc-900 border border-white/5">
-                        <div className="text-[10px] text-zinc-500">MONTHLY RECURRING</div>
-                        <div className="text-sm font-bold text-emerald-400">$34,800</div>
-                      </div>
-                      <div className="p-2 rounded bg-zinc-900 border border-white/5">
-                        <div className="text-[10px] text-zinc-500">AUTO-INVOICED</div>
-                        <div className="text-sm font-bold text-cyan-400">142 Invoices</div>
-                      </div>
-                      <div className="p-2 rounded bg-zinc-900 border border-white/5">
-                        <div className="text-[10px] text-zinc-500">LATENCY</div>
-                        <div className="text-sm font-bold text-violet-400">0.42s</div>
-                      </div>
-                    </div>
-                  </div>
-                )}
-              </div>
-            </div>
-          </div>
+          <Link
+            to="/products"
+            className="inline-flex items-center gap-2 text-sm font-semibold text-cyan-400 hover:text-cyan-300 transition-colors shrink-0"
+          >
+            <span>View Complete Product Index</span>
+            <ArrowRight className="w-4 h-4" />
+          </Link>
         </div>
 
-        {/* Product 2 Showcase: Xenotune */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center pt-12 border-t border-white/10">
-          <div className="lg:col-span-7 order-2 lg:order-1">
-            <div className="rounded-2xl bg-[#111116] border border-white/10 p-5 shadow-2xl space-y-5">
-              <div className="flex items-center justify-between border-b border-white/10 pb-3 text-xs font-mono">
-                <div className="flex items-center gap-2 text-violet-400">
-                  <Zap className="w-4 h-4" />
-                  <span>XENOTUNE // NEURAL ACOUSTIC ENGINE</span>
+        {/* Product Selector Navigation Strip */}
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 mb-10">
+          {PRODUCTS.map((prod) => {
+            const Icon = productIcons[prod.id] || Layers;
+            const isSelected = selectedProduct.id === prod.id;
+            return (
+              <button
+                key={prod.id}
+                onClick={() => setSelectedProduct(prod)}
+                className={`p-4 rounded-2xl border text-left transition-all duration-200 cursor-pointer flex flex-col justify-between h-28 relative overflow-hidden ${
+                  isSelected
+                    ? 'bg-[#111622] border-cyan-500 shadow-lg shadow-cyan-500/10'
+                    : 'bg-[#0A0D14]/80 border-white/8 hover:bg-[#0F1422] hover:border-white/20'
+                }`}
+              >
+                {isSelected && (
+                  <div className="absolute top-0 right-0 w-16 h-16 bg-cyan-500/20 rounded-full blur-xl pointer-events-none" />
+                )}
+                <div className="flex items-center justify-between w-full">
+                  <div className={`p-2 rounded-lg ${isSelected ? 'bg-cyan-500/20 text-cyan-300' : 'bg-white/5 text-zinc-400'}`}>
+                    <Icon className="w-4 h-4" />
+                  </div>
+                  <span className={`text-[9px] font-mono px-1.5 py-0.5 rounded border ${
+                    prod.isUpcoming ? 'bg-amber-950/60 text-amber-300 border-amber-800/40' : 'bg-cyan-950/60 text-cyan-300 border-cyan-800/40'
+                  }`}>
+                    {prod.badge}
+                  </span>
                 </div>
-                <span className="text-[10px] text-zinc-400">DSP LATENCY: 3ms</span>
+                <div>
+                  <div className={`text-sm font-bold tracking-tight ${isSelected ? 'text-white' : 'text-zinc-300'}`}>
+                    {prod.name}
+                  </div>
+                  <div className="text-[10px] text-zinc-500 truncate">{prod.category}</div>
+                </div>
+              </button>
+            );
+          })}
+        </div>
+
+        {/* Showcase Panel for Selected Product */}
+        <div className="rounded-3xl bg-[#0B0F19] border border-white/12 p-6 sm:p-10 shadow-2xl relative overflow-hidden">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+            
+            {/* Left Column: Product Information & Capabilities */}
+            <div className="lg:col-span-6 space-y-6">
+              
+              <div className="flex items-center gap-3">
+                <span className="text-xs font-mono px-2.5 py-1 rounded-full bg-cyan-500/10 text-cyan-300 border border-cyan-500/20 font-semibold tracking-wider uppercase">
+                  {selectedProduct.category}
+                </span>
+                <span className="text-xs font-mono text-zinc-400">
+                  STATUS: <strong className="text-zinc-200">{selectedProduct.statusLabel}</strong>
+                </span>
               </div>
 
-              <div className="flex items-center justify-between gap-2">
-                {['Deep Focus', 'Circadian Shift', 'Sleep Stream'].map((mode) => (
-                  <button
-                    key={mode}
-                    onClick={() => setAudioMode(mode)}
-                    className={`flex-1 py-2 px-3 rounded-lg text-xs font-mono text-center transition-colors ${
-                      audioMode === mode
-                        ? 'bg-violet-600/30 text-violet-200 border border-violet-500/50'
-                        : 'bg-white/[0.03] text-zinc-400 hover:text-white'
-                    }`}
-                  >
-                    {mode}
-                  </button>
-                ))}
+              <div>
+                <h3 className="font-display font-extrabold text-3xl sm:text-4xl text-white tracking-tight mb-2">
+                  {selectedProduct.name}
+                </h3>
+                <p className="text-cyan-300 font-medium text-base mb-3">
+                  {selectedProduct.tagline}
+                </p>
+                <p className="text-zinc-300 text-sm sm:text-base leading-relaxed">
+                  {selectedProduct.description}
+                </p>
               </div>
 
-              <div className="h-28 rounded-xl bg-black/60 border border-white/5 p-4 flex items-center justify-center relative overflow-hidden">
-                <div className="flex items-end justify-center gap-1.5 w-full h-full">
-                  {[40, 65, 30, 85, 95, 50, 75, 90, 45, 60, 80, 100, 70, 55, 35, 80, 90, 45].map((height, i) => (
-                    <div
-                      key={i}
-                      style={{ height: isPlayingAudio ? `${height}%` : '20%' }}
-                      className="w-2 rounded-full bg-gradient-to-t from-violet-600 to-cyan-400 transition-all duration-300"
-                    />
+              {/* Capabilities List */}
+              <div className="space-y-3 pt-2">
+                <div className="text-xs font-mono text-zinc-400 uppercase tracking-wider font-semibold">
+                  Core Product Capabilities:
+                </div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                  {selectedProduct.features.map((feat, idx) => (
+                    <div key={idx} className="flex items-start gap-2 text-xs text-zinc-300">
+                      <Check className="w-4 h-4 text-cyan-400 shrink-0 mt-0.5" />
+                      <span>{feat}</span>
+                    </div>
                   ))}
                 </div>
               </div>
 
-              <div className="flex items-center justify-between pt-1 font-mono text-xs">
-                <button
-                  onClick={() => setIsPlayingAudio(!isPlayingAudio)}
-                  className="flex items-center gap-2 px-4 py-2 rounded-lg bg-violet-600 hover:bg-violet-500 text-white font-semibold transition-colors"
+              {/* Metrics Bar */}
+              <div className="grid grid-cols-3 gap-3 pt-4 border-t border-white/10">
+                {selectedProduct.metrics.map((m, idx) => (
+                  <div key={idx} className="p-3 rounded-xl bg-black/40 border border-white/5 space-y-1">
+                    <div className="text-[10px] font-mono text-zinc-400 uppercase">{m.label}</div>
+                    <div className="text-xs font-mono font-bold text-white truncate">{m.value}</div>
+                  </div>
+                ))}
+              </div>
+
+              {/* Action Buttons */}
+              <div className="flex flex-wrap items-center gap-4 pt-2">
+                <Link
+                  to={selectedProduct.ctaLink}
+                  className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-white text-zinc-950 font-bold text-sm hover:bg-cyan-300 hover:text-black transition-all shadow-lg shadow-white/10"
                 >
-                  {isPlayingAudio ? <Pause className="w-4 h-4" /> : <Play className="w-4 h-4" />}
-                  <span>{isPlayingAudio ? 'PAUSE SOUNDSCAPE' : 'GENERATE AUDIO'}</span>
-                </button>
+                  <span>Explore {selectedProduct.name} →</span>
+                </Link>
 
-                <div className="flex items-center gap-2 text-zinc-400">
-                  <Volume2 className="w-4 h-4 text-cyan-400" />
-                  <span>Spatial Acoustics 3D</span>
-                </div>
+                <Link
+                  to="/contact"
+                  className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-white/[0.05] hover:bg-white/[0.09] text-white font-medium text-sm border border-white/10 transition-all"
+                >
+                  <span>Request Enterprise Demo</span>
+                </Link>
               </div>
 
             </div>
-          </div>
 
-          <div className="lg:col-span-5 space-y-6 order-1 lg:order-2">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-violet-950/80 border border-violet-800/40 text-xs font-mono text-violet-300">
-              <Sparkles className="w-3.5 h-3.5" />
-              <span>AI ACOUSTIC PLATFORM</span>
-            </div>
-
-            <h3 className="font-display font-extrabold text-4xl text-white tracking-tight">
-              Xenotune
-            </h3>
-
-            <p className="text-sm text-zinc-400 leading-relaxed">
-              AI-powered ambient soundscape platform engineered for deep focus, sleep, and circadian rhythm synchronization. Uses procedural audio acoustic synthesis to generate infinite non-repeating streams.
-            </p>
-
-            <div className="grid grid-cols-2 gap-3 pt-2">
-              {[
-                "Neural Sound Engine",
-                "Circadian Sync",
-                "Infinite Audio Stream",
-                "Binaural Frequencies",
-                "WebAudio WASM",
-                "Zero Buffer Latency"
-              ].map((feat, idx) => (
-                <div key={idx} className="flex items-center gap-2 text-xs text-zinc-300">
-                  <CheckCircle2 className="w-3.5 h-3.5 text-violet-400 shrink-0" />
-                  <span>{feat}</span>
+            {/* Right Column: High-End SaaS Dashboard / Product UI Mockup */}
+            <div className="lg:col-span-6">
+              <div className="p-6 sm:p-8 rounded-2xl bg-[#070A10] border border-white/12 shadow-2xl relative space-y-6">
+                
+                {/* Mockup Window Header */}
+                <div className="flex items-center justify-between border-b border-white/10 pb-4">
+                  <div className="flex items-center gap-2">
+                    <div className="w-3 h-3 rounded-full bg-red-500/80" />
+                    <div className="w-3 h-3 rounded-full bg-amber-500/80" />
+                    <div className="w-3 h-3 rounded-full bg-emerald-500/80" />
+                    <span className="text-xs font-mono text-zinc-400 ml-2">
+                      app.xenotrix.in/{selectedProduct.id}
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-2 text-[11px] font-mono text-cyan-400">
+                    <Terminal className="w-3.5 h-3.5" />
+                    <span>v2.4.0</span>
+                  </div>
                 </div>
-              ))}
-            </div>
 
-            <div className="pt-4 flex items-center gap-4">
-              <Link
-                to="/products/xenotune"
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white text-black font-semibold text-xs hover:bg-violet-300 transition-colors shadow-lg shadow-violet-500/10"
-              >
-                <span>Explore Xenotune</span>
-                <ArrowRight className="w-4 h-4" />
-              </Link>
-            </div>
-          </div>
-        </div>
+                {/* Dashboard Mock Visuals */}
+                <div className="space-y-4">
+                  {/* Top Stats Row */}
+                  <div className="grid grid-cols-3 gap-3">
+                    <div className="p-3.5 rounded-xl bg-[#0F1422] border border-white/5 space-y-1">
+                      <div className="text-[10px] text-zinc-400 font-mono">ACTIVE SESSIONS</div>
+                      <div className="text-base font-bold text-white font-mono">1,420 / min</div>
+                      <div className="text-[9px] text-emerald-400 font-mono">↑ 99.98% uptime</div>
+                    </div>
+                    <div className="p-3.5 rounded-xl bg-[#0F1422] border border-white/5 space-y-1">
+                      <div className="text-[10px] text-zinc-400 font-mono">RESPONSE LATENCY</div>
+                      <div className="text-base font-bold text-cyan-400 font-mono">18.4 ms</div>
+                      <div className="text-[9px] text-cyan-300 font-mono">⚡ Zero drop</div>
+                    </div>
+                    <div className="p-3.5 rounded-xl bg-[#0F1422] border border-white/5 space-y-1">
+                      <div className="text-[10px] text-zinc-400 font-mono">DATA VAULT</div>
+                      <div className="text-base font-bold text-violet-400 font-mono">AES-256</div>
+                      <div className="text-[9px] text-zinc-400 font-mono">Encrypted</div>
+                    </div>
+                  </div>
 
-        {/* Product 3 Dedicated Preview: XenoBiz (COMING SOON FROM XENOTRIX) */}
-        <div className="p-8 md:p-12 rounded-3xl bg-[#111116] border border-amber-500/40 space-y-8 relative overflow-hidden">
-          <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
-            <div className="space-y-4 max-w-2xl">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded bg-amber-950 text-amber-300 text-xs font-mono border border-amber-800/40">
-                <Smartphone className="w-3.5 h-3.5" />
-                <span>COMING SOON FROM XENOTRIX // IN DEVELOPMENT</span>
+                  {/* Interactive Visual Graph / Mock Feed */}
+                  <div className="p-4 rounded-xl bg-black/60 border border-white/8 space-y-3">
+                    <div className="flex items-center justify-between text-xs font-mono text-zinc-400">
+                      <span>TELEMETRY & WORKFLOW ENGINE</span>
+                      <span className="text-emerald-400">● REALTIME STREAM</span>
+                    </div>
+
+                    <div className="h-28 flex items-end gap-1.5 pt-4 pb-1 border-b border-white/5">
+                      {[40, 65, 45, 80, 55, 90, 75, 95, 85, 100, 70, 85, 95, 110, 105, 120].map((val, i) => (
+                        <div
+                          key={i}
+                          className="flex-1 bg-gradient-to-t from-cyan-500/20 to-cyan-400/80 rounded-t-sm transition-all hover:to-white"
+                          style={{ height: `${(val / 120) * 100}%` }}
+                        />
+                      ))}
+                    </div>
+
+                    <div className="flex items-center justify-between text-[10px] font-mono text-zinc-400">
+                      <span>00:00 UTC</span>
+                      <span>PEAK RUNTIME THROUGHPUT</span>
+                      <span>LIVE</span>
+                    </div>
+                  </div>
+
+                  {/* Technology Architecture Tag Bar */}
+                  <div className="p-3 rounded-xl bg-[#0F1422] border border-white/5 flex items-center justify-between text-xs">
+                    <span className="text-zinc-400 font-mono text-[11px]">STACK:</span>
+                    <div className="flex items-center gap-2">
+                      {selectedProduct.techStack.map((tech, i) => (
+                        <span key={i} className="text-[10px] font-mono text-zinc-300 px-2 py-0.5 rounded bg-white/5">
+                          {tech}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+
+                </div>
+
               </div>
-
-              <h3 className="font-display font-extrabold text-3xl sm:text-4xl text-white tracking-tight uppercase">
-                XenoBiz — Business Management + CRM + WhatsApp
-              </h3>
-
-              <p className="text-sm text-zinc-300 leading-relaxed font-medium">
-                A mobile-first business operating system for small businesses, shops, wholesalers, and local service teams to manage billing, inventory, payments, customer CRM, and WhatsApp communication from one place.
-              </p>
             </div>
 
-            <div className="shrink-0">
-              <Link
-                to="/products/xenobiz"
-                className="inline-flex items-center gap-3 px-7 py-4 rounded-xl bg-gradient-to-r from-amber-500 to-orange-600 text-black font-bold text-xs uppercase tracking-wider hover:opacity-90 transition-opacity shadow-lg shadow-amber-500/20"
-              >
-                <span>Discover XenoBiz</span>
-                <ArrowRight className="w-4 h-4" />
-              </Link>
-            </div>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-4 border-t border-white/10 text-xs font-mono text-zinc-400">
-            <div className="flex items-center gap-2">
-              <CheckCircle2 className="w-4 h-4 text-amber-400" />
-              <span>01 RUN: Billing, Stock & Payments</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <CheckCircle2 className="w-4 h-4 text-amber-400" />
-              <span>02 MANAGE: Customer CRM & Follow-ups</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <CheckCircle2 className="w-4 h-4 text-amber-400" />
-              <span>03 GROW: WhatsApp Automation</span>
-            </div>
           </div>
         </div>
 

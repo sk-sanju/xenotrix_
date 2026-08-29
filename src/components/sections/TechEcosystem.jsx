@@ -1,80 +1,108 @@
 import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { 
+  Code2, 
+  Database, 
+  Smartphone, 
+  Cpu, 
+  Cloud, 
+  Terminal,
+  Sparkles,
+  Layers,
+  CheckCircle2
+} from 'lucide-react';
 import { TECH_ECOSYSTEM } from '../../data/companyData';
-import { Layers, Terminal, Sparkles } from 'lucide-react';
 
 export const TechEcosystem = () => {
-  const [selectedCategory, setSelectedCategory] = useState('ALL');
+  const [activeTab, setActiveTab] = useState(0);
 
-  const categories = ['ALL', ...TECH_ECOSYSTEM.map(c => c.category)];
-
-  const displayedTech = selectedCategory === 'ALL'
-    ? TECH_ECOSYSTEM.flatMap(c => c.items.map(item => ({ item, category: c.category })))
-    : TECH_ECOSYSTEM.find(c => c.category === selectedCategory)?.items.map(item => ({ item, category: selectedCategory })) || [];
+  const categoryIcons = [
+    Code2,
+    Terminal,
+    Database,
+    Smartphone,
+    Cpu,
+    Cloud
+  ];
 
   return (
-    <section className="py-28 bg-[#0A0A0D] border-b border-white/10 relative overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-12">
+    <section id="technology" className="py-28 bg-[#070A10] border-t border-white/10 relative overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Section Header */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 border-b border-white/10 pb-8">
-          <div>
-            <span className="text-xs font-mono text-cyan-400 tracking-widest uppercase">
-              TECHNOLOGY CONSTELLATION // MODERN STACK
-            </span>
-            <h2 className="font-display font-extrabold text-3xl sm:text-5xl text-white tracking-tight mt-2 uppercase">
-              ENGINEERING ECOSYSTEM
-            </h2>
+        <div className="text-center max-w-3xl mx-auto space-y-4 mb-16">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-950/60 border border-cyan-500/30 text-[11px] font-mono text-cyan-300 uppercase tracking-widest">
+            <Cpu className="w-3.5 h-3.5" />
+            <span>MODERN STACK ARCHITECTURE</span>
           </div>
-          <p className="text-sm text-zinc-400 max-w-md">
-            We use battle-tested, ultra-fast frameworks and cloud infrastructure designed for high throughput, low latency, and long-term maintainability.
+          <h2 className="font-display font-extrabold text-3xl sm:text-5xl text-white tracking-tight">
+            Engineering With Modern Technology
+          </h2>
+          <p className="text-base sm:text-lg text-zinc-300">
+            We build with battle-tested frameworks, distributed microservice patterns, and AI toolchains designed for sub-second performance and modular maintainability.
           </p>
         </div>
 
-        {/* Category Filter Pills */}
-        <div className="flex flex-wrap gap-2">
-          {categories.map((cat) => (
-            <button
-              key={cat}
-              onClick={() => setSelectedCategory(cat)}
-              className={`px-4 py-2 rounded-xl text-xs font-mono transition-all duration-200 ${
-                selectedCategory === cat
-                  ? 'bg-cyan-500 text-black font-semibold shadow-lg shadow-cyan-500/20'
-                  : 'bg-white/[0.04] text-zinc-400 border border-white/10 hover:border-white/20 hover:text-white'
-              }`}
-            >
-              {cat}
-            </button>
-          ))}
+        {/* Interactive Architecture Selector */}
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 mb-10">
+          {TECH_ECOSYSTEM.map((cat, idx) => {
+            const Icon = categoryIcons[idx] || Layers;
+            const isSelected = activeTab === idx;
+            return (
+              <button
+                key={idx}
+                onClick={() => setActiveTab(idx)}
+                className={`p-4 rounded-2xl border text-left transition-all duration-200 cursor-pointer flex flex-col justify-between h-24 ${
+                  isSelected
+                    ? 'bg-[#111726] border-cyan-400 shadow-lg shadow-cyan-500/10'
+                    : 'bg-[#0A0D14]/80 border-white/8 hover:bg-[#0F1422] hover:border-white/20'
+                }`}
+              >
+                <div className={`p-2 rounded-lg w-fit ${isSelected ? 'bg-cyan-500/20 text-cyan-300' : 'bg-white/5 text-zinc-400'}`}>
+                  <Icon className="w-4 h-4" />
+                </div>
+                <div className={`text-xs sm:text-sm font-bold tracking-tight ${isSelected ? 'text-white' : 'text-zinc-300'}`}>
+                  {cat.category}
+                </div>
+              </button>
+            );
+          })}
         </div>
 
-        {/* Interactive Constellation Grid */}
-        <motion.div
-          layout
-          className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4"
-        >
-          <AnimatePresence>
-            {displayedTech.map(({ item, category }, idx) => (
-              <motion.div
-                key={`${item}-${idx}`}
-                layout
-                initial={{ opacity: 0, scale: 0.9 }}
-                animate={{ opacity: 1, scale: 1 }}
-                exit={{ opacity: 0, scale: 0.9 }}
-                transition={{ duration: 0.2 }}
-                className="p-4 rounded-xl bg-[#111116] border border-white/10 hover:border-cyan-500/40 hover:bg-[#181820] transition-all duration-300 flex flex-col justify-between group"
+        {/* Tech Stack Details Box */}
+        <div className="p-8 sm:p-12 rounded-3xl bg-[#090D18] border border-white/12 shadow-2xl relative">
+          <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 border-b border-white/10 pb-6 mb-8">
+            <div className="space-y-1">
+              <span className="text-xs font-mono text-cyan-400 uppercase tracking-widest font-semibold">
+                CATEGORY 0{activeTab + 1}
+              </span>
+              <h3 className="text-2xl font-bold text-white">
+                {TECH_ECOSYSTEM[activeTab].category} Infrastructure
+              </h3>
+            </div>
+            <div className="text-xs font-mono text-zinc-400">
+              STRICT TYPE SAFETY • MODULAR PATTERNS
+            </div>
+          </div>
+
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+            {TECH_ECOSYSTEM[activeTab].items.map((item, i) => (
+              <div
+                key={i}
+                className="p-4 rounded-2xl bg-[#0E1322] border border-white/8 hover:border-cyan-500/30 transition-all flex items-center gap-3 group"
               >
-                <div className="flex items-center justify-between text-[10px] font-mono text-zinc-500 group-hover:text-cyan-400 transition-colors">
-                  <span>{category}</span>
-                  <Sparkles className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
-                </div>
-                <div className="font-display font-bold text-sm text-white mt-3 group-hover:text-cyan-200 transition-colors">
+                <div className="w-2 h-2 rounded-full bg-cyan-400 group-hover:scale-125 transition-transform" />
+                <span className="text-sm font-medium text-zinc-200 group-hover:text-white transition-colors">
                   {item}
-                </div>
-              </motion.div>
+                </span>
+              </div>
             ))}
-          </AnimatePresence>
-        </motion.div>
+          </div>
+
+          <div className="mt-8 pt-6 border-t border-white/8 flex flex-wrap items-center justify-between gap-4 text-xs font-mono text-zinc-400">
+            <span>ARCHITECTURE: MICROSERVICES & SERVERLESS</span>
+            <span>DEPLOYMENT: CONTINUOUS DELIVERY PIPELINES</span>
+          </div>
+        </div>
 
       </div>
     </section>

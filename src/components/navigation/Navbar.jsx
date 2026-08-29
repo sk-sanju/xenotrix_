@@ -1,18 +1,36 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ArrowRight, Menu, X, Terminal, ChevronDown, Sparkles } from 'lucide-react';
-import { COMPANY_INFO } from '../../data/companyData';
+import { 
+  ArrowRight, 
+  Menu, 
+  X, 
+  Terminal, 
+  ChevronDown, 
+  Sparkles,
+  Layers,
+  Cpu,
+  TrendingUp,
+  BarChart3,
+  CreditCard,
+  GraduationCap,
+  Users,
+  Music,
+  Smartphone,
+  Code2,
+  ExternalLink
+} from 'lucide-react';
+import { COMPANY_INFO, PRODUCTS, SERVICE_CATEGORIES } from '../../data/companyData';
 
 export const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [productsDropdownOpen, setProductsDropdownOpen] = useState(false);
+  const [activeDropdown, setActiveDropdown] = useState(null);
   const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 40) {
+      if (window.scrollY > 30) {
         setScrolled(true);
       } else {
         setScrolled(false);
@@ -25,22 +43,17 @@ export const Navbar = () => {
   // Close menus on route change
   useEffect(() => {
     setMobileMenuOpen(false);
-    setProductsDropdownOpen(false);
+    setActiveDropdown(null);
   }, [location.pathname]);
 
-  const navLinks = [
-    { name: 'Solutions', path: '/services' },
-    { name: 'Products', path: '/products', isDropdown: true },
-    { name: 'Industries', path: '/industries' },
-    { name: 'Case Studies', path: '/case-studies' },
-    { name: 'About', path: '/about' },
-  ];
-
-  const productList = [
-    { name: 'XenoCRM', path: '/products/xenocrm', badge: 'SaaS OS', desc: 'Business Operating System' },
-    { name: 'Xenotune', path: '/products/xenotune', badge: 'AI Audio', desc: 'Neural Soundscapes' },
-    { name: 'XenoBiz', path: '/products/xenobiz', badge: 'COMING SOON', isUpcoming: true, desc: 'Business + CRM + WhatsApp' }
-  ];
+  const productIcons = {
+    xenocrm: BarChart3,
+    xenofin: CreditCard,
+    xenobiz: Smartphone,
+    xenoclass: GraduationCap,
+    xenohr: Users,
+    xenotune: Music
+  };
 
   return (
     <>
@@ -53,20 +66,20 @@ export const Navbar = () => {
           <nav
             className={`flex items-center justify-between px-5 py-2.5 rounded-2xl transition-all duration-300 ${
               scrolled
-                ? 'bg-[#0A0A0D]/85 backdrop-blur-xl border border-white/10 shadow-2xl shadow-black/50'
-                : 'bg-[#0A0A0D]/40 backdrop-blur-md border border-white/5'
+                ? 'bg-[#080C14]/90 backdrop-blur-xl border border-white/10 shadow-2xl shadow-black/50'
+                : 'bg-[#080C14]/60 backdrop-blur-md border border-white/8'
             }`}
           >
-            {/* Official Xenotrix Company Logo */}
+            {/* Official Xenotrix Logo */}
             <Link
               to="/"
-              className="flex items-center gap-3 group focus:outline-none"
+              className="flex items-center gap-3 group focus:outline-none shrink-0"
               aria-label="Xenotrix Technologies Home"
             >
               <div className="relative overflow-hidden rounded-xl border border-white/15 group-hover:border-cyan-500/50 transition-colors p-0.5 bg-black/40">
                 <img
                   src="/assets/logo.jpeg"
-                  alt="Xenotrix Technologies Official Logo"
+                  alt="Xenotrix Technologies Logo"
                   className="h-8 w-auto object-contain rounded-lg"
                   onError={(e) => {
                     e.currentTarget.style.display = 'none';
@@ -74,7 +87,7 @@ export const Navbar = () => {
                   }}
                 />
                 <div className="w-8 h-8 rounded-lg bg-gradient-to-tr from-cyan-500 to-violet-600 p-[1px] hidden items-center justify-center">
-                  <div className="w-full h-full bg-[#050505] rounded-[7px] flex items-center justify-center">
+                  <div className="w-full h-full bg-[#05070D] rounded-[7px] flex items-center justify-center">
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-violet-400 font-extrabold text-sm">X</span>
                   </div>
                 </div>
@@ -89,118 +102,210 @@ export const Navbar = () => {
               </div>
             </Link>
 
-            {/* Desktop Navigation Links */}
-            <div className="hidden md:flex items-center gap-8">
-              {navLinks.map((link) => {
-                const isActive = location.pathname.startsWith(link.path);
+            {/* Desktop Navigation Links with Mega Menus */}
+            <div className="hidden lg:flex items-center gap-7 text-xs font-medium tracking-wide">
+              
+              {/* Products Mega Menu Trigger */}
+              <div
+                className="relative"
+                onMouseEnter={() => setActiveDropdown('products')}
+                onMouseLeave={() => setActiveDropdown(null)}
+              >
+                <Link
+                  to="/products"
+                  className={`flex items-center gap-1.5 py-2 uppercase transition-colors ${
+                    location.pathname.startsWith('/products') ? 'text-cyan-300 font-semibold' : 'text-zinc-300 hover:text-white'
+                  }`}
+                >
+                  <span>Products</span>
+                  <ChevronDown className="w-3.5 h-3.5 text-zinc-400" />
+                </Link>
 
-                if (link.isDropdown) {
-                  return (
-                    <div
-                      key={link.name}
-                      className="relative"
-                      onMouseEnter={() => setProductsDropdownOpen(true)}
-                      onMouseLeave={() => setProductsDropdownOpen(false)}
+                {/* Products Mega Dropdown */}
+                <AnimatePresence>
+                  {activeDropdown === 'products' && (
+                    <motion.div
+                      initial={{ opacity: 0, y: 10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0, y: 10 }}
+                      transition={{ duration: 0.15 }}
+                      className="absolute top-full -left-20 w-[580px] pt-3"
                     >
-                      <Link
-                        to={link.path}
-                        className={`text-xs font-medium tracking-wider uppercase transition-colors relative py-1 flex items-center gap-1.5 ${
-                          isActive ? 'text-white font-semibold' : 'text-zinc-400 hover:text-white'
-                        }`}
-                      >
-                        <span>{link.name}</span>
-                        <ChevronDown className="w-3 h-3" />
-                      </Link>
+                      <div className="p-5 rounded-3xl bg-[#090D18]/95 border border-white/12 backdrop-blur-2xl shadow-2xl space-y-4">
+                        <div className="flex items-center justify-between border-b border-white/10 pb-3 text-[11px] font-mono text-zinc-400">
+                          <span className="text-cyan-400 font-semibold uppercase">PROPRIETARY SOFTWARE ECOSYSTEM</span>
+                          <Link to="/products" className="text-zinc-400 hover:text-white flex items-center gap-1">
+                            <span>View All</span>
+                            <ArrowRight className="w-3 h-3" />
+                          </Link>
+                        </div>
 
-                      {/* Dropdown Menu */}
-                      <AnimatePresence>
-                        {productsDropdownOpen && (
-                          <motion.div
-                            initial={{ opacity: 0, y: 10 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            exit={{ opacity: 0, y: 10 }}
-                            transition={{ duration: 0.15 }}
-                            className="absolute top-full left-0 w-64 pt-2"
-                          >
-                            <div className="p-3 rounded-2xl bg-[#0A0A0D]/95 border border-white/10 backdrop-blur-xl shadow-2xl space-y-2">
-                              {productList.map((prod) => (
-                                <Link
-                                  key={prod.name}
-                                  to={prod.path}
-                                  className="flex items-center justify-between p-2.5 rounded-xl hover:bg-white/[0.05] transition-colors group"
-                                >
-                                  <div>
-                                    <div className="text-xs font-bold text-white group-hover:text-cyan-300 transition-colors">
+                        <div className="grid grid-cols-2 gap-3">
+                          {PRODUCTS.map((prod) => {
+                            const Icon = productIcons[prod.id] || Layers;
+                            return (
+                              <Link
+                                key={prod.id}
+                                to={prod.ctaLink}
+                                className="p-3 rounded-2xl bg-white/[0.03] hover:bg-white/[0.08] border border-white/5 hover:border-cyan-500/30 transition-all flex items-start gap-3 group"
+                              >
+                                <div className="p-2 rounded-xl bg-cyan-500/10 text-cyan-400 group-hover:bg-cyan-500 group-hover:text-black transition-all shrink-0">
+                                  <Icon className="w-4 h-4" />
+                                </div>
+                                <div className="space-y-0.5 min-w-0">
+                                  <div className="flex items-center gap-2">
+                                    <span className="font-bold text-white text-xs group-hover:text-cyan-300 transition-colors truncate">
                                       {prod.name}
-                                    </div>
-                                    <div className="text-[10px] text-zinc-400">{prod.desc}</div>
+                                    </span>
+                                    <span className={`text-[8px] font-mono px-1.5 py-0.2 rounded border ${
+                                      prod.isUpcoming ? 'bg-amber-950/80 text-amber-300 border-amber-800/40' : 'bg-cyan-950/80 text-cyan-300 border-cyan-800/40'
+                                    }`}>
+                                      {prod.badge}
+                                    </span>
                                   </div>
-                                  <span
-                                    className={`text-[9px] font-mono px-1.5 py-0.5 rounded border ${
-                                      prod.isUpcoming
-                                        ? 'bg-amber-950/80 text-amber-300 border-amber-800/40'
-                                        : 'bg-cyan-950/80 text-cyan-300 border-cyan-800/40'
-                                    }`}
-                                  >
-                                    {prod.badge}
-                                  </span>
-                                </Link>
-                              ))}
-                            </div>
-                          </motion.div>
-                        )}
-                      </AnimatePresence>
-                    </div>
-                  );
-                }
+                                  <p className="text-[11px] text-zinc-400 truncate leading-tight">
+                                    {prod.category}
+                                  </p>
+                                </div>
+                              </Link>
+                            );
+                          })}
+                        </div>
+                      </div>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </div>
 
-                return (
-                  <Link
-                    key={link.name}
-                    to={link.path}
-                    className={`text-xs font-medium tracking-wider uppercase transition-colors relative py-1 ${
-                      isActive ? 'text-white font-semibold' : 'text-zinc-400 hover:text-white'
-                    }`}
-                  >
-                    {link.name}
-                    {isActive && (
-                      <motion.div
-                        layoutId="activeNavIndicator"
-                        className="absolute bottom-0 left-0 right-0 h-[2px] bg-gradient-to-r from-cyan-400 to-violet-500 rounded-full"
-                        transition={{ type: 'spring', stiffness: 380, damping: 30 }}
-                      />
-                    )}
-                  </Link>
-                );
-              })}
+              {/* Services Mega Menu Trigger */}
+              <div
+                className="relative"
+                onMouseEnter={() => setActiveDropdown('services')}
+                onMouseLeave={() => setActiveDropdown(null)}
+              >
+                <Link
+                  to="/services"
+                  className={`flex items-center gap-1.5 py-2 uppercase transition-colors ${
+                    location.pathname.startsWith('/services') ? 'text-violet-300 font-semibold' : 'text-zinc-300 hover:text-white'
+                  }`}
+                >
+                  <span>Services</span>
+                  <ChevronDown className="w-3.5 h-3.5 text-zinc-400" />
+                </Link>
+
+                {/* Services Mega Dropdown */}
+                <AnimatePresence>
+                  {activeDropdown === 'services' && (
+                    <motion.div
+                      initial={{ opacity: 0, y: 10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0, y: 10 }}
+                      transition={{ duration: 0.15 }}
+                      className="absolute top-full -left-28 w-[580px] pt-3"
+                    >
+                      <div className="p-5 rounded-3xl bg-[#090D18]/95 border border-white/12 backdrop-blur-2xl shadow-2xl space-y-4">
+                        <div className="flex items-center justify-between border-b border-white/10 pb-3 text-[11px] font-mono text-zinc-400">
+                          <span className="text-violet-400 font-semibold uppercase">ENGINEERING PILLARS</span>
+                          <Link to="/services" className="text-zinc-400 hover:text-white flex items-center gap-1">
+                            <span>All Services</span>
+                            <ArrowRight className="w-3 h-3" />
+                          </Link>
+                        </div>
+
+                        <div className="grid grid-cols-2 gap-3">
+                          {SERVICE_CATEGORIES.map((cat, idx) => (
+                            <Link
+                              key={cat.id}
+                              to={`/services/${cat.slug}`}
+                              className="p-3.5 rounded-2xl bg-white/[0.03] hover:bg-white/[0.08] border border-white/5 hover:border-violet-500/30 transition-all space-y-1 group"
+                            >
+                              <div className="flex items-center justify-between">
+                                <span className="font-bold text-white text-xs group-hover:text-violet-300 transition-colors">
+                                  {cat.title}
+                                </span>
+                                <span className="text-[10px] font-mono text-zinc-500">0{idx + 1}</span>
+                              </div>
+                              <p className="text-[11px] text-zinc-400 line-clamp-1">
+                                {cat.tagline}
+                              </p>
+                            </Link>
+                          ))}
+                        </div>
+                      </div>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </div>
+
+              {/* Solutions Link */}
+              <Link
+                to="/solutions"
+                className={`py-2 uppercase transition-colors ${
+                  location.pathname.startsWith('/solutions') ? 'text-white font-semibold' : 'text-zinc-300 hover:text-white'
+                }`}
+              >
+                Solutions
+              </Link>
+
+              {/* Industries Link */}
+              <Link
+                to="/industries"
+                className={`py-2 uppercase transition-colors ${
+                  location.pathname.startsWith('/industries') ? 'text-white font-semibold' : 'text-zinc-300 hover:text-white'
+                }`}
+              >
+                Industries
+              </Link>
+
+              {/* Case Studies Link */}
+              <Link
+                to="/case-studies"
+                className={`py-2 uppercase transition-colors ${
+                  location.pathname.startsWith('/case-studies') ? 'text-white font-semibold' : 'text-zinc-300 hover:text-white'
+                }`}
+              >
+                Selected Work
+              </Link>
+
+              {/* About Link */}
+              <Link
+                to="/about"
+                className={`py-2 uppercase transition-colors ${
+                  location.pathname === '/about' ? 'text-white font-semibold' : 'text-zinc-300 hover:text-white'
+                }`}
+              >
+                Company
+              </Link>
+
             </div>
 
             {/* Right Action CTA */}
-            <div className="hidden md:flex items-center gap-4">
+            <div className="hidden lg:flex items-center gap-3">
               <Link
                 to="/contact"
-                className="group inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-semibold tracking-wide bg-white text-black hover:bg-cyan-400 hover:text-black transition-all duration-200 shadow-md shadow-cyan-500/10 cursor-pointer"
+                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-semibold tracking-wide bg-white text-zinc-950 hover:bg-cyan-300 hover:text-black transition-all shadow-md shadow-white/10 cursor-pointer"
               >
-                <span>Let's Talk</span>
-                <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+                <span>Talk to Xenotrix</span>
+                <ArrowRight className="w-3.5 h-3.5" />
               </Link>
             </div>
 
-            {/* Mobile Menu Button */}
-            <div className="md:hidden flex items-center">
+            {/* Mobile Menu Hamburger Button */}
+            <div className="lg:hidden flex items-center">
               <button
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                className="p-2 rounded-lg bg-zinc-900 border border-white/10 text-zinc-300 hover:text-white focus:outline-none cursor-pointer"
+                className="p-2 rounded-xl bg-zinc-900 border border-white/10 text-zinc-300 hover:text-white focus:outline-none cursor-pointer"
                 aria-label="Toggle mobile menu"
               >
                 {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
               </button>
             </div>
+
           </nav>
         </div>
       </header>
 
-      {/* Mobile Full-Screen Menu */}
+      {/* Mobile Full-Screen Navigation Drawer */}
       <AnimatePresence>
         {mobileMenuOpen && (
           <motion.div
@@ -208,56 +313,102 @@ export const Navbar = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.2 }}
-            className="fixed inset-0 z-30 bg-[#050505]/95 backdrop-blur-2xl pt-24 px-6 pb-8 flex flex-col justify-between md:hidden border-b border-white/10 overflow-y-auto"
+            className="fixed inset-0 z-30 bg-[#05070D]/98 backdrop-blur-2xl pt-24 px-6 pb-8 flex flex-col justify-between lg:hidden border-b border-white/10 overflow-y-auto"
           >
             <div className="space-y-6">
-              <div className="flex items-center gap-2 text-xs font-mono text-cyan-400 border-b border-white/10 pb-3">
-                <Terminal className="w-4 h-4" />
-                <span>NAVIGATION // XENOTRIX</span>
+              <div className="flex items-center justify-between text-xs font-mono text-cyan-400 border-b border-white/10 pb-3">
+                <div className="flex items-center gap-2">
+                  <Terminal className="w-4 h-4" />
+                  <span>XENOTRIX NAVIGATION</span>
+                </div>
+                <span className="text-[10px] text-zinc-400">EST. 2025</span>
               </div>
 
-              <div className="flex flex-col gap-4">
-                {navLinks.map((link) => (
-                  <div key={link.name} className="border-b border-white/5 pb-2">
-                    <Link
-                      to={link.path}
-                      className="text-2xl font-display font-bold tracking-tight text-white hover:text-cyan-400 flex items-center justify-between py-1"
-                    >
-                      <span>{link.name}</span>
-                      <ArrowRight className="w-5 h-5 text-zinc-600" />
-                    </Link>
-                    {link.isDropdown && (
-                      <div className="pl-4 pt-2 space-y-2">
-                        {productList.map((p) => (
-                          <Link
-                            key={p.name}
-                            to={p.path}
-                            className="flex items-center justify-between text-sm text-zinc-400 hover:text-cyan-300 py-1"
-                          >
-                            <span>{p.name}</span>
-                            <span className="text-[9px] font-mono px-1.5 py-0.5 rounded bg-white/[0.04] text-amber-300">
-                              {p.badge}
-                            </span>
-                          </Link>
-                        ))}
-                      </div>
-                    )}
+              <div className="flex flex-col gap-3 font-display">
+                <Link
+                  to="/"
+                  className="text-xl font-bold text-white hover:text-cyan-400 py-1.5 border-b border-white/5"
+                >
+                  Home
+                </Link>
+
+                <div className="border-b border-white/5 pb-2">
+                  <div className="flex items-center justify-between text-xl font-bold text-white mb-2">
+                    <span>Products</span>
+                    <span className="text-xs font-mono text-cyan-400">6 PLATFORMS</span>
                   </div>
-                ))}
+                  <div className="grid grid-cols-2 gap-2 pl-2">
+                    {PRODUCTS.map((p) => (
+                      <Link
+                        key={p.id}
+                        to={p.ctaLink}
+                        className="text-xs text-zinc-400 hover:text-cyan-300 py-1"
+                      >
+                        • {p.name}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="border-b border-white/5 pb-2">
+                  <div className="flex items-center justify-between text-xl font-bold text-white mb-2">
+                    <span>Services</span>
+                    <span className="text-xs font-mono text-violet-400">4 PILLARS</span>
+                  </div>
+                  <div className="grid grid-cols-1 gap-1.5 pl-2">
+                    {SERVICE_CATEGORIES.map((c) => (
+                      <Link
+                        key={c.id}
+                        to={`/services/${c.slug}`}
+                        className="text-xs text-zinc-400 hover:text-violet-300 py-0.5"
+                      >
+                        • {c.title}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+
+                <Link
+                  to="/solutions"
+                  className="text-xl font-bold text-white hover:text-cyan-400 py-1.5 border-b border-white/5"
+                >
+                  Solutions
+                </Link>
+
+                <Link
+                  to="/industries"
+                  className="text-xl font-bold text-white hover:text-cyan-400 py-1.5 border-b border-white/5"
+                >
+                  Industries
+                </Link>
+
+                <Link
+                  to="/case-studies"
+                  className="text-xl font-bold text-white hover:text-cyan-400 py-1.5 border-b border-white/5"
+                >
+                  Selected Work
+                </Link>
+
+                <Link
+                  to="/about"
+                  className="text-xl font-bold text-white hover:text-cyan-400 py-1.5 border-b border-white/5"
+                >
+                  Company Profile
+                </Link>
               </div>
             </div>
 
             <div className="space-y-4 pt-6 border-t border-white/10">
-              <div className="flex items-center gap-2 text-[10px] font-mono text-zinc-500">
+              <div className="flex items-center gap-2 text-[10px] font-mono text-zinc-400">
                 <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
                 <span>{COMPANY_INFO.systemStatus}</span>
               </div>
 
               <Link
                 to="/contact"
-                className="w-full flex items-center justify-center gap-2 py-3 px-6 rounded-xl bg-gradient-to-r from-cyan-500 to-violet-600 text-white font-semibold text-sm shadow-lg shadow-cyan-500/20"
+                className="w-full flex items-center justify-center gap-2 py-3 px-6 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-bold text-sm shadow-lg shadow-cyan-500/20"
               >
-                <span>Start a Project</span>
+                <span>Talk to Xenotrix</span>
                 <ArrowRight className="w-4 h-4" />
               </Link>
             </div>

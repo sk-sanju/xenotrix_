@@ -1,112 +1,155 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
-import { Code2, Cpu, Workflow, TrendingUp, ArrowRight, CheckCircle2 } from 'lucide-react';
-import { WHAT_WE_BUILD } from '../../data/companyData';
+import { 
+  Code2, 
+  Cpu, 
+  Sparkles, 
+  TrendingUp, 
+  ArrowRight, 
+  Layers, 
+  Check, 
+  ShieldCheck,
+  ChevronRight,
+  Terminal
+} from 'lucide-react';
+import { SERVICE_CATEGORIES } from '../../data/companyData';
 
 export const WhatWeBuild = () => {
-  const iconMap = {
-    Code2: Code2,
-    Cpu: Cpu,
-    Workflow: Workflow,
-    TrendingUp: TrendingUp
-  };
+  const [activeCategory, setActiveCategory] = useState(0);
+
+  const categoryIcons = [
+    Code2,
+    Cpu,
+    Sparkles,
+    TrendingUp
+  ];
 
   return (
-    <section className="py-28 bg-[#050505] relative overflow-hidden">
-      {/* Grid Pattern Background */}
-      <div className="absolute inset-0 bg-grid-pattern opacity-40 pointer-events-none" />
+    <section id="services" className="py-28 bg-[#05070D] border-t border-white/10 relative overflow-hidden">
+      {/* Glow Effects */}
+      <div className="absolute top-10 right-1/4 w-96 h-96 bg-violet-600/10 rounded-full blur-[140px] pointer-events-none" />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Section Header */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 border-b border-white/10 pb-8">
-          <div>
-            <span className="text-xs font-mono text-cyan-400 tracking-widest uppercase">
-              CAPABILITY MATRIX // WHAT WE BUILD
-            </span>
-            <h2 className="font-display font-extrabold text-3xl sm:text-5xl text-white tracking-tight mt-2 uppercase">
-              INTELLIGENT SYSTEM ARCHITECTURE
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+          <div className="space-y-4 max-w-2xl">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-violet-950/60 border border-violet-500/30 text-[11px] font-mono text-violet-300 uppercase tracking-widest">
+              <Cpu className="w-3.5 h-3.5" />
+              <span>CUSTOM ENGINEERING CAPABILITIES</span>
+            </div>
+            <h2 className="font-display font-extrabold text-3xl sm:text-5xl text-white tracking-tight">
+              Technology Services
             </h2>
+            <p className="text-base sm:text-lg text-zinc-300">
+              From product engineering to AI-powered automation, we build technology around real business needs.
+            </p>
           </div>
-          <p className="text-sm text-zinc-400 max-w-md">
-            Four interconnected engineering pillars designed to modernize legacy workflows and build scalable software products.
-          </p>
+
+          <Link
+            to="/services"
+            className="inline-flex items-center gap-2 text-sm font-semibold text-violet-400 hover:text-violet-300 transition-colors shrink-0"
+          >
+            <span>Explore All 4 Pillars</span>
+            <ArrowRight className="w-4 h-4" />
+          </Link>
         </div>
 
-        {/* 4 Pillars Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {WHAT_WE_BUILD.map((pillar, idx) => {
-            const IconComponent = iconMap[pillar.icon] || Code2;
+        {/* 4 Category Selection Buttons */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-12">
+          {SERVICE_CATEGORIES.map((cat, idx) => {
+            const Icon = categoryIcons[idx] || Code2;
+            const isActive = activeCategory === idx;
             return (
-              <motion.div
-                key={pillar.id}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: idx * 0.1 }}
-                className="group relative rounded-2xl bg-[#0A0A0D]/80 border border-white/10 hover:border-cyan-500/40 p-6 flex flex-col justify-between transition-all duration-300 hover:shadow-2xl hover:shadow-cyan-500/10 hover:-translate-y-1"
+              <button
+                key={cat.id}
+                onClick={() => setActiveCategory(idx)}
+                className={`p-6 rounded-2xl border text-left transition-all duration-200 cursor-pointer flex flex-col justify-between space-y-4 ${
+                  isActive
+                    ? 'bg-[#121829] border-violet-500 shadow-xl shadow-violet-500/10'
+                    : 'bg-[#0A0D14]/90 border-white/8 hover:bg-[#0F1422] hover:border-white/20'
+                }`}
               >
-                {/* Top Accent Line */}
-                <div className="absolute top-0 left-6 right-6 h-[2px] bg-gradient-to-r from-transparent via-cyan-400 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-
-                <div className="space-y-6">
-                  {/* Pillar Badge & Icon */}
-                  <div className="flex items-center justify-between">
-                    <span className="text-[11px] font-mono tracking-widest text-zinc-500 group-hover:text-cyan-400 transition-colors uppercase">
-                      PILLAR {idx + 1} // {pillar.pillar}
-                    </span>
-                    <div className="w-10 h-10 rounded-xl bg-white/[0.04] group-hover:bg-cyan-500/10 border border-white/10 group-hover:border-cyan-500/30 flex items-center justify-center text-zinc-300 group-hover:text-cyan-300 transition-colors">
-                      <IconComponent className="w-5 h-5" />
-                    </div>
+                <div className="flex items-center justify-between w-full">
+                  <div className={`p-3 rounded-xl ${isActive ? 'bg-violet-500/20 text-violet-300' : 'bg-white/5 text-zinc-400'}`}>
+                    <Icon className="w-6 h-6" />
                   </div>
-
-                  {/* Title & Description */}
-                  <div>
-                    <h3 className="font-display font-bold text-xl text-white group-hover:text-cyan-300 transition-colors">
-                      {pillar.title}
-                    </h3>
-                    <p className="text-xs text-zinc-400 mt-2 leading-relaxed">
-                      {pillar.subtitle}
-                    </p>
-                  </div>
-
-                  {/* Capability List */}
-                  <div className="space-y-2 border-t border-white/5 pt-4">
-                    {pillar.capabilities.map((cap, cIdx) => (
-                      <div key={cIdx} className="flex items-start gap-2 text-xs text-zinc-300">
-                        <CheckCircle2 className="w-3.5 h-3.5 text-cyan-400 shrink-0 mt-0.5" />
-                        <span>{cap}</span>
-                      </div>
-                    ))}
-                  </div>
+                  <span className="text-xs font-mono text-zinc-400">0{idx + 1}</span>
                 </div>
-
-                {/* Tech Tags & CTA Link */}
-                <div className="pt-6 border-t border-white/5 space-y-4">
-                  <div className="flex flex-wrap gap-1.5">
-                    {pillar.tech.map((t, tIdx) => (
-                      <span
-                        key={tIdx}
-                        className="text-[10px] font-mono px-2 py-0.5 rounded bg-white/[0.03] border border-white/5 text-zinc-400"
-                      >
-                        {t}
-                      </span>
-                    ))}
-                  </div>
-
-                  <Link
-                    to={pillar.link}
-                    className="inline-flex items-center gap-2 text-xs font-semibold text-white group-hover:text-cyan-400 transition-colors pt-1"
-                  >
-                    <span>Explore Pillar</span>
-                    <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
-                  </Link>
+                <div>
+                  <h3 className={`text-base font-bold tracking-tight ${isActive ? 'text-white' : 'text-zinc-300'}`}>
+                    {cat.title}
+                  </h3>
+                  <p className="text-xs text-zinc-400 mt-1 line-clamp-2">
+                    {cat.tagline}
+                  </p>
                 </div>
-
-              </motion.div>
+              </button>
             );
           })}
+        </div>
+
+        {/* Active Category Deep Dive Matrix */}
+        <div className="p-8 sm:p-12 rounded-3xl bg-[#080C16] border border-white/12 shadow-2xl space-y-10">
+          
+          <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 border-b border-white/10 pb-8">
+            <div className="space-y-2 max-w-2xl">
+              <span className="text-xs font-mono text-cyan-400 uppercase tracking-widest font-semibold">
+                {SERVICE_CATEGORIES[activeCategory].category}
+              </span>
+              <h3 className="font-display font-extrabold text-2xl sm:text-3xl text-white">
+                {SERVICE_CATEGORIES[activeCategory].tagline}
+              </h3>
+              <p className="text-sm text-zinc-300">
+                {SERVICE_CATEGORIES[activeCategory].description}
+              </p>
+            </div>
+
+            <Link
+              to={`/services/${SERVICE_CATEGORIES[activeCategory].slug}`}
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-violet-600 hover:bg-violet-500 text-white font-semibold text-xs tracking-wide transition-all shrink-0"
+            >
+              <span>Explore {SERVICE_CATEGORIES[activeCategory].title}</span>
+              <ArrowRight className="w-4 h-4" />
+            </Link>
+          </div>
+
+          {/* Sub-Services Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {SERVICE_CATEGORIES[activeCategory].services.map((sub, i) => (
+              <div
+                key={i}
+                className="p-6 rounded-2xl bg-[#0D121F] border border-white/8 hover:border-violet-500/30 transition-all duration-200 space-y-3 group"
+              >
+                <div className="flex items-center gap-2 text-violet-400">
+                  <div className="w-1.5 h-1.5 rounded-full bg-violet-400 group-hover:scale-150 transition-transform" />
+                  <span className="text-xs font-mono uppercase tracking-wider text-zinc-400">CAPABILITY 0{i + 1}</span>
+                </div>
+                <h4 className="text-base font-bold text-white group-hover:text-violet-300 transition-colors">
+                  {sub.name}
+                </h4>
+                <p className="text-xs text-zinc-300 leading-relaxed">
+                  {sub.desc}
+                </p>
+              </div>
+            ))}
+          </div>
+
+          {/* Tech Stack Bar */}
+          <div className="p-4 rounded-2xl bg-black/40 border border-white/8 flex flex-wrap items-center justify-between gap-4">
+            <div className="flex items-center gap-2 text-xs font-mono text-zinc-400">
+              <Terminal className="w-4 h-4 text-cyan-400" />
+              <span>CORE ARCHITECTURAL TOOLS:</span>
+            </div>
+            <div className="flex flex-wrap items-center gap-2">
+              {SERVICE_CATEGORIES[activeCategory].tech.map((t, idx) => (
+                <span key={idx} className="text-xs font-mono text-zinc-300 px-2.5 py-1 rounded-md bg-white/5 border border-white/5">
+                  {t}
+                </span>
+              ))}
+            </div>
+          </div>
+
         </div>
 
       </div>
