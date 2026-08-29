@@ -37,8 +37,8 @@ export const AboutPage = () => {
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-4">
             <div className="p-6 rounded-2xl bg-[#090D18] border border-white/10 space-y-1">
               <div className="text-xs font-mono text-zinc-400 uppercase">HEADQUARTERS</div>
-              <div className="text-xl font-bold text-white">Thrissur, Kerala</div>
-              <div className="text-xs text-cyan-400 font-mono">India (HQ)</div>
+              <div className="text-xl font-bold text-white">Thiruvilwamala, Thrissur</div>
+              <div className="text-xs text-cyan-400 font-mono">Kerala, India (680594)</div>
             </div>
             <div className="p-6 rounded-2xl bg-[#090D18] border border-white/10 space-y-1">
               <div className="text-xs font-mono text-zinc-400 uppercase">OPERATING MODEL</div>

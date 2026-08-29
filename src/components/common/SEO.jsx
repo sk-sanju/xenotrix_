@@ -61,10 +61,10 @@ export const SEO = ({
         "priceRange": "$$$",
         "address": {
           "@type": "PostalAddress",
-          "streetAddress": "Thrissur",
+          "streetAddress": "Thiruvilwamala",
           "addressLocality": "Thrissur",
           "addressRegion": "Kerala",
-          "postalCode": "680001",
+          "postalCode": "680594",
           "addressCountry": "IN"
         },
         "geo": {

@@ -3,8 +3,8 @@
 Company: Xenotrix Technologies
 Tagline: Building Products, Platforms & Digital Solutions for Modern Businesses
 Established: 2025
-Headquarters: Thrissur, Kerala, India - 680001
-Operating Mode: Thrissur HQ + Global Remote Engineering
+Headquarters: Thiruvilwamala, Thrissur, Kerala, India - 680594
+Operating Mode: Thiruvilwamala HQ + Global Remote Engineering
 
 Co-Founders & Technical Leadership:
 1. Sanjay S — Co-Founder & Principal Full-Stack & Cloud Architect
@@ -29,7 +29,7 @@ Core Service Pillars:
 - Growth & Transformation (Technical SEO, Edge Acceleration, Core Web Vitals)
 
 Local Business Profile:
-- Address: Thrissur, Kerala, India - 680001
+- Address: Thiruvilwamala, Thrissur, Kerala, India - 680594
 - Coordinates: 10.5276° N, 76.2144° E
 - Telephone: +91 9995544316
 - Email: info@xenotrix.in

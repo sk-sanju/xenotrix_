@@ -37,8 +37,8 @@ export const COMPANY_INFO = {
   email: "info@xenotrix.in",
   phone: "+91 9995544316",
   whatsapp: "+919995544316",
-  address: "Thrissur, Kerala, India - 680001",
-  location: "Thrissur, Kerala, India & Global Remote Operations",
+  address: "Thiruvilwamala, Thrissur, Kerala, India - 680594",
+  location: "Thiruvilwamala, Thrissur, Kerala, India & Global Remote Operations",
   socials: {
     linkedin: "https://www.linkedin.com/company/xenotrixtech/",
     github: "https://github.com/Xenotrix-Technologies",
@@ -791,7 +791,7 @@ export const FAQS = [
   },
   {
     q: "Where is Xenotrix Technologies located?",
-    a: "Xenotrix Technologies is headquartered in Thrissur, Kerala, India, and operates global remote engineering workflows supporting clients worldwide."
+    a: "Xenotrix Technologies is headquartered in Thiruvilwamala, Thrissur, Kerala, India (680594), and operates global remote engineering workflows supporting clients worldwide."
   },
   {
     q: "How does an engagement with Xenotrix begin?",

@@ -37,15 +37,15 @@ export const CorporateAboutSection = () => {
             </p>
 
             <p className="text-sm sm:text-base text-zinc-400 leading-relaxed">
-              Founded by engineers and product builders in Thrissur, Kerala with global remote operations, our team merges full-stack microservices, autonomous AI models, mobile engineering, and commercial product operations to solve real business bottlenecks at scale.
+              Founded by engineers and product builders in Thiruvilwamala, Thrissur, Kerala with global remote operations, our team merges full-stack microservices, autonomous AI models, mobile engineering, and commercial product operations to solve real business bottlenecks at scale.
             </p>
 
             {/* Core Verification Badges */}
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 pt-4 border-t border-white/10">
               <div className="p-4 rounded-xl bg-black/40 border border-white/5 space-y-1">
                 <div className="text-[10px] font-mono text-zinc-400 uppercase">HEADQUARTERS</div>
-                <div className="text-sm font-bold text-white">Thrissur, Kerala</div>
-                <div className="text-[10px] text-cyan-400 font-mono">India</div>
+                <div className="text-sm font-bold text-white">Thiruvilwamala, Thrissur</div>
+                <div className="text-[10px] text-cyan-400 font-mono">Kerala, India (680594)</div>
               </div>
 
               <div className="p-4 rounded-xl bg-black/40 border border-white/5 space-y-1">
