@@ -1,34 +1,35 @@
 # Xenotrix Technologies
 
-> Xenotrix Technologies builds intelligent software, AI systems, automation platforms and digital products for ambitious businesses.
+> Building Products, Platforms & Digital Solutions for Modern Businesses.
 
-Headquartered in Thrissur, Kerala, India (co-founded in 2025 by **Sanjay S**, **Abi C R**, and **Hari Govind**), Xenotrix Technologies operates globally, delivering high-performance web platforms, Flutter mobile applications, LLM agent orchestrations, and commercial SaaS products.
+Headquartered in Thrissur, Kerala, India (co-founded in 2025 by **Sanjay S**, **Abi C R**, and **Hari Govind**), Xenotrix Technologies operates globally, delivering proprietary software products, enterprise microservices, AI integrations, Flutter mobile apps, and digital transformation solutions.
 
 ## Co-Founders & Leadership
 
-- **Sanjay S**: Co-Founder & Lead Software Engineer (AI Integration, Machine Learning & Frontend Systems Architecture)
-- **Abi C R**: Co-Founder & Systems Architect (Full-Stack Microservices, Database Engineering & Cloud DevOps)
-- **Hari Govind**: Co-Founder & Product & Strategy Lead (Product Operations, Scoping & Digital Growth)
+- **Sanjay S**: Co-Founder & Principal Full-Stack & Cloud Architect (Full-Stack Microservices, Database Engineering & Cloud Infrastructure, Frontend Architecture, and Data Analytics & BI)
+- **Abi C R**: Co-Founder & AI / Machine Learning Lead (AI Integration, Machine Learning, LLM Agents & RAG, Vector Search)
+- **Hari Govind**: Co-Founder & Product Operations & Mobile Engineering Lead (Product Operations, Enterprise Scoping, Digital Growth, Technical SEO, and Mobile App Development in Flutter)
 
-## Flagship Products
+## Proprietary Software Products
 
-- [XenoCRM](https://xenotrix.in/products/xenocrm): Unified business operating system combining CRM sales pipelines, native WhatsApp messaging, automated billing, and AI revenue scoring.
-- [Xenotune](https://xenotrix.in/products/xenotune): AI-powered ambient soundscape platform utilizing WebAudio procedural acoustic synthesis for focus, sleep, and circadian sync.
-- [XenoBiz (Coming Soon)](https://xenotrix.in/products/xenobiz): Mobile-first business management + CRM + WhatsApp app for small businesses, retail shops, wholesalers, and local service teams combining billing, inventory, payments, and offline-first auto sync.
+- [XenoCRM](https://xenotrix.in/products/xenocrm): CRM and business relationship management platform unifying customer pipelines, automated multi-channel messaging, sales tracking, and operational intelligence.
+- [XenoFin](https://xenotrix.in/products/xenofin): Financial and business management platform with real-time cash flow telemetry, automated ledger reconciliation, and taxation compliance.
+- [XenoBiz](https://xenotrix.in/products/xenobiz): Mobile-based billing software designed for small businesses and shop owners combining billing, khata ledgers, inventory, and WhatsApp messaging.
+- [XenoClass](https://xenotrix.in/products/xenoclass): Learning Management System (LMS) for education and training with interactive virtual classrooms and automated progress tracking.
+- [XenoHR](https://xenotrix.in/products/xenohr): Human Resource Management platform orchestrating onboarding, biometric attendance, automated payroll, and leave workflows.
+- [Xenotune](https://xenotrix.in/products/xenotune): AI-powered ambient music platform utilizing procedural acoustic synthesis for focus, relaxation, and circadian recovery.
 
-## Core Capabilities
+## Technology Service Pillars
 
-- [Enterprise Web Development](https://xenotrix.in/services/web-development): High-speed React, Next.js, FastAPI, and Django applications with sub-second latency.
-- [Mobile Application Engineering](https://xenotrix.in/services/mobile-development): Cross-platform Flutter apps with native 60 FPS performance and offline sync.
-- [Artificial Intelligence & ML Integration](https://xenotrix.in/services/ai-development): Retrieval-Augmented Generation (RAG), vector database search (Qdrant/Pinecone), and multi-agent AI workflow swarms.
-- [Workflow & Business Automation](https://xenotrix.in/services/automation): Official WhatsApp Business API automation, webhook triggers (n8n), and ERP integrations.
-- [SaaS Platform Development](https://xenotrix.in/services/saas-development): Multi-tenant architecture, Stripe billing, role-based access control, and usage telemetry.
+- **Software Engineering**: Custom Software Development, Enterprise Applications, SaaS Development, Web Applications, Mobile Applications (Flutter), API Development.
+- **AI & Intelligence**: Artificial Intelligence, AI Agents, Generative AI & RAG, Business Automation, Workflow Automation, Data Analytics & Business Intelligence.
+- **Digital Experience**: Modern Websites, Headless eCommerce, UI/UX Design Systems, Digital Platforms, Customer Portals.
+- **Growth & Transformation**: Technical & Programmatic SEO, Performance Marketing, Lead Generation Infrastructure, Digital Transformation.
 
-## Key Contact & Links
+## Local & Global Contact
 
 - Website: https://xenotrix.in
-- Co-Founders: Sanjay S, Abi C R, Hari Govind
+- Email: info@xenotrix.in / xenotrixtech@gmail.com
 - Phone / WhatsApp: +91 9995544316
-- Email: info@xenotrix.in
-- Location: Thrissur, Kerala, India (680001)
-- Full Technical Specification: https://xenotrix.in/llms-full.txt
+- Address: Thrissur, Kerala, India - 680001
+- Areas Served: Thrissur, Palakkad, Ottapalam, Kochi, Kerala, Chennai, Bangalore, India, and Global Remote Clients.

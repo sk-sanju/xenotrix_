@@ -6,8 +6,13 @@ export const HeroBackground = () => {
   useEffect(() => {
     const canvas = canvasRef.current;
     if (!canvas) return;
-    const ctx = canvas.getContext('2d');
+    const ctx = canvas.getContext('2d', { alpha: true, desynchronized: true });
     if (!ctx) return;
+
+    // Check prefers-reduced-motion
+    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      return;
+    }
 
     let animationFrameId;
     let width = (canvas.width = window.innerWidth);
@@ -19,12 +24,20 @@ export const HeroBackground = () => {
       y: height / 2,
       targetX: width / 2,
       targetY: height / 2,
-      radius: 180,
+      radius: 140,
     };
+
+    let isMouseMoving = false;
+    let mouseTimeout;
 
     const handleMouseMove = (e) => {
       mouse.targetX = e.clientX;
       mouse.targetY = e.clientY;
+      isMouseMoving = true;
+      clearTimeout(mouseTimeout);
+      mouseTimeout = setTimeout(() => {
+        isMouseMoving = false;
+      }, 2000);
     };
 
     const handleResize = () => {
@@ -33,22 +46,22 @@ export const HeroBackground = () => {
       initParticles();
     };
 
-    window.addEventListener('mousemove', handleMouseMove);
-    window.addEventListener('resize', handleResize);
+    window.addEventListener('mousemove', handleMouseMove, { passive: true });
+    window.addEventListener('resize', handleResize, { passive: true });
 
-    // Particle nodes configuration
-    const particleCount = Math.min(Math.floor((width * height) / 18000), 65);
+    // Adaptive Particle Count for Mobile vs Desktop
+    const isMobile = width < 768;
+    const particleCount = isMobile ? 22 : 45;
     let particles = [];
 
     class Particle {
       constructor() {
         this.x = Math.random() * width;
         this.y = Math.random() * height;
-        this.vx = (Math.random() - 0.5) * 0.4;
-        this.vy = (Math.random() - 0.5) * 0.4;
-        this.radius = Math.random() * 1.5 + 1;
-        this.baseAlpha = Math.random() * 0.4 + 0.2;
-        this.alpha = this.baseAlpha;
+        this.vx = (Math.random() - 0.5) * 0.35;
+        this.vy = (Math.random() - 0.5) * 0.35;
+        this.radius = Math.random() * 1.2 + 0.8;
+        this.alpha = Math.random() * 0.35 + 0.2;
       }
 
       update() {
@@ -60,27 +73,22 @@ export const HeroBackground = () => {
         if (this.y < 0) this.y = height;
         if (this.y > height) this.y = 0;
 
-        // Mouse proximity reaction
-        const dx = mouse.x - this.x;
-        const dy = mouse.y - this.y;
-        const dist = Math.sqrt(dx * dx + dy * dy);
-
-        if (dist < mouse.radius) {
-          const force = (1 - dist / mouse.radius) * 0.05;
-          this.x -= dx * force;
-          this.y -= dy * force;
-          this.alpha = Math.min(this.baseAlpha + 0.4, 0.85);
-        } else {
-          this.alpha = this.baseAlpha;
+        if (isMouseMoving) {
+          const dx = mouse.x - this.x;
+          const dy = mouse.y - this.y;
+          const dist = Math.sqrt(dx * dx + dy * dy);
+          if (dist < mouse.radius) {
+            const force = (1 - dist / mouse.radius) * 0.04;
+            this.x -= dx * force;
+            this.y -= dy * force;
+          }
         }
       }
 
       draw() {
         ctx.beginPath();
         ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
-        ctx.fillStyle = `rgba(139, 92, 246, ${this.alpha})`;
-        ctx.shadowBlur = 8;
-        ctx.shadowColor = 'rgba(6, 182, 212, 0.5)';
+        ctx.fillStyle = `rgba(56, 189, 248, ${this.alpha})`;
         ctx.fill();
       }
     }
@@ -94,33 +102,21 @@ export const HeroBackground = () => {
 
     initParticles();
 
-    // Render loop
-    const render = () => {
-      // Smooth lerp for mouse
-      mouse.x += (mouse.targetX - mouse.x) * 0.05;
-      mouse.y += (mouse.targetY - mouse.y) * 0.05;
+    // Render loop with high-efficiency direct paths
+    let lastTime = 0;
+    const render = (time) => {
+      // Smooth lerp only when mouse is active
+      if (isMouseMoving) {
+        mouse.x += (mouse.targetX - mouse.x) * 0.08;
+        mouse.y += (mouse.targetY - mouse.y) * 0.08;
+      }
 
       ctx.clearRect(0, 0, width, height);
 
-      // Draw subtle grid lines
-      const gridSize = 80;
-      ctx.strokeStyle = 'rgba(255, 255, 255, 0.02)';
-      ctx.lineWidth = 1;
-
-      for (let x = 0; x < width; x += gridSize) {
-        ctx.beginPath();
-        ctx.moveTo(x, 0);
-        ctx.lineTo(x, height);
-        ctx.stroke();
-      }
-      for (let y = 0; y < height; y += gridSize) {
-        ctx.beginPath();
-        ctx.moveTo(0, y);
-        ctx.lineTo(width, y);
-        ctx.stroke();
-      }
-
       // Connect nodes with proximity lines
+      ctx.lineWidth = 0.75;
+      const maxDistance = isMobile ? 90 : 125;
+
       for (let i = 0; i < particles.length; i++) {
         particles[i].update();
         particles[i].draw();
@@ -130,41 +126,26 @@ export const HeroBackground = () => {
           const dy = particles[i].y - particles[j].y;
           const dist = Math.sqrt(dx * dx + dy * dy);
 
-          if (dist < 140) {
+          if (dist < maxDistance) {
+            const lineAlpha = (1 - dist / maxDistance) * 0.18;
             ctx.beginPath();
             ctx.moveTo(particles[i].x, particles[i].y);
             ctx.lineTo(particles[j].x, particles[j].y);
-            const lineAlpha = (1 - dist / 140) * 0.15;
             ctx.strokeStyle = `rgba(6, 182, 212, ${lineAlpha})`;
-            ctx.lineWidth = 0.8;
             ctx.stroke();
           }
         }
       }
 
-      // Draw mouse ambient glow spotlight
-      const gradient = ctx.createRadialGradient(
-        mouse.x,
-        mouse.y,
-        0,
-        mouse.x,
-        mouse.y,
-        250
-      );
-      gradient.addColorStop(0, 'rgba(139, 92, 246, 0.08)');
-      gradient.addColorStop(0.5, 'rgba(6, 182, 212, 0.04)');
-      gradient.addColorStop(1, 'rgba(5, 5, 5, 0)');
-      ctx.fillStyle = gradient;
-      ctx.fillRect(0, 0, width, height);
-
       animationFrameId = requestAnimationFrame(render);
     };
 
-    render();
+    animationFrameId = requestAnimationFrame(render);
 
     return () => {
       window.removeEventListener('mousemove', handleMouseMove);
       window.removeEventListener('resize', handleResize);
+      clearTimeout(mouseTimeout);
       cancelAnimationFrame(animationFrameId);
     };
   }, []);
@@ -172,7 +153,8 @@ export const HeroBackground = () => {
   return (
     <canvas
       ref={canvasRef}
-      className="absolute inset-0 pointer-events-none z-0 opacity-80"
+      className="absolute inset-0 pointer-events-none z-0 opacity-70"
+      style={{ contain: 'strict', willChange: 'transform' }}
     />
   );
 };

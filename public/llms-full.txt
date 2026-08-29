@@ -1,41 +1,36 @@
-# Xenotrix Technologies - Full Technical Specification for Large Language Models
+# Xenotrix Technologies — Complete Enterprise & Local Architecture Manifest
 
-## Organization Details
-- Legal Name: Xenotrix Technologies
-- Tagline: Building the Digital Infrastructure of Tomorrow
-- Founded: 2025
-- Co-Founders:
-  - Sanjay S (Co-Founder & Lead Software Engineer - AI & Systems Architecture)
-  - Abi C R (Co-Founder & Systems Architect - Full-Stack & Cloud DevOps)
-  - Hari Govind (Co-Founder & Product & Strategy Lead - Operations & Growth)
+Company: Xenotrix Technologies
+Tagline: Building Products, Platforms & Digital Solutions for Modern Businesses
+Established: 2025
+Headquarters: Thrissur, Kerala, India - 680001
+Operating Mode: Thrissur HQ + Global Remote Engineering
+
+Co-Founders & Technical Leadership:
+1. Sanjay S — Co-Founder & Principal Full-Stack & Cloud Architect
+   Domains: Full-Stack Microservices, Database Engineering & Cloud Infrastructure, Frontend Architecture, and Data Analytics & BI.
+2. Abi C R — Co-Founder & AI / Machine Learning Lead
+   Domains: AI Integration, Machine Learning, LLM Agents & RAG, Vector Search, Neural Models.
+3. Hari Govind — Co-Founder & Product Operations & Mobile Engineering Lead
+   Domains: Product Operations, Enterprise Scoping & Digital Growth, Mobile App Development (Flutter), Technical SEO.
+
+Proprietary Software Ecosystem:
+- XenoCRM: Multi-tenant SaaS Business OS uniting CRM, billing, and WhatsApp.
+- XenoFin: Financial intelligence, ledger reconciliation, GST/tax calculation.
+- XenoBiz: Mobile-first billing, customer ledgers, and WhatsApp commerce for SMBs and retail.
+- XenoClass: Learning Management System (LMS) with WebRTC virtual classrooms.
+- XenoHR: Automated payroll rule engine, biometric attendance, employee portal.
+- Xenotune: Procedural WebAudio ambient acoustic synthesizer for cognitive focus.
+
+Core Service Pillars:
+- Software Engineering (React, Next.js, FastAPI, Django, Flutter, PostgreSQL, Docker)
+- AI & Intelligence (PyTorch, LangChain, Qdrant, Pinecone, Autonomous Agents)
+- Digital Experience (High-Speed Headless Storefronts, UI/UX Design Systems)
+- Growth & Transformation (Technical SEO, Edge Acceleration, Core Web Vitals)
+
+Local Business Profile:
 - Address: Thrissur, Kerala, India - 680001
-- Phone / WhatsApp: +91 9995544316
+- Coordinates: 10.5276° N, 76.2144° E
+- Telephone: +91 9995544316
 - Email: info@xenotrix.in
-- Social Profiles:
-  - LinkedIn: https://www.linkedin.com/company/xenotrixtech/
-  - GitHub: https://github.com/Xenotrix-Technologies
-  - Instagram: https://www.instagram.com/xenotrix_
-
-## Architectural Philosophy
-Xenotrix Technologies avoids agency superficialities and generic IT templates. Systems are built according to four core tenets:
-1. Business First: Systems must prove commercial utility, increase speed, or reduce operational expense.
-2. AI Native: Artificial intelligence is embedded into fundamental data workflows via LLMs, vector search, and agent swarms.
-3. Built to Scale: Modular, typed microservice architectures deployed on containerized infrastructure (Docker, Kubernetes, Cloudflare).
-4. Long-Term Partnership: Continuous monitoring, telemetry tracking, patch updates, and performance tuning.
-
-## Core Engineering Services
-- Enterprise Web Development: React, Next.js, Vite, FastAPI, Django REST Framework, PostgreSQL, Cloudflare Edge.
-- Mobile Application Engineering: Flutter, Dart, iOS Swift, Android Kotlin, Firebase, SQLite.
-- Artificial Intelligence & ML Integration: PyTorch, OpenAI API, Qdrant, Pinecone, LangChain, LlamaIndex, OCR/Vision AI.
-- Business & Workflow Automation: n8n, Node.js, WhatsApp Business API, Webhooks, Stripe API.
-- SaaS Platform Development: Multi-tenant tenant isolation, subscription metering, role-based access control (RBAC).
-- Data Analytics & BI: ClickHouse, PostgreSQL, Recharts, PostHog, Grafana telemetry.
-- Digital Growth & SEO: Technical SEO audits, Lighthouse 90+ speed tuning, Schema.org structured data.
-
-## Commercial Software Suite
-- XenoCRM: Multi-tenant business OS unifying sales pipelines, WhatsApp customer messaging, automated invoicing, inventory, and AI pipeline scoring.
-- Xenotune: Generative AI soundscape platform utilizing client-side WebAudio procedural synthesis for deep focus and circadian synchronization.
-- XenoBiz: Mobile-first business operating system for small businesses, shops, and wholesalers combining billing, inventory, payments, customer CRM, and WhatsApp messaging.
-
-## Industries Served
-Retail & E-Commerce, Healthcare & Life Sciences, Finance & Fintech, Logistics & Supply Chain, Education & EdTech, Real Estate & PropTech, Professional Services, Manufacturing & Industrial.
+- Region Served: Thrissur, Palakkad, Ottapalam, Kochi, Kerala, Chennai, Bangalore, India, Worldwide.

@@ -16,33 +16,11 @@ import { FAQAccordion } from '../../components/sections/FAQAccordion';
 import { FinalCTASection } from '../../components/sections/FinalCTASection';
 
 export const HomePage = () => {
-  const schema = {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Xenotrix Technologies",
-    "url": "https://xenotrix.in",
-    "logo": "https://xenotrix.in/assets/logo.jpeg",
-    "description": "Xenotrix Technologies builds software products, digital platforms and intelligent technology solutions that help businesses operate smarter, scale faster and grow with confidence.",
-    "founder": [
-      { "@type": "Person", "name": "Sanjay S" },
-      { "@type": "Person", "name": "Abi C R" },
-      { "@type": "Person", "name": "Hari Govind" }
-    ],
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Thrissur",
-      "addressRegion": "Kerala",
-      "postalCode": "680001",
-      "addressCountry": "IN"
-    }
-  };
-
   return (
     <>
       <SEO
-        title="Xenotrix Technologies — Building Products, Platforms & Digital Solutions"
-        description="Xenotrix Technologies builds proprietary software products (XenoCRM, XenoFin, XenoBiz, XenoClass, XenoHR, Xenotune) and custom AI, automation, and enterprise engineering solutions."
-        schema={schema}
+        title="Xenotrix Technologies — Building Products, Platforms & Digital Solutions | Kerala & Global"
+        description="Xenotrix Technologies builds proprietary software products (XenoCRM, XenoFin, XenoBiz, XenoClass, XenoHR, Xenotune) and custom AI, automation, and enterprise engineering solutions. Co-founded in Thrissur, Kerala by Sanjay S, Abi C R, and Hari Govind."
       />
       <main className="overflow-x-hidden">
         {/* 1. Hero Section */}
@@ -52,40 +30,64 @@ export const HomePage = () => {
         <TrustStrip />
 
         {/* 3. Two Pillars: We Build Products / We Build For Businesses */}
-        <IntroStatement />
+        <div className="optimize-render">
+          <IntroStatement />
+        </div>
 
         {/* 4. Products Ecosystem Showcase (All 6 Products) */}
-        <FeaturedProducts />
+        <div className="optimize-render">
+          <FeaturedProducts />
+        </div>
 
         {/* 5. Technology Services (4 Major Pillars) */}
-        <WhatWeBuild />
+        <div className="optimize-render">
+          <WhatWeBuild />
+        </div>
 
         {/* 6. Solutions Built Around Your Business */}
-        <SolutionsSection />
+        <div className="optimize-render">
+          <SolutionsSection />
+        </div>
 
         {/* 7. Technology Across Industries */}
-        <IndustriesGrid />
+        <div className="optimize-render">
+          <IndustriesGrid />
+        </div>
 
         {/* 8. Engineering With Modern Technology */}
-        <TechEcosystem />
+        <div className="optimize-render">
+          <TechEcosystem />
+        </div>
 
         {/* 9. Why Xenotrix (6 Differentiators) */}
-        <WhyXenotrix />
+        <div className="optimize-render">
+          <WhyXenotrix />
+        </div>
 
         {/* 10. Selected Work / Case Studies */}
-        <SelectedWorkSection />
+        <div className="optimize-render">
+          <SelectedWorkSection />
+        </div>
 
         {/* 11. From Idea to Impact (Development Process) */}
-        <ProcessTimeline />
+        <div className="optimize-render">
+          <ProcessTimeline />
+        </div>
 
         {/* 12. Corporate About Xenotrix */}
-        <CorporateAboutSection />
+        <div className="optimize-render">
+          <CorporateAboutSection />
+        </div>
 
         {/* 13. Frequently Asked Questions */}
-        <FAQAccordion />
+        <div className="optimize-render">
+          <FAQAccordion />
+        </div>
 
         {/* 14. Final CTA Section */}
-        <FinalCTASection />
+        <div className="optimize-render">
+          <FinalCTASection />
+        </div>
       </main>
     </>
   );

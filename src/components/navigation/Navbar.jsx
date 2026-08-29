@@ -80,7 +80,11 @@ export const Navbar = () => {
                 <img
                   src="/assets/logo.jpeg"
                   alt="Xenotrix Technologies Logo"
-                  className="h-8 w-auto object-contain rounded-lg"
+                  width="32"
+                  height="32"
+                  decoding="async"
+                  fetchPriority="high"
+                  className="h-8 w-8 object-contain rounded-lg"
                   onError={(e) => {
                     e.currentTarget.style.display = 'none';
                     e.currentTarget.nextSibling.style.display = 'flex';
@@ -150,7 +154,7 @@ export const Navbar = () => {
                                 className="p-3 rounded-2xl bg-white/[0.03] hover:bg-white/[0.08] border border-white/5 hover:border-cyan-500/30 transition-all flex items-start gap-3 group"
                               >
                                 <div className="p-2 rounded-xl bg-cyan-500/10 text-cyan-400 group-hover:bg-cyan-500 group-hover:text-black transition-all shrink-0">
-                                  <Icon className="w-4 h-4" />
+                                   <Icon className="w-4 h-4" />
                                 </div>
                                 <div className="space-y-0.5 min-w-0">
                                   <div className="flex items-center gap-2">

@@ -1,8 +1,10 @@
 import React, { useEffect, lazy, Suspense } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
 
-// Lazy Loaded Pages for Performance & Sub-Second Code Splitting
-const HomePage = lazy(() => import('../pages/Home/HomePage').then(m => ({ default: m.HomePage })));
+// Eagerly import HomePage for INSTANT Zero-Delay First Paint (0ms Waterfall)
+import { HomePage } from '../pages/Home/HomePage';
+
+// Subpages remain lazy loaded on demand
 const AboutPage = lazy(() => import('../pages/About/AboutPage').then(m => ({ default: m.AboutPage })));
 const ServicesIndexPage = lazy(() => import('../pages/Services/ServicesIndexPage').then(m => ({ default: m.ServicesIndexPage })));
 const ServicePageTemplate = lazy(() => import('../pages/Services/ServicePageTemplate').then(m => ({ default: m.ServicePageTemplate })));
@@ -29,15 +31,10 @@ export const ScrollToTop = () => {
   return null;
 };
 
-// Loading Fallback Indicator
+// Lightweight Suspense Fallback
 const LoadingFallback = () => (
-  <div className="min-h-[70vh] flex items-center justify-center bg-[#05070D]">
-    <div className="flex flex-col items-center gap-3">
-      <div className="w-8 h-8 rounded-full border-2 border-cyan-400 border-t-transparent animate-spin" />
-      <span className="text-xs font-mono tracking-widest text-zinc-500 uppercase">
-        LOADING XENOTRIX NODE...
-      </span>
-    </div>
+  <div className="min-h-[60vh] flex items-center justify-center bg-[#05070D]">
+    <div className="w-6 h-6 rounded-full border-2 border-cyan-400 border-t-transparent animate-spin" />
   </div>
 );
 
@@ -47,34 +44,23 @@ export const AppRoutes = () => {
       <ScrollToTop />
       <Suspense fallback={<LoadingFallback />}>
         <Routes>
+          {/* Eagerly rendered instant home route */}
           <Route path="/" element={<HomePage />} />
+          
+          {/* On-demand lazy routes */}
           <Route path="/about" element={<AboutPage />} />
-
-          {/* Products Routes (All 6 proprietary products) */}
           <Route path="/products" element={<ProductsIndexPage />} />
           <Route path="/products/:id" element={<ProductDetailPage />} />
-
-          {/* Services Routes (4 major engineering pillars) */}
           <Route path="/services" element={<ServicesIndexPage />} />
           <Route path="/services/:slug" element={<ServicePageTemplate />} />
-
-          {/* Solutions Route */}
           <Route path="/solutions" element={<SolutionsPage />} />
-
-          {/* Industries Routes */}
           <Route path="/industries" element={<IndustriesIndexPage />} />
           <Route path="/industries/:slug" element={<IndustryPageTemplate />} />
-
-          {/* Case Studies Routes */}
           <Route path="/case-studies" element={<CaseStudiesIndexPage />} />
           <Route path="/case-studies/:slug" element={<CaseStudyDetailPage />} />
-
-          {/* Contact & Legal Routes */}
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/privacy" element={<PrivacyPage />} />
           <Route path="/terms" element={<TermsPage />} />
-
-          {/* 404 Route */}
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </Suspense>
