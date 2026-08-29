@@ -95,8 +95,7 @@ export const SEO = ({
           COMPANY_INFO.socials.linkedin,
           COMPANY_INFO.socials.github,
           COMPANY_INFO.socials.instagram,
-          COMPANY_INFO.socials.twitter,
-          COMPANY_INFO.socials.youtube
+          COMPANY_INFO.socials.twitter
         ],
         "founder": [
           {

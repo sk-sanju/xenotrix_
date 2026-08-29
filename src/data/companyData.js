@@ -43,8 +43,7 @@ export const COMPANY_INFO = {
     linkedin: "https://www.linkedin.com/company/xenotrixtech/",
     github: "https://github.com/Xenotrix-Technologies",
     instagram: "https://www.instagram.com/xenotrix_",
-    twitter: "https://twitter.com/xenotrixtech",
-    youtube: "https://youtube.com/@xenotrixtech",
+    twitter: "https://twitter.com/xenotrixtech"
   },
   systemStatus: "ALL SYSTEMS OPERATIONAL — 99.98% NODE RUNTIME",
   valueStrip: [
