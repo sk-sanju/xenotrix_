@@ -38,48 +38,28 @@ export const Hero = () => {
           <div className="lg:col-span-7 space-y-8 text-left">
             
             {/* Enterprise Status Pill */}
-            <motion.div
-              initial={{ opacity: 0, y: 15 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-              className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-white/[0.04] border border-white/10 backdrop-blur-md shadow-sm"
-            >
+            <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-white/[0.04] border border-white/10 backdrop-blur-md shadow-sm">
               <span className="w-2 h-2 rounded-full bg-cyan-400 animate-pulse" />
               <span className="text-[11px] font-mono tracking-wider text-zinc-300 font-medium uppercase">
                 ENTERPRISE PRODUCTS • PLATFORMS • AI ENGINEERING
               </span>
-            </motion.div>
+            </div>
 
-            {/* Main Headline */}
-            <motion.h1
-              initial={{ opacity: 0, y: 25 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.1 }}
-              className="font-display font-extrabold text-[40px] sm:text-[56px] md:text-[68px] lg:text-[76px] leading-[1.02] tracking-tight text-white"
-            >
+            {/* Main Headline - Rendered with 0ms delay for instant Largest Contentful Paint (LCP) */}
+            <h1 className="font-display font-extrabold text-[40px] sm:text-[56px] md:text-[68px] lg:text-[76px] leading-[1.02] tracking-tight text-white">
               Building Technology That <br className="hidden sm:inline" />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-cyan-200 to-cyan-400">
                 Moves Businesses Forward.
               </span>
-            </motion.h1>
+            </h1>
 
             {/* Supporting Copy */}
-            <motion.p
-              initial={{ opacity: 0, y: 25 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              className="text-base sm:text-lg md:text-xl text-zinc-300 font-normal leading-relaxed max-w-2xl"
-            >
+            <p className="text-base sm:text-lg md:text-xl text-zinc-300 font-normal leading-relaxed max-w-2xl">
               Xenotrix Technologies builds software products, digital platforms and intelligent technology solutions that help businesses operate smarter, scale faster and grow with confidence.
-            </motion.p>
+            </p>
 
             {/* Dual CTAs */}
-            <motion.div
-              initial={{ opacity: 0, y: 25 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.3 }}
-              className="flex flex-wrap items-center gap-4 pt-2"
-            >
+            <div className="flex flex-wrap items-center gap-4 pt-2">
               <a
                 href="#products"
                 className="group inline-flex items-center gap-2.5 px-7 py-4 rounded-xl bg-white text-zinc-950 font-semibold text-sm tracking-wide hover:bg-cyan-300 hover:text-black transition-all duration-300 shadow-[0_0_30px_rgba(255,255,255,0.15)]"
@@ -95,28 +75,23 @@ export const Hero = () => {
                 <span>Build With Xenotrix</span>
                 <ChevronRight className="w-4 h-4 text-zinc-400 group-hover:text-cyan-300 transition-colors" />
               </Link>
-            </motion.div>
+            </div>
 
             {/* Quick Feature Badges */}
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.6, delay: 0.4 }}
-              className="grid grid-cols-2 sm:grid-cols-3 gap-4 pt-4 border-t border-white/10"
-            >
-              <div className="flex items-center gap-2 text-xs text-zinc-400">
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 pt-4 border-t border-white/10">
+              <div className="flex items-center gap-2 text-xs text-zinc-300">
                 <CheckCircle2 className="w-4 h-4 text-cyan-400 shrink-0" />
                 <span>Proprietary SaaS Suites</span>
               </div>
-              <div className="flex items-center gap-2 text-xs text-zinc-400">
+              <div className="flex items-center gap-2 text-xs text-zinc-300">
                 <CheckCircle2 className="w-4 h-4 text-cyan-400 shrink-0" />
                 <span>Custom Enterprise Code</span>
               </div>
-              <div className="flex items-center gap-2 text-xs text-zinc-400">
+              <div className="flex items-center gap-2 text-xs text-zinc-300">
                 <CheckCircle2 className="w-4 h-4 text-cyan-400 shrink-0" />
                 <span>AI & Automation Native</span>
               </div>
-            </motion.div>
+            </div>
           </div>
 
           {/* Interactive SaaS Product & Ecosystem Dashboard Visual */}
@@ -186,7 +161,7 @@ export const Hero = () => {
                   <div className="grid grid-cols-2 gap-2.5">
                     {heroProducts[activeTab].metrics.map((m, i) => (
                       <div key={i} className="p-3 rounded-lg bg-black/50 border border-white/5 space-y-1">
-                        <div className="text-[10px] font-mono text-zinc-500 uppercase">{m.label}</div>
+                        <div className="text-[10px] font-mono text-zinc-400 uppercase">{m.label}</div>
                         <div className="text-xs font-mono font-bold text-white">{m.value}</div>
                       </div>
                     ))}
@@ -197,7 +172,7 @@ export const Hero = () => {
                     {heroProducts[activeTab].techStack.slice(0, 4).map((tech, i) => (
                       <span
                         key={i}
-                        className="px-2 py-0.5 rounded text-[10px] font-mono bg-white/[0.03] text-zinc-400 border border-white/5"
+                        className="px-2 py-0.5 rounded text-[10px] font-mono bg-white/[0.03] text-zinc-300 border border-white/5"
                       >
                         {tech}
                       </span>
@@ -217,7 +192,7 @@ export const Hero = () => {
               </AnimatePresence>
 
               {/* Status Footer */}
-              <div className="pt-3 border-t border-white/10 flex items-center justify-between text-[11px] font-mono text-zinc-500">
+              <div className="pt-3 border-t border-white/10 flex items-center justify-between text-[11px] font-mono text-zinc-400">
                 <span>API LATENCY: 24ms</span>
                 <span>SECURITY: ENCRYPTED (TLS 1.3)</span>
               </div>

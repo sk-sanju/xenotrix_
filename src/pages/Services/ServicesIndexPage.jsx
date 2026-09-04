@@ -101,7 +101,7 @@ export const ServicesIndexPage = () => {
                         <div className="w-12 h-12 rounded-2xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 group-hover:scale-110 group-hover:bg-cyan-500/20 transition-all">
                           <Icon className="w-6 h-6" />
                         </div>
-                        <span className="text-xs font-mono text-zinc-500 uppercase">{srv.category}</span>
+                        <span className="text-xs font-mono text-zinc-400 uppercase">{srv.category}</span>
                       </div>
 
                       <h3 className="font-display font-bold text-xl text-white group-hover:text-cyan-300 transition-colors">
@@ -188,7 +188,7 @@ export const ServicesIndexPage = () => {
 
                   {/* Architecture Badges */}
                   <div className="pt-4 border-t border-white/5 flex flex-wrap items-center gap-2 text-xs font-mono text-zinc-400">
-                    <span className="text-zinc-500">TECH STACK:</span>
+                    <span className="text-zinc-400">TECH STACK:</span>
                     {cat.tech.map((t, tIdx) => (
                       <span key={tIdx} className="px-2.5 py-0.5 rounded bg-white/5 text-zinc-300 border border-white/5 text-[11px]">
                         {t}

@@ -98,7 +98,7 @@ export const ProductsIndexPage = () => {
                   </div>
 
                   <div className="pt-4 border-t border-white/5 flex items-center justify-between">
-                    <span className="text-[11px] font-mono text-zinc-500">
+                    <span className="text-[11px] font-mono text-zinc-400">
                       STATUS: {product.statusLabel}
                     </span>
                     <Link

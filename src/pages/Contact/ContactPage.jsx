@@ -174,7 +174,7 @@ export const ContactPage = () => {
                       <Mail className="w-5 h-5" />
                     </div>
                     <div>
-                      <div className="text-[10px] font-mono text-zinc-500 uppercase">OFFICIAL EMAIL</div>
+                      <div className="text-[10px] font-mono text-zinc-400 uppercase">OFFICIAL EMAIL</div>
                       <div className="text-sm font-semibold">info@xenotrix.in</div>
                     </div>
                   </a>
@@ -190,7 +190,7 @@ export const ContactPage = () => {
                       <MessageSquare className="w-5 h-5" />
                     </div>
                     <div>
-                      <div className="text-[10px] font-mono text-zinc-500 uppercase">WHATSAPP DIRECT</div>
+                      <div className="text-[10px] font-mono text-zinc-400 uppercase">WHATSAPP DIRECT</div>
                       <div className="text-sm font-semibold">+91 9995544316</div>
                     </div>
                   </a>
@@ -200,7 +200,7 @@ export const ContactPage = () => {
                       <Calendar className="w-5 h-5" />
                     </div>
                     <div>
-                      <div className="text-[10px] font-mono text-zinc-500 uppercase">DISCOVERY CALL</div>
+                      <div className="text-[10px] font-mono text-zinc-400 uppercase">DISCOVERY CALL</div>
                       <div className="text-sm font-semibold">30-Min Technical Scoping</div>
                     </div>
                   </div>

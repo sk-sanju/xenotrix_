@@ -96,7 +96,7 @@ export const FeaturedProducts = () => {
                   <div className={`text-sm font-bold tracking-tight ${isSelected ? 'text-white' : 'text-zinc-300'}`}>
                     {prod.name}
                   </div>
-                  <div className="text-[10px] text-zinc-500 truncate">{prod.category}</div>
+                  <div className="text-[10px] text-zinc-400 truncate">{prod.category}</div>
                 </div>
               </button>
             );

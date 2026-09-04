@@ -26,9 +26,12 @@ export const Footer = () => {
             <Link to="/" className="flex items-center gap-3 group">
               <div className="relative overflow-hidden rounded-xl border border-white/15 p-0.5 bg-black/40">
                 <img
-                  src="/assets/logo.jpeg"
+                  src="/assets/logo-icon.webp"
                   alt="Xenotrix Technologies Logo"
-                  className="h-8 w-auto object-contain rounded-lg"
+                  width="32"
+                  height="32"
+                  decoding="async"
+                  className="h-8 w-8 object-contain rounded-lg"
                   onError={(e) => {
                     e.currentTarget.style.display = 'none';
                     e.currentTarget.nextSibling.style.display = 'flex';
@@ -124,9 +127,9 @@ export const Footer = () => {
 
           {/* Products Column */}
           <div className="lg:col-span-3 space-y-4">
-            <h4 className="text-xs font-mono text-white uppercase tracking-widest font-semibold">
+            <h2 className="text-xs font-mono text-white uppercase tracking-widest font-semibold">
               PROPRIETARY PRODUCTS
-            </h4>
+            </h2>
             <ul className="space-y-2.5 text-xs">
               {PRODUCTS.map((prod) => (
                 <li key={prod.id}>
@@ -135,7 +138,7 @@ export const Footer = () => {
                     className="hover:text-white transition-colors flex items-center justify-between group"
                   >
                     <span>{prod.name}</span>
-                    <span className="text-[10px] text-zinc-500 group-hover:text-cyan-400 transition-colors">
+                    <span className="text-[10px] text-zinc-400 group-hover:text-cyan-300 transition-colors">
                       {prod.category.split('&')[0]}
                     </span>
                   </Link>
@@ -146,9 +149,9 @@ export const Footer = () => {
 
           {/* Services Column */}
           <div className="lg:col-span-3 space-y-4">
-            <h4 className="text-xs font-mono text-white uppercase tracking-widest font-semibold">
+            <h2 className="text-xs font-mono text-white uppercase tracking-widest font-semibold">
               TECHNOLOGY SERVICES
-            </h4>
+            </h2>
             <ul className="space-y-2.5 text-xs">
               <li>
                 <Link to="/services/website-development" className="hover:text-white transition-colors">
@@ -190,9 +193,9 @@ export const Footer = () => {
 
           {/* Company & Resources Column */}
           <div className="lg:col-span-2 space-y-4">
-            <h4 className="text-xs font-mono text-white uppercase tracking-widest font-semibold">
+            <h2 className="text-xs font-mono text-white uppercase tracking-widest font-semibold">
               COMPANY & LEGAL
-            </h4>
+            </h2>
             <ul className="space-y-2.5 text-xs">
               <li>
                 <Link to="/about" className="hover:text-white transition-colors">

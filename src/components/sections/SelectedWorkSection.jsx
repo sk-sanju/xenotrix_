@@ -64,9 +64,10 @@ export const SelectedWorkSection = () => {
 
                 <Link
                   to={`/case-studies/${study.slug}`}
+                  aria-label={`Read full technical architecture case study for ${study.title}`}
                   className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-white/5 hover:bg-white/10 text-white text-xs font-semibold border border-white/10 transition-all shrink-0"
                 >
-                  <span>Read Full Technical Architecture</span>
+                  <span>Read Technical Architecture</span>
                   <ArrowRight className="w-3.5 h-3.5" />
                 </Link>
               </div>

@@ -22,9 +22,12 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <meta name="apple-mobile-web-app-title" content="Xenotrix" />
 
-    <!-- Google Analytics 4 (gtag.js) -->
-    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin />
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-70W923NZBJ"></script>
+    <!-- Favicon & Modern WebP Icons -->
+    <link rel="icon" type="image/webp" href="/assets/logo-icon.webp" />
+    <link rel="shortcut icon" type="image/webp" href="/assets/logo-icon.webp" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/logo.webp" />
+
+    <!-- Google Analytics 4 (Deferred to optimize First Contentful Paint & TBT) -->
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -32,16 +35,32 @@
       gtag('config', 'G-70W923NZBJ', {
         page_path: window.location.pathname + window.location.search
       });
+
+      // Lazy load GTM on user interaction or idle to prevent render-blocking
+      (function() {
+        var gtmLoaded = false;
+        function loadGTM() {
+          if (gtmLoaded) return;
+          gtmLoaded = true;
+          var s = document.createElement('script');
+          s.async = true;
+          s.src = 'https://www.googletagmanager.com/gtag/js?id=G-70W923NZBJ';
+          document.head.appendChild(s);
+        }
+        if ('requestIdleCallback' in window) {
+          requestIdleCallback(function() { setTimeout(loadGTM, 2500); });
+        } else {
+          setTimeout(loadGTM, 3000);
+        }
+        ['touchstart', 'scroll', 'mousemove', 'keydown', 'click'].forEach(function(ev) {
+          window.addEventListener(ev, loadGTM, { once: true, passive: true });
+        });
+      })();
     </script>
 
-    <!-- Critical Resource Hints -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+    <!-- Critical Resource Hints for Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-    <!-- Favicon & Icons -->
-    <link rel="icon" type="image/jpeg" href="/assets/logo.jpeg" />
-    <link rel="shortcut icon" type="image/jpeg" href="/assets/logo.jpeg" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/logo.jpeg" />
 
     <!-- Open Graph Protocol -->
     <meta property="og:type" content="website" />

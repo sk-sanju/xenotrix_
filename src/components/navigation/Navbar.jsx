@@ -78,7 +78,7 @@ export const Navbar = () => {
             >
               <div className="relative overflow-hidden rounded-xl border border-white/15 group-hover:border-cyan-500/50 transition-colors p-0.5 bg-black/40">
                 <img
-                  src="/assets/logo.jpeg"
+                  src="/assets/logo-icon.webp"
                   alt="Xenotrix Technologies Logo"
                   width="32"
                   height="32"
@@ -227,7 +227,7 @@ export const Navbar = () => {
                                 <span className="font-bold text-white text-xs group-hover:text-violet-300 transition-colors">
                                   {cat.title}
                                 </span>
-                                <span className="text-[10px] font-mono text-zinc-500">0{idx + 1}</span>
+                                <span className="text-[10px] font-mono text-zinc-400">0{idx + 1}</span>
                               </div>
                               <p className="text-[11px] text-zinc-400 line-clamp-1">
                                 {cat.tagline}

@@ -127,7 +127,7 @@ export const ServicePageTemplate = () => {
             {/* Target Location Badges */}
             {service.targetLocations && (
               <div className="flex flex-wrap items-center gap-2 pt-2">
-                <span className="text-xs font-mono text-zinc-500 flex items-center gap-1 mr-1">
+                <span className="text-xs font-mono text-zinc-400 flex items-center gap-1 mr-1">
                   <MapPin className="w-3 h-3 text-cyan-400" /> SERVING:
                 </span>
                 {service.targetLocations.map((loc, idx) => (
@@ -206,7 +206,7 @@ export const ServicePageTemplate = () => {
                     <div className="w-10 h-10 rounded-2xl bg-violet-500/10 border border-violet-500/20 flex items-center justify-center text-violet-400 group-hover:scale-110 transition-transform">
                       <Check className="w-5 h-5" />
                     </div>
-                    <span className="text-xs font-mono text-zinc-500">0{idx + 1}</span>
+                    <span className="text-xs font-mono text-zinc-400">0{idx + 1}</span>
                   </div>
 
                   <h3 className="font-bold text-lg text-white group-hover:text-cyan-300 transition-colors">

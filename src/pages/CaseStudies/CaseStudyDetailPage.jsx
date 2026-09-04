@@ -76,19 +76,19 @@ export const CaseStudyDetailPage = () => {
           {/* Meta Info Bar */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 p-6 sm:p-8 rounded-3xl bg-[#090D18] border border-white/10 text-xs font-mono">
             <div>
-              <span className="text-zinc-500 block mb-1">CLIENT INITIATIVE</span>
+              <span className="text-zinc-400 block mb-1">CLIENT INITIATIVE</span>
               <span className="text-white font-bold">{caseStudy.client}</span>
             </div>
             <div>
-              <span className="text-zinc-500 block mb-1">INDUSTRY DOMAIN</span>
+              <span className="text-zinc-400 block mb-1">INDUSTRY DOMAIN</span>
               <span className="text-white font-bold">{caseStudy.industry}</span>
             </div>
             <div>
-              <span className="text-zinc-500 block mb-1">ENGINEERING TYPE</span>
+              <span className="text-zinc-400 block mb-1">ENGINEERING TYPE</span>
               <span className="text-cyan-400 font-bold">{caseStudy.category}</span>
             </div>
             <div>
-              <span className="text-zinc-500 block mb-1">CORE DELIVERABLE</span>
+              <span className="text-zinc-400 block mb-1">CORE DELIVERABLE</span>
               <span className="text-emerald-400 font-bold">Production Ready Architecture</span>
             </div>
           </div>

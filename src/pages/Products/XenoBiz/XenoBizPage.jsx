@@ -303,7 +303,7 @@ export const XenoBizPage = () => {
                     </div>
                   )}
 
-                  <div className="pt-2 text-center text-[10px] font-mono text-zinc-500">
+                  <div className="pt-2 text-center text-[10px] font-mono text-zinc-400">
                     CONCEPTUAL XENOBIZ UI PREVIEW
                   </div>
                 </div>
@@ -471,7 +471,7 @@ export const XenoBizPage = () => {
               ))}
             </div>
 
-            <div className="pt-2 text-[11px] font-mono text-zinc-500 border-t border-white/10 flex items-center justify-between">
+            <div className="pt-2 text-[11px] font-mono text-zinc-400 border-t border-white/10 flex items-center justify-between">
               <span>* Official WhatsApp Business Platform integrations labeled as: PLANNED / FUTURE</span>
               <span>DIRECT MESSAGING INTEGRATION</span>
             </div>
@@ -528,7 +528,7 @@ export const XenoBizPage = () => {
               ].map((ev, eIdx) => (
                 <div key={eIdx} className="flex items-center justify-between p-3 rounded-lg bg-black/40 border border-white/5">
                   <div className="flex items-center gap-4">
-                    <span className="text-[10px] text-zinc-500">{ev.date}</span>
+                    <span className="text-[10px] text-zinc-400">{ev.date}</span>
                     <span className={`font-bold ${ev.color}`}>{ev.title}</span>
                   </div>
                   <span className="text-zinc-300 text-[11px]">{ev.detail}</span>

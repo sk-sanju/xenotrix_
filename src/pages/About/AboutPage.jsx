@@ -58,7 +58,7 @@ export const AboutPage = () => {
             <div className="p-6 rounded-2xl bg-[#090D18] border border-white/10 space-y-1">
               <div className="text-xs font-mono text-zinc-400 uppercase">SYSTEM RUNTIME</div>
               <div className="text-xl font-bold text-emerald-400">99.98%</div>
-              <div className="text-xs text-zinc-500 font-mono">Monitored SLA</div>
+              <div className="text-xs text-zinc-400 font-mono">Monitored SLA</div>
             </div>
           </div>
 
