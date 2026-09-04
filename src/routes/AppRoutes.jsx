@@ -20,13 +20,16 @@ const PrivacyPage = lazy(() => import('../pages/PrivacyTermsPages').then(m => ({
 const TermsPage = lazy(() => import('../pages/PrivacyTermsPages').then(m => ({ default: m.TermsPage })));
 const NotFoundPage = lazy(() => import('../pages/NotFoundPage').then(m => ({ default: m.NotFoundPage })));
 
-// Scroll to top on route change
+import { trackPageView } from '../utils/analytics';
+
+// Scroll to top and track GA4 page view on route change
 export const ScrollToTop = () => {
-  const { pathname } = useLocation();
+  const { pathname, search } = useLocation();
 
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, [pathname]);
+    trackPageView(pathname + search, document.title);
+  }, [pathname, search]);
 
   return null;
 };

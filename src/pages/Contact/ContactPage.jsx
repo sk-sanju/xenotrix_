@@ -4,6 +4,7 @@ import { COMPANY_INFO } from '../../data/companyData';
 import { motion } from 'framer-motion';
 import { Mail, Phone, MessageSquare, Calendar, Send, CheckCircle2, Terminal, Loader2, AlertCircle } from 'lucide-react';
 import confetti from 'canvas-confetti';
+import { trackFormSubmission, trackWhatsAppClick, trackContactClick } from '../../utils/analytics';
 
 export const ContactPage = () => {
   const [formData, setFormData] = useState({
@@ -72,6 +73,7 @@ export const ContactPage = () => {
 
       if (response.ok || resData.success === 'true' || resData.success === true) {
         setStatus('success');
+        trackFormSubmission(formData.service, formData.budget);
         confetti({
           particleCount: 90,
           spread: 70,
@@ -165,6 +167,7 @@ export const ContactPage = () => {
                 <div className="space-y-4">
                   <a
                     href="mailto:info@xenotrix.in"
+                    onClick={() => trackContactClick('email')}
                     className="flex items-center gap-4 p-4 rounded-xl bg-white/[0.03] border border-white/5 hover:border-cyan-500/40 text-zinc-300 hover:text-white transition-all group"
                   >
                     <div className="w-10 h-10 rounded-lg bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 shrink-0">
@@ -180,6 +183,7 @@ export const ContactPage = () => {
                     href="https://wa.me/919995544316"
                     target="_blank"
                     rel="noopener noreferrer"
+                    onClick={() => trackWhatsAppClick('Contact Page')}
                     className="flex items-center gap-4 p-4 rounded-xl bg-white/[0.03] border border-white/5 hover:border-emerald-500/40 text-zinc-300 hover:text-white transition-all group"
                   >
                     <div className="w-10 h-10 rounded-lg bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 shrink-0">
