@@ -2,7 +2,7 @@
 
 > Building Products, Platforms & Digital Solutions for Modern Businesses.
 
-Headquartered in Thrissur, Kerala, India (co-founded in 2025 by **Sanjay S**, **Abi C R**, and **Hari Govind**), Xenotrix Technologies operates globally, delivering proprietary software products, enterprise microservices, AI integrations, Flutter mobile apps, and digital transformation solutions.
+Headquartered in Thiruvilwamala, Thrissur, Kerala, India (co-founded in 2025 by **Sanjay S**, **Abi C R**, and **Hari Govind**), Xenotrix Technologies operates globally, delivering proprietary software products, enterprise microservices, AI integrations, Flutter mobile apps, high-conversion websites, and digital transformation solutions.
 
 ## Co-Founders & Leadership
 
@@ -19,17 +19,22 @@ Headquartered in Thrissur, Kerala, India (co-founded in 2025 by **Sanjay S**, **
 - [XenoHR](https://xenotrix.in/products/xenohr): Human Resource Management platform orchestrating onboarding, biometric attendance, automated payroll, and leave workflows.
 - [Xenotune](https://xenotrix.in/products/xenotune): AI-powered ambient music platform utilizing procedural acoustic synthesis for focus, relaxation, and circadian recovery.
 
-## Technology Service Pillars
+## Commercial Engineering Practices & Services
 
-- **Software Engineering**: Custom Software Development, Enterprise Applications, SaaS Development, Web Applications, Mobile Applications (Flutter), API Development.
-- **AI & Intelligence**: Artificial Intelligence, AI Agents, Generative AI & RAG, Business Automation, Workflow Automation, Data Analytics & Business Intelligence.
-- **Digital Experience**: Modern Websites, Headless eCommerce, UI/UX Design Systems, Digital Platforms, Customer Portals.
-- **Growth & Transformation**: Technical & Programmatic SEO, Performance Marketing, Lead Generation Infrastructure, Digital Transformation.
+- [Website Development](https://xenotrix.in/services/website-development): High-speed corporate websites, custom portals, sub-second Core Web Vitals, and conversion engineering in Kerala, India & UAE.
+- [Web Application Development](https://xenotrix.in/services/web-application-development): Scalable multi-tenant SaaS systems, real-time client dashboards, FastAPI/React backends.
+- [E-Commerce Development](https://xenotrix.in/services/ecommerce-development): Headless eCommerce storefronts, payment gateways (Razorpay, Stripe), WhatsApp commerce & inventory sync.
+- [Mobile App Development](https://xenotrix.in/services/mobile-app-development): 60fps Flutter mobile applications for iOS & Android, offline-first SQLite architectures.
+- [Custom Software Development](https://xenotrix.in/services/custom-software-development): Bespoke business operating systems, microservices, and database engineering.
+- [CRM & ERP Development](https://xenotrix.in/services/crm-erp-development): All-in-one CRM/ERP software, GST billing, inventory, and WhatsApp CRM pipelines.
+- [AI Solutions & Automation](https://xenotrix.in/services/ai-automation): Autonomous AI agents, enterprise RAG knowledge vaults, WhatsApp AI chatbots, n8n workflow automation.
+- [Digital Marketing & SEO](https://xenotrix.in/services/digital-marketing-seo): Technical SEO, Schema.org engineering, local pack SEO (Kerala, Thrissur, Kochi), and conversion optimization.
+- [Cloud & Deployment](https://xenotrix.in/services/cloud-deployment): Docker containerization, CI/CD pipelines, Cloudflare edge security, and 99.98% runtime SLA.
 
-## Local & Global Contact
+## Local & Global Contact Information
 
-- Website: https://xenotrix.in
+- Official Website: https://xenotrix.in
 - Email: info@xenotrix.in / xenotrixtech@gmail.com
 - Phone / WhatsApp: +91 9995544316
 - Address: Thiruvilwamala, Thrissur, Kerala, India - 680594
-- Areas Served: Thiruvilwamala, Thrissur, Palakkad, Ottapalam, Kochi, Kerala, Chennai, Bangalore, India, and Global Remote Clients.
+- Areas Served: Thiruvilwamala, Thrissur, Palakkad, Ottapalam, Kochi, Kerala, Chennai, Bangalore, India, UAE, and Global Remote Clients.

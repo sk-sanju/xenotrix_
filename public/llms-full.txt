@@ -15,22 +15,27 @@ Co-Founders & Technical Leadership:
    Domains: Product Operations, Enterprise Scoping & Digital Growth, Mobile App Development (Flutter), Technical SEO.
 
 Proprietary Software Ecosystem:
-- XenoCRM: Multi-tenant SaaS Business OS uniting CRM, billing, and WhatsApp.
-- XenoFin: Financial intelligence, ledger reconciliation, GST/tax calculation.
-- XenoBiz: Mobile-first billing, customer ledgers, and WhatsApp commerce for SMBs and retail.
-- XenoClass: Learning Management System (LMS) with WebRTC virtual classrooms.
-- XenoHR: Automated payroll rule engine, biometric attendance, employee portal.
-- Xenotune: Procedural WebAudio ambient acoustic synthesizer for cognitive focus.
+- XenoCRM (https://xenotrix.in/products/xenocrm): Multi-tenant SaaS Business OS uniting CRM, billing, and WhatsApp.
+- XenoFin (https://xenotrix.in/products/xenofin): Financial intelligence, ledger reconciliation, GST/tax calculation.
+- XenoBiz (https://xenotrix.in/products/xenobiz): Mobile-first billing, customer ledgers, and WhatsApp commerce for SMBs and retail.
+- XenoClass (https://xenotrix.in/products/xenoclass): Learning Management System (LMS) with WebRTC virtual classrooms.
+- XenoHR (https://xenotrix.in/products/xenohr): Automated payroll rule engine, biometric attendance, employee portal.
+- Xenotune (https://xenotrix.in/products/xenotune): Procedural WebAudio ambient acoustic synthesizer for cognitive focus.
 
-Core Service Pillars:
-- Software Engineering (React, Next.js, FastAPI, Django, Flutter, PostgreSQL, Docker)
-- AI & Intelligence (PyTorch, LangChain, Qdrant, Pinecone, Autonomous Agents)
-- Digital Experience (High-Speed Headless Storefronts, UI/UX Design Systems)
-- Growth & Transformation (Technical SEO, Edge Acceleration, Core Web Vitals)
+Dedicated Core Engineering Practices:
+- Website Development (https://xenotrix.in/services/website-development): Sub-second corporate websites, landing pages, headless CMS.
+- Web Application Development (https://xenotrix.in/services/web-application-development): Multi-tenant SaaS, client portals, real-time dashboards.
+- E-Commerce Development (https://xenotrix.in/services/ecommerce-development): Headless stores, payment gateways, WhatsApp commerce.
+- Mobile App Development (https://xenotrix.in/services/mobile-app-development): 60fps Flutter iOS & Android apps, offline-first SQLite.
+- Custom Software Development (https://xenotrix.in/services/custom-software-development): Bespoke business systems, microservices, databases.
+- CRM & ERP Development (https://xenotrix.in/services/crm-erp-development): Unified CRM/ERP platforms, GST invoicing, automated payroll.
+- AI Solutions & Automation (https://xenotrix.in/services/ai-automation): Autonomous AI agents, enterprise RAG vaults, WhatsApp chatbots.
+- Digital Marketing & SEO (https://xenotrix.in/services/digital-marketing-seo): Technical SEO, Schema graphs, local SEO, conversion optimization.
+- Cloud & Deployment (https://xenotrix.in/services/cloud-deployment): Docker containerization, CI/CD pipelines, Cloudflare WAF, 99.98% runtime SLA.
 
-Local Business Profile:
+Local & Global Business Profile:
 - Address: Thiruvilwamala, Thrissur, Kerala, India - 680594
-- Coordinates: 10.5276° N, 76.2144° E
+- Geo Coordinates: 10.5276° N, 76.2144° E
 - Telephone: +91 9995544316
-- Email: info@xenotrix.in
-- Region Served: Thrissur, Palakkad, Ottapalam, Kochi, Kerala, Chennai, Bangalore, India, Worldwide.
+- Email: info@xenotrix.in / xenotrixtech@gmail.com
+- Region Served: Thrissur, Palakkad, Ottapalam, Kochi, Kerala, Chennai, Bangalore, India, UAE, Worldwide.

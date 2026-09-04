@@ -94,11 +94,43 @@ export const ContactPage = () => {
     }
   };
 
+  const canonicalUrl = "https://xenotrix.in/contact";
+  const breadcrumbs = [
+    { name: 'Home', item: '/' },
+    { name: 'Contact', item: '/contact' }
+  ];
+
+  const contactSchema = {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "@id": `${canonicalUrl}#contactpage`,
+    "name": "Contact Xenotrix Technologies",
+    "description": "Get in touch with Xenotrix Technologies for software development, AI automation, and product inquiries.",
+    "mainEntity": {
+      "@type": "LocalBusiness",
+      "@id": "https://xenotrix.in/#organization",
+      "name": "Xenotrix Technologies",
+      "telephone": COMPANY_INFO.phone,
+      "email": COMPANY_INFO.email,
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Thiruvilwamala",
+        "addressLocality": "Thrissur",
+        "addressRegion": "Kerala",
+        "postalCode": "680594",
+        "addressCountry": "IN"
+      }
+    }
+  };
+
   return (
     <>
       <SEO
-        title="Contact & Project Scoping — Xenotrix Technologies"
-        description="Let's build something useful. Tell us what you're trying to build, improve or automate."
+        title="Contact Xenotrix Technologies — Request a Quote & Project Scoping | Kerala & Global"
+        description="Contact Xenotrix Technologies in Thrissur, Kerala for website development, custom software, Flutter mobile apps, and AI automation. Fast technical response within 24 hours."
+        canonical={canonicalUrl}
+        breadcrumbs={breadcrumbs}
+        schema={contactSchema}
       />
       <div className="pt-32 pb-28 bg-[#050505] relative overflow-hidden">
         

@@ -8,8 +8,13 @@ export const AboutPage = () => {
   return (
     <>
       <SEO
-        title="About Xenotrix Technologies — Company Profile & Leadership"
-        description="Xenotrix Technologies develops software products, digital platforms and intelligent technology solutions. Co-founded in 2025 by Sanjay S, Abi C R, and Hari Govind."
+        title="About Xenotrix Technologies — Company Profile, Leadership & Engineering Culture"
+        description="Learn about Xenotrix Technologies, a technology company founded in 2025 by Sanjay S, Abi C R, and Hari Govind in Thrissur, Kerala. Building proprietary SaaS products, AI automation, and enterprise software."
+        canonical="https://xenotrix.in/about"
+        breadcrumbs={[
+          { name: 'Home', item: '/' },
+          { name: 'About', item: '/about' }
+        ]}
       />
       <div className="pt-32 pb-28 bg-[#05070D] relative overflow-hidden min-h-screen">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16 relative z-10">

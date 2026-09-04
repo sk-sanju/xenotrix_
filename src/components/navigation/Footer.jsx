@@ -151,33 +151,38 @@ export const Footer = () => {
             </h4>
             <ul className="space-y-2.5 text-xs">
               <li>
-                <Link to="/services/software-engineering" className="hover:text-white transition-colors">
-                  Software Development
+                <Link to="/services/website-development" className="hover:text-white transition-colors">
+                  Website Development
                 </Link>
               </li>
               <li>
-                <Link to="/services/ai-intelligence" className="hover:text-white transition-colors">
-                  AI & Automation
+                <Link to="/services/custom-software-development" className="hover:text-white transition-colors">
+                  Custom Software Development
                 </Link>
               </li>
               <li>
-                <Link to="/services/digital-experience" className="hover:text-white transition-colors">
-                  Web Development
-                </Link>
-              </li>
-              <li>
-                <Link to="/services/software-engineering" className="hover:text-white transition-colors">
+                <Link to="/services/mobile-app-development" className="hover:text-white transition-colors">
                   Mobile App Development (Flutter)
                 </Link>
               </li>
               <li>
-                <Link to="/services/digital-experience" className="hover:text-white transition-colors">
-                  eCommerce Platforms
+                <Link to="/services/ecommerce-development" className="hover:text-white transition-colors">
+                  E-Commerce Development
                 </Link>
               </li>
               <li>
-                <Link to="/services/growth-transformation" className="hover:text-white transition-colors">
-                  Digital Transformation & SEO
+                <Link to="/services/crm-erp-development" className="hover:text-white transition-colors">
+                  CRM & ERP Development
+                </Link>
+              </li>
+              <li>
+                <Link to="/services/ai-automation" className="hover:text-white transition-colors">
+                  AI Solutions & Automation
+                </Link>
+              </li>
+              <li>
+                <Link to="/services/digital-marketing-seo" className="hover:text-white transition-colors">
+                  Technical SEO & Growth
                 </Link>
               </li>
             </ul>

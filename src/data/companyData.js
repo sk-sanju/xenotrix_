@@ -380,6 +380,537 @@ export const SERVICE_CATEGORIES = [
   }
 ];
 
+export const DEDICATED_SERVICES = [
+  {
+    id: "website-development",
+    slug: "website-development",
+    title: "Website Development Services",
+    metaTitle: "Website Development Company in Kerala & Thrissur | Xenotrix Technologies",
+    metaDescription: "Professional website development company in Thrissur, Kerala. We engineer ultra-fast, high-converting corporate websites, Webflow/React builds, and custom portals across India & UAE.",
+    keywords: "website development company Kerala, website development Thrissur, custom website development India, web design Kochi, responsive web design Kerala, corporate website development",
+    category: "DIGITAL EXPERIENCE",
+    tagline: "High-Performance, Conversion-Engineered Business Websites",
+    description: "We build ultra-fast, custom websites designed to convert visitors into paying clients. Powered by modern web architectures, instant sub-second page loads, and structured SEO.",
+    problemStatement: "Most business websites are sluggish template themes burdened with heavy plugins, poor mobile UX, and zero technical SEO—costing companies valuable organic search rankings and enterprise leads.",
+    solutionStatement: "Xenotrix engineers bespoke corporate websites with clean semantic HTML, modular React/Next.js architectures, sub-500ms Core Web Vitals, and conversion pathways tailored to your industry.",
+    targetLocations: ["Kerala", "Thrissur", "Kochi", "Chennai", "Bangalore", "India", "UAE", "Global"],
+    services: [
+      {
+        name: "Custom Corporate Websites",
+        desc: "Bespoke digital brand homes engineered from scratch without bloated templates for maximum speed and authority."
+      },
+      {
+        name: "High-Conversion Landing Pages",
+        desc: "Targeted campaign pages optimized for paid ads and organic search with clear CTAs and minimal friction."
+      },
+      {
+        name: "Interactive Web Portals",
+        desc: "Dynamic, authenticated web applications for customer account management, quoting, and client interaction."
+      },
+      {
+        name: "Technical SEO & Performance First",
+        desc: "Built-in structured JSON-LD schemas, sub-second LCP, zero CLS, and responsive layout across all viewports."
+      },
+      {
+        name: "CMS & Headless Integrations",
+        desc: "Seamless content management workflows enabling your marketing team to publish content without developer bottlenecks."
+      },
+      {
+        name: "Multi-Language & Regional Support",
+        desc: "Localization and internationalization architecture ready for regional Kerala, Indian, and Middle Eastern markets."
+      }
+    ],
+    benefits: [
+      "Sub-second load times that drastically boost search engine ranking and user retention",
+      "Direct conversion paths designed to capture inquiries via WhatsApp, email, and forms",
+      "Zero dependency on fragile third-party plugin ecosystems",
+      "Comprehensive OpenGraph, Twitter card, and Schema.org rich snippet compliance"
+    ],
+    tech: ["React", "Next.js", "Tailwind CSS", "JavaScript", "HTML5", "Cloudflare", "Framer Motion"],
+    faqs: [
+      {
+        q: "How much does a custom business website cost in Kerala?",
+        a: "Website development costs vary based on complexity, feature requirements, and custom design depth. Typical professional business websites range from ₹25,000 for focused corporate sites to larger custom web platforms. Contact us for a transparent technical scope and quote."
+      },
+      {
+        q: "How long does it take to design and launch a website?",
+        a: "A standard high-performance corporate website typically launches within 2 to 4 weeks, including discovery, UI/UX prototyping, full-stack engineering, SEO setup, and deployment."
+      },
+      {
+        q: "Will our website be optimized for mobile devices and search engines?",
+        a: "Yes. Every website we build is 100% responsive across mobile, tablet, and desktop, and comes standard with full technical SEO, structured data schemas, and Core Web Vitals optimization."
+      }
+    ]
+  },
+  {
+    id: "web-application-development",
+    slug: "web-application-development",
+    title: "Web Application Development",
+    metaTitle: "Web Application Development Company Kerala | Xenotrix Technologies",
+    metaDescription: "Custom web application development services in Kerala and India. We build scalable SaaS platforms, client portals, and microservices backends with React, FastAPI, and PostgreSQL.",
+    keywords: "web application development Kerala, custom web apps India, SaaS development Thrissur, React web application company, FastAPI backend development",
+    category: "SOFTWARE ENGINEERING",
+    tagline: "Scalable, Real-Time Cloud Web Applications & SaaS Systems",
+    description: "From complex customer dashboards to multi-tenant SaaS products, we build secure, reactive web applications that streamline business operations and scale effortlessly.",
+    problemStatement: "Off-the-shelf software often fails to adapt to specific enterprise workflows, resulting in fragmented spreadsheets, manual errors, and high operational overhead.",
+    solutionStatement: "We engineer tailored web applications with role-based access control (RBAC), real-time data synchronization, robust REST/GraphQL APIs, and resilient cloud architectures.",
+    targetLocations: ["Kerala", "Thrissur", "Kochi", "Chennai", "India", "UAE", "Global"],
+    services: [
+      {
+        name: "Custom SaaS Product Engineering",
+        desc: "Multi-tenant SaaS architectures featuring subscription billing, customer self-onboarding, and granular role management."
+      },
+      {
+        name: "Enterprise Management Dashboards",
+        desc: "Real-time administrative dashboards with data visualization, export pipelines, and operational telemetry."
+      },
+      {
+        name: "Client & Vendor Self-Service Portals",
+        desc: "Secure authenticated environments for invoicing, project approvals, ticket triage, and digital document distribution."
+      },
+      {
+        name: "Progressive Web Apps (PWAs)",
+        desc: "Offline-capable, installable web experiences delivering native-like app performance directly in modern browsers."
+      },
+      {
+        name: "API & Microservice Architectures",
+        desc: "High-throughput asynchronous backends built with Python, FastAPI, and PostgreSQL."
+      },
+      {
+        name: "Real-Time Collaboration Engines",
+        desc: "WebSockets and event-driven data streaming for instant messaging, status updates, and live updates."
+      }
+    ],
+    benefits: [
+      "Custom business workflows that automate manual work and eliminate recurring licensing costs",
+      "Enterprise-grade security with encrypted authentication and audit logging",
+      "Zero-lag user interfaces powered by lightweight reactive frontend architecture",
+      "Seamless integration with WhatsApp, payment gateways, and internal ERP systems"
+    ],
+    tech: ["React", "Next.js", "Python", "FastAPI", "PostgreSQL", "Redis", "Docker", "Tailwind CSS"],
+    faqs: [
+      {
+        q: "What technologies do you use for web application development?",
+        a: "We primarily utilize React/Next.js for reactive, high-speed frontends and FastAPI/Python or Node.js for backend microservices, backed by PostgreSQL, MySQL, and Redis for high-throughput data processing."
+      },
+      {
+        q: "Can you modernize our existing legacy web application?",
+        a: "Yes. We perform legacy code audits, database migrations, API modernization, and complete frontend redesigns with zero data loss or downtime."
+      }
+    ]
+  },
+  {
+    id: "ecommerce-development",
+    slug: "ecommerce-development",
+    title: "E-Commerce Development Services",
+    metaTitle: "E-Commerce Website Development in Kerala & India | Xenotrix Technologies",
+    metaDescription: "Custom eCommerce website and store development in Kerala. Headless commerce, payment gateway integration, WhatsApp checkout, and high-conversion online stores.",
+    keywords: "ecommerce development company Kerala, ecommerce website Thrissur, online store development Kochi, custom ecommerce India, headless commerce Kerala",
+    category: "DIGITAL EXPERIENCE",
+    tagline: "Headless, High-Conversion Online Stores & Commerce Platforms",
+    description: "We build sub-second headless e-commerce storefronts and custom online commerce platforms engineered for maximum checkout conversion, inventory sync, and WhatsApp engagement.",
+    problemStatement: "Traditional eCommerce storefronts suffer from high page latency, clunky checkout funnels, and high shopping cart abandonment rates.",
+    solutionStatement: "Xenotrix builds lightning-fast headless e-commerce platforms with one-click payment gateways, real-time inventory management, automated WhatsApp order updates, and optimized checkout UX.",
+    targetLocations: ["Kerala", "Thrissur", "Kochi", "Chennai", "India", "UAE", "Global"],
+    services: [
+      {
+        name: "Custom Headless Storefronts",
+        desc: "Blazing fast shopping experiences with instantaneous product filtering, zero-delay search, and sub-second checkout."
+      },
+      {
+        name: "Payment Gateway Integration",
+        desc: "Flawless integration with Razorpay, Cashfree, Stripe, UPI QR, and international multi-currency gateways."
+      },
+      {
+        name: "WhatsApp Commerce & Notifications",
+        desc: "Automated order confirmation, shipment tracking, and abandoned cart recovery sequences over WhatsApp."
+      },
+      {
+        name: "Inventory & Multi-Store Sync",
+        desc: "Centralized stock control synchronizing physical retail POS systems with online storefront inventories in real time."
+      },
+      {
+        name: "B2B Wholesale & Distributor Portals",
+        desc: "Tiered pricing, bulk order minimums, credit terms, and custom quotation pipelines for wholesale commerce."
+      },
+      {
+        name: "E-Commerce SEO & Rich Snippets",
+        desc: "Structured Product, Review, and Offer Schema.org metadata for enhanced Google Search Shopping rankings."
+      }
+    ],
+    benefits: [
+      "Sub-second catalog browsing and checkout speeds that increase conversion rates",
+      "Automated WhatsApp alerts reducing customer support load and cart abandonment",
+      "Direct integration with shipping aggregators (Shiprocket, Delhivery) and payment providers",
+      "Mobile-first design optimized for Indian and international shoppers"
+    ],
+    tech: ["React", "Next.js", "FastAPI", "PostgreSQL", "Redis", "WhatsApp API", "Stripe / Razorpay"],
+    faqs: [
+      {
+        q: "Do you integrate Indian payment gateways like UPI and Razorpay?",
+        a: "Yes. We implement seamless multi-option checkouts including UPI, GPay, PhonePe, credit/debit cards, net banking, and international credit cards via Razorpay, Cashfree, and Stripe."
+      },
+      {
+        q: "Can customers receive order updates on WhatsApp?",
+        a: "Yes. We integrate official WhatsApp Business Cloud APIs to send instant automated order confirmations, payment receipts, tracking links, and delivery notifications."
+      }
+    ]
+  },
+  {
+    id: "mobile-app-development",
+    slug: "mobile-app-development",
+    title: "Mobile App Development Services",
+    metaTitle: "Mobile App Development Company in Kerala | Flutter Apps | Xenotrix",
+    metaDescription: "Premier mobile app development company in Thrissur, Kerala. Native-performance Flutter mobile apps for iOS and Android with offline-first architecture and real-time cloud sync.",
+    keywords: "mobile app development Kerala, Flutter app development Thrissur, iOS Android app development Kochi, mobile application development India",
+    category: "SOFTWARE ENGINEERING",
+    tagline: "High-Frame-Rate Native & Cross-Platform Mobile Applications",
+    description: "We engineer native-performance mobile applications for iOS and Android using Flutter. Fast, fluid, and robust mobile products tailored for modern enterprises and consumer platforms.",
+    problemStatement: "Building separate native apps for iOS and Android doubles development costs and timelines, while subpar cross-platform frameworks lead to laggy, clunky user experiences.",
+    solutionStatement: "Using production Flutter engineering, we build a single, unified codebase that renders 60fps+ native performance on both iOS and Android, backed by secure cloud APIs and offline data caching.",
+    targetLocations: ["Kerala", "Thrissur", "Kochi", "Chennai", "Bangalore", "India", "UAE", "Global"],
+    services: [
+      {
+        name: "Cross-Platform Flutter Apps",
+        desc: "One high-performance codebase delivering pixel-perfect, native-compiled mobile experiences for iOS and Android."
+      },
+      {
+        name: "Offline-First Mobile Architecture",
+        desc: "Seamless local SQLite data caching that functions flawlessly without internet and automatically syncs upon reconnection."
+      },
+      {
+        name: "Enterprise Field & Billing Apps",
+        desc: "Mobile POS, inventory scanning, field technician dispatch, and digital receipt generation tools."
+      },
+      {
+        name: "Push Notifications & Deep Linking",
+        desc: "Targeted segmentation notifications via Firebase Cloud Messaging and universal deep links for marketing campaigns."
+      },
+      {
+        name: "Biometrics & Mobile Security",
+        desc: "Fingerprint/FaceID authentication, end-to-end payload encryption, and secure local keychain token storage."
+      },
+      {
+        name: "App Store & Play Store Deployment",
+        desc: "End-to-end submission management, compliance approvals, signing certificates, and continuous CI/CD delivery."
+      }
+    ],
+    benefits: [
+      "Halve development cost and launch timeline with a unified Flutter codebase",
+      "Butter-smooth 60fps animation and native platform gestures",
+      "Offline-first resilience ensuring your team or customers can work anywhere",
+      "Full API integration with your existing backend and database systems"
+    ],
+    tech: ["Flutter", "Dart", "Firebase", "FastAPI", "SQLite", "Riverpod", "PostgreSQL"],
+    faqs: [
+      {
+        q: "Why do you recommend Flutter for mobile app development?",
+        a: "Flutter compiles directly to native ARM machine code on both iOS and Android, delivering 60fps/120fps rendering speed while maintaining a single codebase—saving up to 50% in development and ongoing maintenance costs."
+      },
+      {
+        q: "Do you publish our mobile app to the Apple App Store and Google Play Store?",
+        a: "Yes. We manage the entire deployment process, including app signing, privacy policies, store listings, screenshot generation, and compliance reviews."
+      }
+    ]
+  },
+  {
+    id: "custom-software-development",
+    slug: "custom-software-development",
+    title: "Custom Software Development",
+    metaTitle: "Custom Software Development Company in Kerala | Xenotrix Technologies",
+    metaDescription: "Enterprise custom software development services in Thrissur, Kerala. We build bespoke business software, microservices, databases, and automated workflows across India & UAE.",
+    keywords: "custom software development Kerala, enterprise software development Thrissur, software company Kochi, business software India, bespoke software solutions",
+    category: "SOFTWARE ENGINEERING",
+    tagline: "Bespoke Enterprise Software Engineered Around Your Business Logic",
+    description: "We architect and engineer mission-critical custom software systems that replace fragmented tools, eliminate manual bottlenecks, and give businesses a lasting technological advantage.",
+    problemStatement: "Generic SaaS tools force businesses to adapt their workflows to rigid software limitations, resulting in high subscription costs, poor data ownership, and disjointed team communication.",
+    solutionStatement: "Xenotrix builds 100% proprietary custom software engineered to mirror your exact operational logic, providing full intellectual property ownership, bank-grade security, and unlimited scalability.",
+    targetLocations: ["Kerala", "Thrissur", "Kochi", "Chennai", "Bangalore", "India", "UAE", "Global"],
+    services: [
+      {
+        name: "Bespoke Enterprise Solutions",
+        desc: "Tailored business operating platforms engineered specifically for your company's proprietary workflows."
+      },
+      {
+        name: "Distributed Microservices Architecture",
+        desc: "Fault-tolerant, containerized backend systems that scale horizontally without performance degradation."
+      },
+      {
+        name: "Database Engineering & Optimization",
+        desc: "High-frequency relational and columnar database designs (PostgreSQL, MySQL, ClickHouse, Redis) for instant queries."
+      },
+      {
+        name: "Legacy Modernization & Data Migration",
+        desc: "Upgrading outdated desktop or spreadsheet databases into modern, cloud-native web and mobile platforms."
+      },
+      {
+        name: "Third-Party API & Webhook Integrations",
+        desc: "Connecting banking, accounting, payment, logistics, and communication APIs into one unified nerve center."
+      },
+      {
+        name: "Cloud Hosting & DevOps Automation",
+        desc: "Docker containerization, automated CI/CD deployment pipelines, and 99.98% monitored cloud uptime."
+      }
+    ],
+    benefits: [
+      "100% ownership of your intellectual property and data assets",
+      "Eliminate recurring per-user monthly SaaS subscription fees",
+      "Tailor every screen, permission level, and calculation to your company's rules",
+      "Bank-grade security with granular role-based access control and audit logs"
+    ],
+    tech: ["Python", "FastAPI", "Django", "React", "PostgreSQL", "Docker", "Redis", "ClickHouse"],
+    faqs: [
+      {
+        q: "What are the advantages of custom software vs off-the-shelf software?",
+        a: "Custom software is designed 100% around your exact business processes, meaning no compromises, no recurring per-seat subscription fees, and complete ownership of your intellectual property and proprietary data."
+      },
+      {
+        q: "Who owns the source code upon project completion?",
+        a: "You do. Full ownership and intellectual property of the custom software source code, database architectures, and assets belong entirely to your company."
+      }
+    ]
+  },
+  {
+    id: "crm-erp-development",
+    slug: "crm-erp-development",
+    title: "CRM & ERP Development Services",
+    metaTitle: "Custom CRM & ERP Software Development in Kerala | Xenotrix Technologies",
+    metaDescription: "Custom CRM and ERP software development in Kerala and Thrissur. Streamline sales pipelines, automated invoicing, inventory, HR payroll, and WhatsApp operations.",
+    keywords: "CRM development company Kerala, ERP development Thrissur, custom CRM India, business ERP software Kochi, XenoCRM",
+    category: "SOFTWARE ENGINEERING",
+    tagline: "All-in-One Business Operating Systems & Resource Planning",
+    description: "We build custom CRM and ERP software systems that unify customer pipelines, sales tracking, inventory management, automated payroll, and multi-channel messaging in one intuitive platform.",
+    problemStatement: "Businesses waste dozens of hours each week manually syncing data between separate CRM, accounting, inventory, and messaging software—leading to lost leads and billing errors.",
+    solutionStatement: "Xenotrix builds unified CRM & ERP platforms (including our proprietary XenoCRM and XenoHR technologies) that centralize every operational department into one real-time dashboard.",
+    targetLocations: ["Kerala", "Thrissur", "Kochi", "Chennai", "India", "UAE", "Global"],
+    services: [
+      {
+        name: "Custom Sales Pipeline CRM",
+        desc: "Visual deal stages, lead assignment rules, automated WhatsApp follow-ups, and sales forecasting."
+      },
+      {
+        name: "Enterprise ERP & Inventory Systems",
+        desc: "Multi-warehouse inventory tracking, purchase order routing, supplier ledgers, and low-stock alerts."
+      },
+      {
+        name: "Automated Billing & GST Invoicing",
+        desc: "Generate professional digital invoices, track payment status, and send automated payment reminder links."
+      },
+      {
+        name: "Human Resource & Payroll Modules",
+        desc: "Biometric attendance, leave approvals, salary calculations, and direct payslip distribution."
+      },
+      {
+        name: "WhatsApp Business CRM Integration",
+        desc: "Manage customer chats, send catalog links, and trigger automated notifications directly from your CRM."
+      },
+      {
+        name: "Executive Analytics & Reporting",
+        desc: "Instant profit & loss summaries, employee productivity metrics, and cash flow telemetry."
+      }
+    ],
+    benefits: [
+      "Unify all business departments into a single pane of glass",
+      "Automate lead capture and follow-ups to increase sales conversion",
+      "Prevent stock-outs and inventory discrepancies with real-time tracking",
+      "Save 15+ administrative hours per employee every month"
+    ],
+    tech: ["React", "FastAPI", "PostgreSQL", "MySQL", "Redis", "Docker", "WhatsApp Cloud API"],
+    faqs: [
+      {
+        q: "Can our CRM integrate directly with WhatsApp for lead follow-ups?",
+        a: "Yes. Our CRM platforms feature native WhatsApp integration, enabling your sales team to receive instant lead notifications, send template messages, and log conversations automatically."
+      },
+      {
+        q: "Can the ERP system handle GST compliance and multi-branch operations?",
+        a: "Yes. Our systems are engineered with full GST taxation rules, e-invoicing support, and multi-branch inventory synchronization."
+      }
+    ]
+  },
+  {
+    id: "ai-automation",
+    slug: "ai-automation",
+    title: "AI Solutions & Business Automation",
+    metaTitle: "AI Solutions & Automation Company in Kerala | Xenotrix Technologies",
+    metaDescription: "Enterprise AI solutions, autonomous AI agents, WhatsApp automation, and RAG knowledge systems in Kerala and India. Modernize business workflows with AI.",
+    keywords: "AI automation company Kerala, AI solutions Thrissur, business automation Kochi, AI agents India, WhatsApp AI bot Kerala, RAG systems",
+    category: "AI & INTELLIGENCE",
+    tagline: "Autonomous AI Agents, LLM Integrations & Intelligent Workflow Automation",
+    description: "We deploy practical, high-ROI artificial intelligence systems for modern businesses—including autonomous AI agents, custom document intelligence, RAG knowledge vaults, and multi-channel automation.",
+    problemStatement: "Repetitive manual tasks, slow customer support responses, and unstructured document processing drain team productivity and delay critical business decisions.",
+    solutionStatement: "Xenotrix bridges cutting-edge generative AI and practical operational execution, building intelligent AI agents, automated triage workflows, and custom neural systems that operate 24/7.",
+    targetLocations: ["Kerala", "Thrissur", "Kochi", "Chennai", "India", "UAE", "Global"],
+    services: [
+      {
+        name: "Autonomous AI Agents & Swarms",
+        desc: "Goal-directed AI assistants that handle multi-step customer inquiries, lead qualification, and document parsing."
+      },
+      {
+        name: "Enterprise RAG & Knowledge Vaults",
+        desc: "Connect your company's manuals, policy documents, and databases to secure, conversational LLM assistants."
+      },
+      {
+        name: "WhatsApp Business AI Automation",
+        desc: "24/7 intelligent chatbots that answer customer questions, share product catalogs, and book appointments."
+      },
+      {
+        name: "Document OCR & Extraction Pipelines",
+        desc: "Automated extraction and classification of invoices, receipts, medical records, and legal contracts."
+      },
+      {
+        name: "Predictive Analytics & Machine Learning",
+        desc: "Custom ML models for customer churn prediction, demand forecasting, and behavioral pattern discovery."
+      },
+      {
+        name: "Event-Driven Workflow Automation",
+        desc: "End-to-end webhook pipelines (n8n, Python) connecting CRM, emails, payment gateways, and databases."
+      }
+    ],
+    benefits: [
+      "Provide 24/7 instantaneous customer responses over WhatsApp and web",
+      "Eliminate manual data entry errors and document transcription backlogs",
+      "Empower your staff with instant access to company knowledge vaults",
+      "Achieve measurable operational ROI within the first 30 days of deployment"
+    ],
+    tech: ["Python", "PyTorch", "OpenAI / Claude APIs", "LangChain", "Qdrant", "Pinecone", "n8n", "FastAPI"],
+    faqs: [
+      {
+        q: "Is our business data kept secure and private when using AI?",
+        a: "Yes. We implement private enterprise RAG architectures and vector databases where your proprietary business data is never used to train public models, with strict access control and encryption."
+      },
+      {
+        q: "How can WhatsApp AI automation help our business?",
+        a: "A custom WhatsApp AI bot can instantly respond to customer product queries, qualify leads, send quotations, accept bookings, and route complex cases to your human team seamlessly."
+      }
+    ]
+  },
+  {
+    id: "digital-marketing-seo",
+    slug: "digital-marketing-seo",
+    title: "Digital Marketing & Technical SEO",
+    metaTitle: "SEO Company in Kerala & Thrissur | Technical SEO | Xenotrix",
+    metaDescription: "Data-driven SEO services and digital marketing agency in Thrissur, Kerala. Technical SEO, programmatic search, local SEO, and conversion rate optimization (CRO) in India & UAE.",
+    keywords: "SEO company Kerala, SEO services Thrissur, digital marketing agency Kochi, technical SEO India, local SEO Kerala, conversion rate optimization",
+    category: "GROWTH & TRANSFORMATION",
+    tagline: "Data-Driven Technical SEO, Conversion Engineering & Organic Growth",
+    description: "We optimize your digital footprint with rigorous technical SEO, programmatic content architectures, Schema.org structured data, and high-converting acquisition funnels.",
+    problemStatement: "Many businesses waste money on generic marketing agencies that deliver vanity traffic without generating actual commercial leads or high-intent search visibility.",
+    solutionStatement: "Xenotrix approaches search visibility and marketing as an engineering discipline—optimizing Core Web Vitals, Schema graphs, local pack rankings, and conversion funnels to drive real revenue.",
+    targetLocations: ["Kerala", "Thrissur", "Kochi", "Chennai", "India", "UAE", "Global"],
+    services: [
+      {
+        name: "Technical SEO & Schema Engineering",
+        desc: "Complete optimization of crawlability, Core Web Vitals, canonical architecture, and rich Schema.org structured data."
+      },
+      {
+        name: "Local SEO & Google Business Profile",
+        desc: "Dominate local map pack rankings for Thrissur, Kochi, Kerala, and target regional metropolitan hubs."
+      },
+      {
+        name: "Programmatic SEO & Content Clusters",
+        desc: "Architecting scalable topical authority clusters and intent-driven content that capture high-value commercial searches."
+      },
+      {
+        name: "Conversion Rate Optimization (CRO)",
+        desc: "Telemetry-driven UX enhancements, heatmap analysis, and CTA optimization that maximize visitor-to-lead conversions."
+      },
+      {
+        name: "AI Search Optimization (AEO/GEO)",
+        desc: "Formatting entity structures and factual manifests for Google AI Overviews, Perplexity, and ChatGPT search citations."
+      },
+      {
+        name: "Performance Analytics & Attribution",
+        desc: "Precision tracking of form submissions, WhatsApp clicks, phone calls, and revenue attribution in Google Analytics 4."
+      }
+    ],
+    benefits: [
+      "Sustainable organic search traffic that reduces dependency on paid advertising",
+      "Topical authority in your industry that positions your brand as the market leader",
+      "Measurable lead generation telemetry tracked directly in Google Analytics 4",
+      "Future-proof visibility across traditional search engines and AI search platforms"
+    ],
+    tech: ["Google Analytics 4", "Google Search Console", "Schema.org", "Lighthouse", "PostHog", "Cloudflare"],
+    faqs: [
+      {
+        q: "What makes technical SEO different from basic SEO?",
+        a: "Technical SEO focuses on the structural and architectural foundation of your website—such as sub-second Core Web Vitals, JSON-LD structured data schemas, canonical URL hierarchies, crawl budget optimization, and semantic HTML—ensuring search engines can flawlessly index and rank your pages."
+      },
+      {
+        q: "How long does it take to see results from SEO?",
+        a: "Technical SEO fixes (crawling, indexing, schema) often show ranking improvements within 2 to 6 weeks, while comprehensive topical authority and competitive commercial rankings typically compound significantly over 3 to 6 months."
+      }
+    ]
+  },
+  {
+    id: "cloud-deployment",
+    slug: "cloud-deployment",
+    title: "Cloud & Deployment Solutions",
+    metaTitle: "Cloud Architecture & DevOps Deployment Services | Xenotrix Technologies",
+    metaDescription: "Enterprise cloud architecture, Docker containerization, CI/CD pipelines, and high-availability server deployment in Kerala and India. 99.98% monitored runtime.",
+    keywords: "cloud deployment services Kerala, DevOps company Thrissur, Docker containerization India, cloud architecture Kochi, microservices deployment",
+    category: "SOFTWARE ENGINEERING",
+    tagline: "Resilient Cloud Infrastructure, Containerization & CI/CD Pipelines",
+    description: "We design, deploy, and monitor scalable cloud environments with Docker containerization, automated continuous deployment pipelines, edge caching, and 99.98% runtime SLAs.",
+    problemStatement: "Unmonitored servers, manual deployment errors, and unoptimized database configurations lead to downtime, security vulnerabilities, and unexpected cloud hosting bills.",
+    solutionStatement: "Xenotrix deploys deterministic cloud architectures with automated CI/CD workflows, Cloudflare edge security, automated database backups, and real-time telemetry monitoring.",
+    targetLocations: ["Kerala", "Thrissur", "Kochi", "Chennai", "India", "UAE", "Global"],
+    services: [
+      {
+        name: "Cloud Infrastructure Architecture",
+        desc: "Design and deployment of auto-scaling, multi-region cloud setups on AWS, DigitalOcean, Hetzner, and GCP."
+      },
+      {
+        name: "Docker & Container Orchestration",
+        desc: "Containerizing microservices for isolated, reproducible, and zero-downtime deployment workflows."
+      },
+      {
+        name: "Automated CI/CD Delivery Pipelines",
+        desc: "GitHub Actions pipelines that test, build, and deploy software updates automatically with zero human friction."
+      },
+      {
+        name: "Cloudflare Edge Caching & Security",
+        desc: "DDoS mitigation, SSL/TLS certificate management, web application firewalls (WAF), and global CDN acceleration."
+      },
+      {
+        name: "Database Backup & Disaster Recovery",
+        desc: "Automated encrypted database snapshots, point-in-time recovery, and multi-node replication."
+      },
+      {
+        name: "24/7 Telemetry & Health Monitoring",
+        desc: "Real-time CPU/memory alerting, error tracking, and API uptime monitoring maintaining 99.98% availability."
+      }
+    ],
+    benefits: [
+      "99.98% monitored system runtime and rapid disaster recovery",
+      "Instantaneous zero-downtime software deployments via CI/CD pipelines",
+      "Dramatically reduced cloud hosting costs through optimized container resource utilization",
+      "Enterprise security compliance with automated SSL and edge firewall protection"
+    ],
+    tech: ["Docker", "GitHub Actions", "Cloudflare", "AWS", "DigitalOcean", "Linux / Ubuntu", "Nginx", "PostgreSQL"],
+    faqs: [
+      {
+        q: "What cloud platforms do you support?",
+        a: "We deploy on all major modern cloud providers including AWS, Google Cloud, DigitalOcean, Hetzner, and Cloudflare Edge depending on performance and budget needs."
+      },
+      {
+        q: "Do you provide ongoing server maintenance and monitoring?",
+        a: "Yes. We provide 24/7 infrastructure monitoring, automated security patch updates, and backup verification to ensure uninterrupted business operations."
+      }
+    ]
+  }
+];
+
+export const ALL_SERVICES = [...SERVICE_CATEGORIES, ...DEDICATED_SERVICES];
+
+export const getServiceBySlug = (slug) => {
+  if (!slug) return null;
+  const cleanSlug = slug.toLowerCase().trim();
+  return ALL_SERVICES.find(
+    (s) => s.slug === cleanSlug || s.id === cleanSlug
+  ) || null;
+};
+
+
 export const SOLUTIONS = [
   {
     id: "sales-crm",

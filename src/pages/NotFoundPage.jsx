@@ -29,6 +29,7 @@ export const NotFoundPage = () => {
       <SEO 
         title="404 — Node Not Found | Xenotrix Technologies" 
         description="The page or route node you requested could not be located in the Xenotrix network."
+        noindex={true}
       />
 
       <div className="relative min-h-screen w-full flex flex-col items-center justify-center pt-24 pb-16 px-4 sm:px-6 lg:px-8 bg-[#050505] text-white overflow-hidden select-none">

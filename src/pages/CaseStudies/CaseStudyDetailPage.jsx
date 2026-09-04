@@ -9,11 +9,42 @@ export const CaseStudyDetailPage = () => {
   const { slug } = useParams();
   const caseStudy = CASE_STUDIES.find((cs) => cs.slug === slug || cs.id === slug) || CASE_STUDIES[0];
 
+  const canonicalUrl = `https://xenotrix.in/case-studies/${caseStudy.slug}`;
+  const breadcrumbs = [
+    { name: 'Home', item: '/' },
+    { name: 'Case Studies', item: '/case-studies' },
+    { name: caseStudy.title, item: `/case-studies/${caseStudy.slug}` }
+  ];
+
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": `${canonicalUrl}#article`,
+    "headline": caseStudy.title,
+    "description": caseStudy.summary,
+    "author": {
+      "@type": "Organization",
+      "@id": "https://xenotrix.in/#organization",
+      "name": "Xenotrix Technologies"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "@id": "https://xenotrix.in/#organization",
+      "name": "Xenotrix Technologies",
+      "logo": "https://xenotrix.in/assets/logo.jpeg"
+    },
+    "mainEntityOfPage": canonicalUrl
+  };
+
   return (
     <>
       <SEO
         title={`Case Study: ${caseStudy.title} — Xenotrix Technologies`}
         description={caseStudy.summary}
+        canonical={canonicalUrl}
+        ogType="article"
+        breadcrumbs={breadcrumbs}
+        schema={articleSchema}
       />
       <div className="pt-32 pb-28 bg-[#05070D] relative overflow-hidden min-h-screen">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12 relative z-10">

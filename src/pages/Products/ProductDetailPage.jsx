@@ -39,13 +39,22 @@ export const ProductDetailPage = () => {
     }
   };
 
-  return (
-    <>
-      <SEO
-        title={`${product.name} — ${product.tagline} | Xenotrix Technologies`}
-        description={product.description}
-        schema={schema}
-      />
+    const canonicalUrl = `https://xenotrix.in/products/${product.id}`;
+    const breadcrumbs = [
+      { name: 'Home', item: '/' },
+      { name: 'Products', item: '/products' },
+      { name: product.name, item: `/products/${product.id}` }
+    ];
+
+    return (
+      <>
+        <SEO
+          title={`${product.name} — ${product.tagline} | Xenotrix Technologies`}
+          description={product.description}
+          canonical={canonicalUrl}
+          breadcrumbs={breadcrumbs}
+          schema={schema}
+        />
       <div className="pt-32 pb-28 bg-[#05070D] relative overflow-hidden min-h-screen">
         {/* Ambient Glows */}
         <div className="absolute top-1/4 left-1/4 w-[600px] h-[600px] bg-cyan-500/10 rounded-full blur-[160px] pointer-events-none" />
