@@ -13,6 +13,7 @@ const IndustriesIndexPage = lazy(() => import('../pages/Industries/IndustriesInd
 const IndustryPageTemplate = lazy(() => import('../pages/Industries/IndustryPageTemplate').then(m => ({ default: m.IndustryPageTemplate })));
 const ProductsIndexPage = lazy(() => import('../pages/Products/ProductsIndexPage').then(m => ({ default: m.ProductsIndexPage })));
 const ProductDetailPage = lazy(() => import('../pages/Products/ProductDetailPage').then(m => ({ default: m.ProductDetailPage })));
+const PortfolioPage = lazy(() => import('../pages/Portfolio/PortfolioPage').then(m => ({ default: m.PortfolioPage })));
 const CaseStudiesIndexPage = lazy(() => import('../pages/CaseStudies/CaseStudiesIndexPage').then(m => ({ default: m.CaseStudiesIndexPage })));
 const CaseStudyDetailPage = lazy(() => import('../pages/CaseStudies/CaseStudyDetailPage').then(m => ({ default: m.CaseStudyDetailPage })));
 const ContactPage = lazy(() => import('../pages/Contact/ContactPage').then(m => ({ default: m.ContactPage })));
@@ -59,6 +60,7 @@ export const AppRoutes = () => {
           <Route path="/solutions" element={<SolutionsPage />} />
           <Route path="/industries" element={<IndustriesIndexPage />} />
           <Route path="/industries/:slug" element={<IndustryPageTemplate />} />
+          <Route path="/portfolio" element={<PortfolioPage />} />
           <Route path="/case-studies" element={<CaseStudiesIndexPage />} />
           <Route path="/case-studies/:slug" element={<CaseStudyDetailPage />} />
           <Route path="/contact" element={<ContactPage />} />

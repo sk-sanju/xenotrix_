@@ -261,6 +261,16 @@ export const Navbar = () => {
                 Industries
               </Link>
 
+              {/* Portfolio Link */}
+              <Link
+                to="/portfolio"
+                className={`py-2 uppercase transition-colors ${
+                  location.pathname === '/portfolio' ? 'text-cyan-300 font-semibold' : 'text-zinc-300 hover:text-white'
+                }`}
+              >
+                Portfolio
+              </Link>
+
               {/* Case Studies Link */}
               <Link
                 to="/case-studies"
@@ -384,6 +394,14 @@ export const Navbar = () => {
                   className="text-xl font-bold text-white hover:text-cyan-400 py-1.5 border-b border-white/5"
                 >
                   Industries
+                </Link>
+
+                <Link
+                  to="/portfolio"
+                  className="text-xl font-bold text-white hover:text-cyan-400 py-1.5 border-b border-white/5 flex items-center justify-between"
+                >
+                  <span>Portfolio & Clients</span>
+                  <span className="text-[10px] font-mono text-cyan-300 px-2 py-0.5 rounded bg-cyan-950 border border-cyan-800">CLIENTS</span>
                 </Link>
 
                 <Link

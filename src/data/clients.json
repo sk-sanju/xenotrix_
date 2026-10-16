@@ -1,0 +1,324 @@
+{
+  "stats": [
+    { "value": "10+", "label": "Client Systems Delivered", "sub": "Commercial & Regional Businesses" },
+    { "value": "99.98%", "label": "System SLA Reliability", "sub": "Zero-Downtime Architecture" },
+    { "value": "6+", "label": "Industry Sectors", "sub": "Retail, Healthcare, CleanTech & Fashion" },
+    { "value": "100%", "label": "Milestone Delivery Rate", "sub": "Agile & Transparent Sprints" }
+  ],
+  "logos": [
+    {
+      "id": "nivin-garments",
+      "name": "Nivin Garments",
+      "category": "Retail & Apparel",
+      "location": "Thiruvilwamala, Kerala",
+      "initials": "NG",
+      "color": "from-cyan-500 to-blue-600",
+      "logo": ""
+    },
+    {
+      "id": "pratheeksha-ayurveda",
+      "name": "Pratheeksha Ayurveda",
+      "category": "Healthcare & Wellness",
+      "location": "Mankara, Kerala",
+      "initials": "PA",
+      "color": "from-emerald-500 to-teal-600",
+      "logo": ""
+    },
+    {
+      "id": "streevastoo",
+      "name": "Streevastoo",
+      "category": "Architecture & Living",
+      "location": "Kerala",
+      "initials": "SV",
+      "color": "from-amber-500 to-orange-600",
+      "logo": ""
+    },
+    {
+      "id": "ethnic-wears",
+      "name": "Ethnic Wears",
+      "category": "Fashion & Lifestyle",
+      "location": "Kerala",
+      "initials": "EW",
+      "color": "from-rose-500 to-pink-600",
+      "logo": ""
+    },
+    {
+      "id": "zeba",
+      "name": "Zeba Store",
+      "category": "E-Commerce & Retail",
+      "location": "Kerala & Online",
+      "initials": "ZS",
+      "color": "from-violet-500 to-purple-600",
+      "logo": ""
+    }
+  ],
+  "projects": [
+    {
+      "id": "nivin-garments-digital",
+      "title": "Nivin Garments: Digital Growth & Multi-Channel Campaign Infrastructure",
+      "client": "Nivin Garments",
+      "clientLogo": "",
+      "industry": "Retail & Apparel",
+      "category": "E-Commerce & Retail",
+      "location": "Thiruvilwamala, Kerala",
+      "year": "2025",
+      "engagementType": "Digital Growth & Campaign Infrastructure",
+      "heroMetric": "3.5x Customer Inquiries & Store Footfall",
+      "tagline": "End-to-end digital marketing infrastructure, Meta Ads targeting, and localized creative campaign automation for leading regional garment retailer.",
+      "challenge": "Nivin Garments needed to scale beyond local foot traffic and capture regional retail buyers across Palakkad and Thrissur with structured Meta Ad campaigns and measurable conversion tracking.",
+      "solution": "Engineered high-converting digital campaign pipelines, managed Meta Ads campaigns, and established automated inquiry routing via WhatsApp Business API for instant product catalogs.",
+      "architecture": "Event-driven WhatsApp lead capture, Meta Pixel & conversion tracking integration, targeted demographic ad set orchestration, and real-time lead qualification.",
+      "techStack": ["Meta Ads Manager", "WhatsApp Business API", "Google Analytics 4", "Canva Pro", "Meta Pixel"],
+      "deliverables": [
+        "Digital marketing campaign infrastructure and custom audience retargeting",
+        "WhatsApp Business automated catalog dispatch and quick response bot",
+        "Targeted Instagram and Facebook ad creative campaigns",
+        "Performance reporting dashboard tracking cost-per-lead and store visits"
+      ],
+      "metrics": [
+        { "label": "Inquiry Growth", "val": "+250%" },
+        { "label": "Cost Per Lead", "val": "-42%" },
+        { "label": "Campaign Reach", "val": "85,000+" },
+        { "label": "Client Satisfaction", "val": "100%" }
+      ],
+      "testimonial": {
+        "quote": "Xenotrix transformed our customer outreach. The targeted campaigns and WhatsApp automation brought customers to our store from across the district.",
+        "author": "Saranya Pradeep",
+        "role": "Proprietor & Operations Head",
+        "organization": "Nivin Garments"
+      },
+      "featured": true,
+      "accentColor": "blue"
+    },
+    {
+      "id": "pratheeksha-ayurveda-digital",
+      "title": "Pratheeksha Ayurveda: Clinical Brand Identity & Local Search Portal",
+      "client": "Pratheeksha Ayurveda",
+      "clientLogo": "",
+      "industry": "Healthcare & Wellness",
+      "category": "FinTech & Healthcare",
+      "location": "Mankara, Kerala",
+      "year": "2025",
+      "engagementType": "Brand Identity & Local Healthcare Presence",
+      "heroMetric": "Top 3 Google Search Placement in Palakkad District",
+      "tagline": "Full clinical visual identity system, verified Google Business Profile SEO, and patient inquiry design system for authentic Ayurvedic center.",
+      "challenge": "A certified Ayurvedic hospital required a professional digital presence to communicate authentic medical credentials, attract local consultation bookings, and establish high-trust patient discovery.",
+      "solution": "Delivered medical brand identity guidelines, official clinical logo and collateral design, optimized Google Business Profile with localized technical SEO, and automated consultation booking links.",
+      "architecture": "Local Schema.org medical business metadata, Google Maps API location indexing, responsive mobile booking landing flows, and localized keyword optimization.",
+      "techStack": ["Local SEO", "Google Business Profile", "Figma", "Schema.org", "WhatsApp API"],
+      "deliverables": [
+        "Official clinic logo and comprehensive visual brand identity guidelines",
+        "Google Business Profile setup with verified medical categories and local SEO optimization",
+        "Clinical marketing posters and digital consultation schedule flyers",
+        "Direct-to-clinic WhatsApp consultation booking routing"
+      ],
+      "metrics": [
+        { "label": "Local Map Views", "val": "14,000+" },
+        { "label": "Direct Call Clicks", "val": "+180%" },
+        { "label": "Search Rank", "val": "#1 in Area" },
+        { "label": "Google Rating", "val": "4.9 ★" }
+      ],
+      "testimonial": {
+        "quote": "Xenotrix gave our clinic the credibility and visibility it needed. Patients now discover us easily on Google Maps and reach out directly through WhatsApp.",
+        "author": "Dr. Priya",
+        "role": "Chief Ayurvedic Physician",
+        "organization": "Pratheeksha Ayurveda"
+      },
+      "featured": true,
+      "accentColor": "emerald"
+    },
+    {
+      "id": "zeba-ecommerce",
+      "title": "Zeba Fashion: Modern Direct-to-Consumer E-Commerce Storefront",
+      "client": "Zeba Store",
+      "clientLogo": "",
+      "industry": "Fashion & E-Commerce",
+      "category": "E-Commerce & Retail",
+      "location": "Kerala & Online",
+      "year": "2025",
+      "engagementType": "Headless E-Commerce Platform",
+      "heroMetric": "< 600ms Sub-Second Catalog Load Speed",
+      "tagline": "High-performance online fashion storefront with razor-sharp checkout, mobile-first product filtering, and payment gateway integration.",
+      "challenge": "Launching a high-growth fashion label online required a fast, glitch-free shopping platform capable of handling flash sales and instant mobile checkout without sluggish page reloads.",
+      "solution": "Built a headless e-commerce web application featuring reactive product filtering, instant cart calculations, secure Razorpay checkout integration, and automated order notifications.",
+      "architecture": "React and Tailwind CSS frontend, Node.js API services, PostgreSQL product catalog database, Razorpay payment webhooks, and Vercel edge deployment.",
+      "techStack": ["React", "Node.js", "Tailwind CSS", "PostgreSQL", "Razorpay", "Vercel"],
+      "deliverables": [
+        "Responsive direct-to-consumer e-commerce storefront with instant mobile navigation",
+        "Interactive product catalog with color, size, and category filtering",
+        "Integrated payment gateway with UPI, Card, and Netbanking support",
+        "Automated WhatsApp & Email order receipt dispatch pipeline"
+      ],
+      "metrics": [
+        { "label": "Page Load Speed", "val": "< 600ms" },
+        { "label": "Mobile Conversion", "val": "+38%" },
+        { "label": "Cart Abandonment", "val": "-28%" },
+        { "label": "Uptime SLA", "val": "99.98%" }
+      ],
+      "testimonial": {
+        "quote": "The speed and look of our store exceeded our expectations. The checkout is seamless, and our mobile shoppers love the smooth browsing experience.",
+        "author": "Zeba Operations Team",
+        "role": "Brand Director",
+        "organization": "Zeba Fashion"
+      },
+      "featured": true,
+      "accentColor": "violet"
+    },
+    {
+      "id": "streevastoo-digital",
+      "title": "Streevastoo: Architectural Consultation & Digital Presence",
+      "client": "Streevastoo",
+      "clientLogo": "",
+      "industry": "Architecture & Real Estate",
+      "category": "Enterprise & SaaS",
+      "location": "Kerala",
+      "year": "2025",
+      "engagementType": "Digital Showcase & Lead Capture System",
+      "heroMetric": "Streamlined Client Project Consultation Routing",
+      "tagline": "Architectural and traditional living consultation digital showcase with portfolio project gallery and consultation booking.",
+      "challenge": "Traditional architectural consultancy needed a contemporary digital presence to exhibit completed spatial designs and facilitate structured client inquiries.",
+      "solution": "Engineered a minimalist architectural showcase emphasizing high-resolution spatial imagery, clear service pillars, and an inquiry scheduling funnel.",
+      "architecture": "Modern responsive interface with optimized image loading, cloud CDN asset distribution, and secure inquiry delivery.",
+      "techStack": ["React", "Tailwind CSS", "Cloudflare CDN", "WhatsApp Cloud API"],
+      "deliverables": [
+        "Curated project portfolio visual gallery with high-fidelity architectural imagery",
+        "Client consultation inquiry intake workflow",
+        "Mobile-first responsive presentation optimized for on-site meetings",
+        "Technical SEO optimization for architectural consulting keywords"
+      ],
+      "metrics": [
+        { "label": "Consultation Inquiries", "val": "+140%" },
+        { "label": "Portfolio Load Time", "val": "< 800ms" },
+        { "label": "Mobile Traffic", "val": "74%" },
+        { "label": "Inquiry Conversion", "val": "+32%" }
+      ],
+      "testimonial": {
+        "quote": "Xenotrix created an elegant digital showcase that truly represents our design philosophy and makes client consultations effortless.",
+        "author": "HariKrishnan",
+        "role": "Founder & Principal Consultant",
+        "organization": "Streevastoo"
+      },
+      "featured": false,
+      "accentColor": "amber"
+    },
+    {
+      "id": "ethnic-wears-campaign",
+      "title": "Ethnic Wears: Cultural Apparel Digital Branding & Media Launch",
+      "client": "Ethnic Wears",
+      "clientLogo": "",
+      "industry": "Fashion & Apparel",
+      "category": "E-Commerce & Retail",
+      "location": "Kerala",
+      "year": "2025",
+      "engagementType": "Brand Launch & Social Media Campaign",
+      "heroMetric": "50,000+ Reach Across Festival Product Launch",
+      "tagline": "Creative anchor media production, video reel storytelling, and targeted social ad distribution for traditional festive apparel.",
+      "challenge": "Festive seasonal apparel brand needed high-impact video creative production and anchor-led social media campaigns to drive customer footfall during peak festival shopping seasons.",
+      "solution": "Directed multi-day creative shoots with professional anchors, produced short-form video reels, and deployed hyper-targeted festival ad campaigns.",
+      "architecture": "High-engagement short-form video production, Meta Ad campaign segmentation, and localized festive geographic ad targeting.",
+      "techStack": ["Meta Ads", "Instagram Reels", "Premiere Pro", "Canva Pro", "Meta Pixel"],
+      "deliverables": [
+        "Anchor-led promotional video production and festive reel edits",
+        "Targeted festival ad campaigns driving direct store foot traffic",
+        "Social media creative branding and product catalog showcase",
+        "Post-campaign performance analytics report"
+      ],
+      "metrics": [
+        { "label": "Campaign Video Views", "val": "50,000+" },
+        { "label": "Engagement Rate", "val": "6.8%" },
+        { "label": "Store Footfall Lift", "val": "+65%" },
+        { "label": "ROAS (Return on Ad Spend)", "val": "4.2x" }
+      ],
+      "testimonial": {
+        "quote": "The video content and festival campaigns Xenotrix created generated tremendous buzz for our festive collection. Our footfall during the season was outstanding.",
+        "author": "Vishwajith",
+        "role": "Managing Partner",
+        "organization": "Ethnic Wears"
+      },
+      "featured": false,
+      "accentColor": "rose"
+    }
+  ],
+  "testimonials": [
+    {
+      "quote": "Xenotrix transformed our customer outreach. The targeted campaigns and WhatsApp automation brought customers to our store from across the district.",
+      "author": "Saranya Pradeep",
+      "role": "Proprietor & Operations Head",
+      "company": "Nivin Garments",
+      "location": "Thiruvilwamala, Kerala",
+      "project": "Digital Growth & Campaign Infrastructure",
+      "metric": "3.5x Customer Inquiries",
+      "avatarColor": "from-cyan-500 to-blue-600"
+    },
+    {
+      "quote": "Xenotrix gave our clinic the credibility and visibility it needed. Patients now discover us easily on Google Maps and reach out directly through WhatsApp.",
+      "author": "Dr. Priya",
+      "role": "Chief Ayurvedic Physician",
+      "company": "Pratheeksha Ayurveda",
+      "location": "Mankara, Kerala",
+      "project": "Clinical Brand Identity & Local Search Portal",
+      "metric": "#1 Local Ranking",
+      "avatarColor": "from-emerald-500 to-teal-600"
+    },
+    {
+      "quote": "The speed and look of our store exceeded our expectations. The checkout is seamless, and our mobile shoppers love the smooth browsing experience.",
+      "author": "Zeba Operations Team",
+      "role": "Brand Director",
+      "company": "Zeba Store",
+      "location": "Kerala",
+      "project": "Modern E-Commerce Storefront",
+      "metric": "< 600ms Load Speed",
+      "avatarColor": "from-violet-500 to-purple-600"
+    },
+    {
+      "quote": "The video content and festival campaigns Xenotrix created generated tremendous buzz for our festive collection. Our footfall during the season was outstanding.",
+      "author": "Vishwajith",
+      "role": "Managing Partner",
+      "company": "Ethnic Wears",
+      "location": "Kerala",
+      "project": "Cultural Apparel Digital Campaign",
+      "metric": "50,000+ Campaign Views",
+      "avatarColor": "from-rose-500 to-pink-600"
+    },
+    {
+      "quote": "Xenotrix created an elegant digital showcase that truly represents our design philosophy and makes client consultations effortless.",
+      "author": "HariKrishnan",
+      "role": "Founder & Principal Consultant",
+      "company": "Streevastoo",
+      "location": "Kerala",
+      "project": "Architectural Showcase",
+      "metric": "+140% Consultations",
+      "avatarColor": "from-amber-500 to-orange-600"
+    }
+  ],
+  "workflow": [
+    {
+      "step": "01",
+      "phase": "Technical Discovery & Scoping",
+      "timeframe": "48 - 72 Hours",
+      "description": "We dissect your business workflows, pinpoint bottlenecks, establish data models, and produce a transparent architectural blueprint before writing code.",
+      "deliverables": ["Architecture Specification", "Tech Stack Feasibility", "Sprint Milestones & Fixed Quotation"]
+    },
+    {
+      "step": "02",
+      "phase": "System Design & Interactive Prototypes",
+      "timeframe": "Week 1 - 2",
+      "description": "High-fidelity interactive interfaces, API schema definitions, database entity relationships, and security controls mapped out for feedback.",
+      "deliverables": ["Figma Design System", "Database Schema Models", "API Endpoint Contracts"]
+    },
+    {
+      "step": "03",
+      "phase": "Agile Engineering & Implementation",
+      "timeframe": "Weeks 3 - 6",
+      "description": "Two-week bi-weekly sprints with continuous integration, automated test suites, clean modular code, and weekly preview staging environments.",
+      "deliverables": ["Staging Deployment", "Clean Documented Source Code", "Automated Test Coverage"]
+    },
+    {
+      "step": "04",
+      "phase": "Production Deployment & Support",
+      "timeframe": "Final Milestone",
+      "description": "Production load testing, automated database migrations, telemetry monitoring, CI/CD pipelines, staff documentation, and continuous post-launch warranty.",
+      "deliverables": ["Production CI/CD Pipeline", "Telemetry & Uptime Alerts", "Operational Runbook & Staff Training"]
+    }
+  ]
+}
