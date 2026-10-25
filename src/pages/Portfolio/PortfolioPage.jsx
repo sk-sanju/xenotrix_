@@ -15,7 +15,8 @@ import {
   ShieldCheck,
   Mail,
   Phone,
-  CheckCircle2
+  CheckCircle2,
+  ExternalLink
 } from 'lucide-react';
 import { SEO } from '../../components/common/SEO';
 import { 
@@ -135,7 +136,7 @@ export const PortfolioPage = () => {
 
           {/* 3. Client Brands Showcase */}
           {CLIENT_LOGOS?.length > 0 && (
-            <div className="space-y-6">
+            <div id="trusted-partners" className="space-y-6">
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-[#d8e0e4] pb-4">
                 <div className="text-xs font-semibold text-[#0d7480]">
                   Trusted by Regional & Commercial Partners
@@ -145,20 +146,31 @@ export const PortfolioPage = () => {
                 </span>
               </div>
 
-              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
+              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 sm:gap-4">
                 {CLIENT_LOGOS.map((client) => (
                   <div
                     key={client.id}
-                    className="p-4 rounded-xl bg-[#ecf0f2] flex flex-col items-center justify-center text-center space-y-2"
+                    className="p-4 rounded-xl bg-[#ecf0f2] flex flex-col items-center justify-center text-center space-y-3 transition-transform hover:-translate-y-0.5 duration-200"
                   >
-                    <div className="w-10 h-10 rounded bg-[#1f3038] text-white flex items-center justify-center font-bold text-xs">
-                      {client.initials}
+                    <div className="w-16 h-16 rounded-xl bg-white flex items-center justify-center p-2.5 shadow-xs border border-[#1f3038]/5 overflow-hidden shrink-0">
+                      {client.logo ? (
+                        <img
+                          src={client.logo}
+                          alt={client.name}
+                          className="max-h-full max-w-full object-contain"
+                          loading="lazy"
+                        />
+                      ) : (
+                        <div className="w-full h-full rounded-lg bg-[#1f3038] text-white flex items-center justify-center font-bold text-xs">
+                          {client.initials}
+                        </div>
+                      )}
                     </div>
-                    <div>
-                      <div className="text-xs font-semibold text-[#1f3038] truncate max-w-[120px]">
+                    <div className="w-full space-y-0.5">
+                      <div className="text-xs font-semibold text-[#1f3038] truncate">
                         {client.name}
                       </div>
-                      <div className="text-[11px] text-[#5d6b72] truncate max-w-[120px]">
+                      <div className="text-[11px] text-[#5d6b72] truncate">
                         {client.category}
                       </div>
                     </div>
@@ -199,6 +211,22 @@ export const PortfolioPage = () => {
                           <span className="text-[#1f3038] bg-[#f7f9fa] px-2.5 py-1 rounded font-medium">
                             {proj.engagementType}
                           </span>
+                          {proj.liveUrl && (
+                            <a
+                              href={proj.liveUrl}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-[#0d7480]/10 hover:bg-[#0d7480]/20 text-[#0d7480] font-semibold transition-colors"
+                              title="Visit live client website"
+                            >
+                              <span>
+                                {proj.liveUrl.includes('google.com') || proj.liveUrl.includes('maps')
+                                  ? 'Google Business Profile'
+                                  : proj.liveUrl.replace(/^https?:\/\/(www\.)?/, '').replace(/\/$/, '')}
+                              </span>
+                              <ExternalLink className="w-3.5 h-3.5" />
+                            </a>
+                          )}
                         </div>
 
                         <h3 className="font-semibold text-2xl sm:text-3xl text-[#1f3038]">
@@ -268,7 +296,25 @@ export const PortfolioPage = () => {
                         ))}
                       </div>
 
-                      <div className="flex items-center gap-3 shrink-0">
+                      <div className="flex items-center gap-3 shrink-0 flex-wrap">
+                        {proj.liveUrl && (
+                          <a
+                            href={proj.liveUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-1.5 px-4 py-2 rounded bg-[#0d7480] hover:bg-[#0b5f69] text-white text-xs font-semibold transition-colors shadow-xs"
+                          >
+                            <span>
+                              {proj.liveUrl.includes('instagram.com')
+                                ? 'Instagram Store'
+                                : proj.liveUrl.includes('google.com') || proj.liveUrl.includes('maps')
+                                ? 'Google Business Profile'
+                                : 'Live Website'}
+                            </span>
+                            <ExternalLink className="w-3.5 h-3.5" />
+                          </a>
+                        )}
+
                         <button
                           onClick={() => setActiveModalProject(proj)}
                           className="inline-flex items-center gap-1.5 px-4 py-2 rounded bg-[#f7f9fa] hover:bg-[#e2e8eb] text-xs font-semibold text-[#1f3038] transition-colors cursor-pointer"
@@ -424,13 +470,33 @@ export const PortfolioPage = () => {
 
                     {/* Bottom Card Actions */}
                     <div className="pt-4 border-t border-[#d8e0e4] flex items-center justify-between gap-2">
-                      <button
-                        onClick={() => setActiveModalProject(project)}
-                        className="text-xs font-semibold text-[#0d7480] hover:text-[#1f3038] flex items-center gap-1 transition-colors cursor-pointer"
-                      >
-                        <span>Specifications</span>
-                        <ChevronRight className="w-3.5 h-3.5" />
-                      </button>
+                      <div className="flex items-center gap-3">
+                        <button
+                          onClick={() => setActiveModalProject(project)}
+                          className="text-xs font-semibold text-[#0d7480] hover:text-[#1f3038] flex items-center gap-1 transition-colors cursor-pointer"
+                        >
+                          <span>Specifications</span>
+                          <ChevronRight className="w-3.5 h-3.5" />
+                        </button>
+
+                        {project.liveUrl && (
+                          <a
+                            href={project.liveUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-xs font-semibold text-[#0d7480] hover:text-[#0b5f69] flex items-center gap-1 transition-colors"
+                          >
+                            <span>
+                              {project.liveUrl.includes('instagram.com')
+                                ? 'Instagram Store'
+                                : project.liveUrl.includes('google.com') || project.liveUrl.includes('maps')
+                                ? 'Google Maps'
+                                : 'Live Site'}
+                            </span>
+                            <ExternalLink className="w-3 h-3" />
+                          </a>
+                        )}
+                      </div>
 
                       <Link
                         to="/contact"
@@ -684,6 +750,24 @@ export const PortfolioPage = () => {
 
               {/* Action Buttons */}
               <div className="pt-4 border-t border-[#d8e0e4] flex flex-col sm:flex-row items-center justify-end gap-3">
+                {activeModalProject.liveUrl && (
+                  <a
+                    href={activeModalProject.liveUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full sm:w-auto inline-flex items-center justify-center gap-1.5 px-5 py-2.5 rounded bg-[#0d7480] hover:bg-[#0b5f69] text-white text-xs font-semibold transition-colors"
+                  >
+                    <span>
+                      {activeModalProject.liveUrl.includes('instagram.com')
+                        ? 'View Instagram Store'
+                        : activeModalProject.liveUrl.includes('google.com') || activeModalProject.liveUrl.includes('maps')
+                        ? 'View on Google Maps'
+                        : 'Visit Live Website'}
+                    </span>
+                    <ExternalLink className="w-3.5 h-3.5" />
+                  </a>
+                )}
+
                 <button
                   onClick={() => setActiveModalProject(null)}
                   className="w-full sm:w-auto px-5 py-2.5 rounded bg-[#ecf0f2] hover:bg-[#e2e8eb] text-[#1f3038] text-xs font-medium cursor-pointer"

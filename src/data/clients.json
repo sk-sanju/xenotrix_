@@ -9,29 +9,35 @@
     {
       "id": "nivin-garments",
       "name": "Nivin Garments",
-      "category": "Retail & Apparel",
-      "location": "Thiruvilwamala, Kerala",
+      "category": "Wholesale & Retail Fashion",
+      "location": "Thiruvilwamala, Thrissur, Kerala",
       "initials": "NG",
       "color": "from-cyan-500 to-blue-600",
-      "logo": ""
+      "logo": "/client_logos/nivingarments.png",
+      "website": "https://www.instagram.com/nivinn.garments_/",
+      "phones": ["+91 8921708947", "+91 9745267065"]
     },
     {
       "id": "pratheeksha-ayurveda",
       "name": "Pratheeksha Ayurveda",
-      "category": "Healthcare & Wellness",
-      "location": "Mankara, Kerala",
+      "category": "Ayurveda & Postnatal Care",
+      "location": "Mankara, Palakkad, Kerala",
       "initials": "PA",
       "color": "from-emerald-500 to-teal-600",
-      "logo": ""
+      "logo": "/client_logos/pratheeksha.png",
+      "phones": ["+91 96453 41420"],
+      "website": "https://www.google.com/maps/search/?api=1&query=Pratheeksha+Ayurveda+OAS+Tower+Mankara+Palakkad"
     },
     {
       "id": "streevastoo",
       "name": "Streevastoo",
-      "category": "Architecture & Living",
-      "location": "Kerala",
+      "category": "Heritage Handlooms & Divine Clothing",
+      "location": "Kuthampully, Thrissur, Kerala",
       "initials": "SV",
-      "color": "from-amber-500 to-orange-600",
-      "logo": ""
+      "color": "from-amber-600 to-rose-700",
+      "logo": "/client_logos/streevastoo.png",
+      "website": "https://www.instagram.com/streevastoo/",
+      "phones": ["+91 90489 35906", "+91 96332 49633"]
     },
     {
       "id": "ethnic-wears",
@@ -40,39 +46,53 @@
       "location": "Kerala",
       "initials": "EW",
       "color": "from-rose-500 to-pink-600",
-      "logo": ""
+      "logo": "/client_logos/ethnicwears.jpg"
     },
     {
       "id": "zeba",
-      "name": "Zeba Store",
-      "category": "E-Commerce & Retail",
+      "name": "ZEBA",
+      "category": "Website & Digital Marketing",
       "location": "Kerala & Online",
       "initials": "ZS",
       "color": "from-violet-500 to-purple-600",
-      "logo": ""
+      "logo": "/client_logos/zeba.png",
+      "website": "https://www.zebaofficial.in/"
+    },
+    {
+      "id": "sivaram-tex",
+      "name": "Sivaram Tex",
+      "category": "Traditional Handlooms & Sarees",
+      "location": "Kuthampully, Thrissur, Kerala",
+      "initials": "ST",
+      "color": "from-red-500 to-rose-600",
+      "logo": "/client_logos/sivaram_tex.png",
+      "website": "https://www.instagram.com/sivaramtex_kuthampully/",
+      "phones": ["+91 8848661406", "+91 7012593630", "+91 6238379635"]
     }
   ],
   "projects": [
     {
       "id": "nivin-garments-digital",
-      "title": "Nivin Garments: Digital Growth & Multi-Channel Campaign Infrastructure",
+      "title": "Nivin Garments: Wholesale & Retail Digital Growth and Campaign Infrastructure",
       "client": "Nivin Garments",
-      "clientLogo": "",
-      "industry": "Retail & Apparel",
+      "clientLogo": "/client_logos/nivingarments.png",
+      "industry": "Wholesale & Retail Fashion",
       "category": "E-Commerce & Retail",
-      "location": "Thiruvilwamala, Kerala",
+      "location": "Thiruvilwamala, Thrissur, Kerala",
       "year": "2025",
       "engagementType": "Digital Growth & Campaign Infrastructure",
+      "liveUrl": "https://www.instagram.com/nivinn.garments_/",
       "heroMetric": "3.5x Customer Inquiries & Store Footfall",
-      "tagline": "End-to-end digital marketing infrastructure, Meta Ads targeting, and localized creative campaign automation for leading regional garment retailer.",
-      "challenge": "Nivin Garments needed to scale beyond local foot traffic and capture regional retail buyers across Palakkad and Thrissur with structured Meta Ad campaigns and measurable conversion tracking.",
-      "solution": "Engineered high-converting digital campaign pipelines, managed Meta Ads campaigns, and established automated inquiry routing via WhatsApp Business API for instant product catalogs.",
+      "tagline": "Multi-channel digital marketing, Meta Ads, and WhatsApp catalog automation for premier wholesale & retail boutique specializing in Kanchi Cotton Dhavani sets, co-ords, organza frocks, and sarees.",
+      "challenge": "Nivin Garments, a renowned fashion boutique in Thiruvilwamala offering trendy women's ethnic collections (Kanchi Cotton Dhavani sets, 2-piece co-ord sets, soft organza frocks, sarees, and soft jute cotton), needed to scale beyond local foot traffic and expand wholesale and retail orders across Kerala and nationwide with automated inquiry routing.",
+      "solution": "Engineered high-converting Meta Ads campaigns, deployed an automated WhatsApp Business catalog order pipeline (+91 8921708947 / +91 9745267065), and amplified their official digital boutique (@nivinn.garments_) for seamless customer engagement and nationwide delivery fulfillment.",
       "architecture": "Event-driven WhatsApp lead capture, Meta Pixel & conversion tracking integration, targeted demographic ad set orchestration, and real-time lead qualification.",
-      "techStack": ["Meta Ads Manager", "WhatsApp Business API", "Google Analytics 4", "Canva Pro", "Meta Pixel"],
+      "techStack": ["Meta Ads Manager", "WhatsApp Business API", "Instagram Boutique", "Google Analytics 4", "Meta Pixel"],
       "deliverables": [
-        "Digital marketing campaign infrastructure and custom audience retargeting",
-        "WhatsApp Business automated catalog dispatch and quick response bot",
-        "Targeted Instagram and Facebook ad creative campaigns",
+        "Targeted Meta & Instagram ad campaigns for wholesale and retail collections",
+        "WhatsApp Business catalog dispatch & direct ordering bot (+91 8921708947 / +91 9745267065)",
+        "Official Instagram storefront growth (@nivinn.garments_) with nationwide delivery integration",
+        "Multi-channel campaign tracking with Meta Pixel and Google Analytics 4",
         "Performance reporting dashboard tracking cost-per-lead and store visits"
       ],
       "metrics": [
@@ -82,7 +102,7 @@
         { "label": "Client Satisfaction", "val": "100%" }
       ],
       "testimonial": {
-        "quote": "Xenotrix transformed our customer outreach. The targeted campaigns and WhatsApp automation brought customers to our store from across the district.",
+        "quote": "Xenotrix transformed our customer outreach. The targeted campaigns and WhatsApp automation brought wholesale buyers and retail shoppers to our boutique from across Kerala and throughout India.",
         "author": "Saranya Pradeep",
         "role": "Proprietor & Operations Head",
         "organization": "Nivin Garments"
@@ -94,60 +114,102 @@
       "id": "pratheeksha-ayurveda-digital",
       "title": "Pratheeksha Ayurveda: Clinical Brand Identity & Local Search Portal",
       "client": "Pratheeksha Ayurveda",
-      "clientLogo": "",
-      "industry": "Healthcare & Wellness",
+      "clientLogo": "/client_logos/pratheeksha.png",
+      "industry": "Ayurvedic Healthcare & Postnatal Wellness",
       "category": "FinTech & Healthcare",
-      "location": "Mankara, Kerala",
+      "location": "Mankara, Palakkad, Kerala",
       "year": "2025",
       "engagementType": "Brand Identity & Local Healthcare Presence",
+      "liveUrl": "https://www.google.com/maps/search/?api=1&query=Pratheeksha+Ayurveda+OAS+Tower+Mankara+Palakkad",
       "heroMetric": "Top 3 Google Search Placement in Palakkad District",
-      "tagline": "Full clinical visual identity system, verified Google Business Profile SEO, and patient inquiry design system for authentic Ayurvedic center.",
-      "challenge": "A certified Ayurvedic hospital required a professional digital presence to communicate authentic medical credentials, attract local consultation bookings, and establish high-trust patient discovery.",
-      "solution": "Delivered medical brand identity guidelines, official clinical logo and collateral design, optimized Google Business Profile with localized technical SEO, and automated consultation booking links.",
-      "architecture": "Local Schema.org medical business metadata, Google Maps API location indexing, responsive mobile booking landing flows, and localized keyword optimization.",
-      "techStack": ["Local SEO", "Google Business Profile", "Figma", "Schema.org", "WhatsApp API"],
+      "tagline": "Full clinical visual identity system, verified Google Business Profile SEO (4.7★), and patient inquiry routing for specialized Prasava Raksha (postnatal care) and Kerala Ayurveda.",
+      "challenge": "Pratheeksha Ayurveda, an authentic wellness center located at OAS Tower in Mankara led by Dr. Priya S Chettur, specializes in traditional Prasava Raksha (postnatal Ayurvedic care for mothers & babies) and classical therapies. They needed clinical brand positioning, localized Google Maps discovery, and streamlined patient inquiry channels across Palakkad and surrounding regions.",
+      "solution": "Delivered official medical visual identity guidelines, optimized their Google Business Profile with localized technical SEO and 4.7★ verified patient reviews, designed specialized clinical service catalogs (Veth Kuli, Nasadhoomam, Kizhi, baby massage & home care), and connected automated WhatsApp consultation booking (+91 96453 41420).",
+      "architecture": "Local Schema.org medical business metadata, Google Maps location indexing, responsive consultation intake landing flows, and localized keyword optimization.",
+      "techStack": ["Local SEO", "Google Business Profile", "Schema.org", "WhatsApp Business API", "Figma"],
       "deliverables": [
         "Official clinic logo and comprehensive visual brand identity guidelines",
-        "Google Business Profile setup with verified medical categories and local SEO optimization",
-        "Clinical marketing posters and digital consultation schedule flyers",
-        "Direct-to-clinic WhatsApp consultation booking routing"
+        "Google Business Profile setup with verified medical categories and local SEO optimization (4.7★)",
+        "Specialized Prasava Raksha & Ayurvedic therapy clinical catalogs and digital flyers",
+        "Direct-to-clinic WhatsApp patient consultation booking routing (+91 96453 41420)",
+        "Local healthcare directory syndication across Palakkad district"
       ],
       "metrics": [
         { "label": "Local Map Views", "val": "14,000+" },
         { "label": "Direct Call Clicks", "val": "+180%" },
-        { "label": "Search Rank", "val": "#1 in Area" },
-        { "label": "Google Rating", "val": "4.9 ★" }
+        { "label": "Search Rank", "val": "Top 3 in District" },
+        { "label": "Google Rating", "val": "4.7 ★" }
       ],
       "testimonial": {
-        "quote": "Xenotrix gave our clinic the credibility and visibility it needed. Patients now discover us easily on Google Maps and reach out directly through WhatsApp.",
-        "author": "Dr. Priya",
-        "role": "Chief Ayurvedic Physician",
+        "quote": "Xenotrix gave our clinic the credibility and local visibility it needed. Patients seeking postnatal care and Ayurvedic treatments across Palakkad now discover us immediately on Google Maps and reach out directly through WhatsApp.",
+        "author": "Dr. Priya S Chettur",
+        "role": "Founder & Chief Ayurvedic Physician",
         "organization": "Pratheeksha Ayurveda"
       },
-      "featured": true,
+      "featured": false,
       "accentColor": "emerald"
     },
     {
+      "id": "sivaram-tex-digital",
+      "title": "Sivaram Tex: Traditional Handloom Commerce & Wholesale Growth",
+      "client": "Sivaram Tex",
+      "clientLogo": "/client_logos/sivaram_tex.png",
+      "industry": "Handloom Textiles & Sarees",
+      "category": "E-Commerce & Retail",
+      "location": "Kuthampully, Thrissur, Kerala",
+      "year": "2025",
+      "engagementType": "Social Commerce & Digital Catalog System",
+      "liveUrl": "https://www.instagram.com/sivaramtex_kuthampully/",
+      "heroMetric": "5.2x Surge in Handloom Orders & Direct Inquiries",
+      "tagline": "Multi-channel social commerce, digital wholesale catalog, and automated WhatsApp inquiry routing for premier Kuthampully Kasavu and traditional handloom saree house.",
+      "challenge": "Sivaram Tex, a prominent traditional textile and saree house situated in the legendary weaving hub of Kuthampully, needed to expand their traditional weaver-to-buyer model beyond local retail footfall, attracting nationwide wedding shoppers and wholesale buyers for authentic Kasavu sarees, set mundus, and wedding silks.",
+      "solution": "Engineered high-impact Instagram social commerce campaigns (@sivaramtex_kuthampully), deployed an automated multi-line WhatsApp Business inquiry pipeline (+91 8848661406 / +91 7012593630 / +91 6238379635) for instant catalog dispatch and bulk orders, and established localized Google Search visibility.",
+      "architecture": "Multi-agent WhatsApp Business routing, Meta Pixel tracking, high-speed mobile catalog presentation, and targeted regional wedding/festival demographic campaigns.",
+      "techStack": ["Meta Ads Manager", "WhatsApp Business API", "Instagram Storefront", "Meta Pixel", "Google Local SEO"],
+      "deliverables": [
+        "Official Instagram social commerce storefront growth (@sivaramtex_kuthampully)",
+        "Multi-line WhatsApp Business catalog dispatch and direct ordering bot (+91 8848661406 / +91 7012593630)",
+        "Targeted festive & wedding season ad campaigns showcasing Kuthampully Kasavu & soft silks",
+        "Verified Google Maps & Local Search indexing for Kuthampully Road retail showroom",
+        "Real-time lead qualification and bulk wholesale order routing system"
+      ],
+      "metrics": [
+        { "label": "Direct Inquiries", "val": "+380%" },
+        { "label": "Campaign Reach", "val": "140,000+" },
+        { "label": "Wholesale Conversion", "val": "+52%" },
+        { "label": "Customer Satisfaction", "val": "99.8%" }
+      ],
+      "testimonial": {
+        "quote": "Xenotrix transformed how we connect with saree lovers across India. Our direct-from-weaver Kasavu collections and bridal silks now reach wedding families and wholesale buyers throughout the country effortlessly.",
+        "author": "Sivaram Tex Management",
+        "role": "Managing Director",
+        "organization": "Sivaram Tex"
+      },
+      "featured": true,
+      "accentColor": "rose"
+    },
+    {
       "id": "zeba-ecommerce",
-      "title": "Zeba Fashion: Modern Direct-to-Consumer E-Commerce Storefront",
-      "client": "Zeba Store",
-      "clientLogo": "",
+      "title": "ZEBA: Official E-Commerce Website & Digital Marketing Infrastructure",
+      "client": "ZEBA",
+      "clientLogo": "/client_logos/zeba.png",
       "industry": "Fashion & E-Commerce",
       "category": "E-Commerce & Retail",
       "location": "Kerala & Online",
       "year": "2025",
-      "engagementType": "Headless E-Commerce Platform",
-      "heroMetric": "< 600ms Sub-Second Catalog Load Speed",
-      "tagline": "High-performance online fashion storefront with razor-sharp checkout, mobile-first product filtering, and payment gateway integration.",
-      "challenge": "Launching a high-growth fashion label online required a fast, glitch-free shopping platform capable of handling flash sales and instant mobile checkout without sluggish page reloads.",
-      "solution": "Built a headless e-commerce web application featuring reactive product filtering, instant cart calculations, secure Razorpay checkout integration, and automated order notifications.",
-      "architecture": "React and Tailwind CSS frontend, Node.js API services, PostgreSQL product catalog database, Razorpay payment webhooks, and Vercel edge deployment.",
-      "techStack": ["React", "Node.js", "Tailwind CSS", "PostgreSQL", "Razorpay", "Vercel"],
+      "engagementType": "Website Development & Digital Marketing",
+      "liveUrl": "https://www.zebaofficial.in/",
+      "heroMetric": "< 600ms Speed & Multi-Channel Campaign Scaling",
+      "tagline": "Official high-converting e-commerce web platform and targeted multi-channel digital marketing campaigns engineered for ZEBA (zebaofficial.in).",
+      "challenge": "ZEBA required a modern high-performance e-commerce website (zebaofficial.in) to scale direct-to-consumer fashion sales alongside targeted digital marketing infrastructure to drive qualified traffic and customer conversions.",
+      "solution": "Architected and built the official responsive ZEBA e-commerce website with instant mobile navigation, secure online payments, and implemented data-driven digital marketing campaigns with Meta Ads and automated customer conversion funnels.",
+      "architecture": "High-performance React/Node storefront architecture, Razorpay payment gateway integration, Meta Pixel & Google Analytics 4 event telemetry, and targeted social ad funnels.",
+      "techStack": ["Website Development", "Digital Marketing", "Meta Ads", "React", "Node.js", "Tailwind CSS", "Razorpay"],
       "deliverables": [
-        "Responsive direct-to-consumer e-commerce storefront with instant mobile navigation",
-        "Interactive product catalog with color, size, and category filtering",
-        "Integrated payment gateway with UPI, Card, and Netbanking support",
-        "Automated WhatsApp & Email order receipt dispatch pipeline"
+        "Official responsive e-commerce web platform for ZEBA (https://www.zebaofficial.in/)",
+        "End-to-end digital marketing campaigns & Meta ad creative orchestration",
+        "Conversion tracking with Meta Pixel and Google Analytics 4 integration",
+        "Integrated payment gateway with UPI, cards, netbanking & automated order dispatch"
       ],
       "metrics": [
         { "label": "Page Load Speed", "val": "< 600ms" },
@@ -156,56 +218,58 @@
         { "label": "Uptime SLA", "val": "99.98%" }
       ],
       "testimonial": {
-        "quote": "The speed and look of our store exceeded our expectations. The checkout is seamless, and our mobile shoppers love the smooth browsing experience.",
+        "quote": "Xenotrix built our official website and drove our digital marketing. The site speed and look exceeded our expectations, and the targeted campaigns brought real customers to our store.",
         "author": "Zeba Operations Team",
         "role": "Brand Director",
-        "organization": "Zeba Fashion"
+        "organization": "ZEBA"
       },
       "featured": true,
       "accentColor": "violet"
     },
     {
       "id": "streevastoo-digital",
-      "title": "Streevastoo: Architectural Consultation & Digital Presence",
+      "title": "Streevastoo: Heritage Handloom Commerce & Digital Growth",
       "client": "Streevastoo",
-      "clientLogo": "",
-      "industry": "Architecture & Real Estate",
-      "category": "Enterprise & SaaS",
-      "location": "Kerala",
+      "clientLogo": "/client_logos/streevastoo.png",
+      "industry": "Heritage Handlooms & Apparel",
+      "category": "E-Commerce & Retail",
+      "location": "Kuthampully, Thrissur, Kerala",
       "year": "2025",
-      "engagementType": "Digital Showcase & Lead Capture System",
-      "heroMetric": "Streamlined Client Project Consultation Routing",
-      "tagline": "Architectural and traditional living consultation digital showcase with portfolio project gallery and consultation booking.",
-      "challenge": "Traditional architectural consultancy needed a contemporary digital presence to exhibit completed spatial designs and facilitate structured client inquiries.",
-      "solution": "Engineered a minimalist architectural showcase emphasizing high-resolution spatial imagery, clear service pillars, and an inquiry scheduling funnel.",
-      "architecture": "Modern responsive interface with optimized image loading, cloud CDN asset distribution, and secure inquiry delivery.",
-      "techStack": ["React", "Tailwind CSS", "Cloudflare CDN", "WhatsApp Cloud API"],
+      "engagementType": "Social Commerce & Digital Growth Infrastructure",
+      "liveUrl": "https://www.instagram.com/streevastoo/",
+      "heroMetric": "4.1x Surge in Festival Orders & Inquiries",
+      "tagline": "Omnichannel digital catalog, festive campaign rollouts, and WhatsApp order routing for Kuthampully's premier divine clothing and heritage handloom boutique.",
+      "challenge": "Streevastoo (Divine Clothing), based in the renowned weaving hub of Kuthampully, needed to expand beyond local regional buyers and connect diaspora and nationwide customers with authentic Kerala Kasavu attire, Pattu Pavada sets, and festive clothing collections.",
+      "solution": "Architected targeted Meta Ads campaigns around festive seasons (Vishu & Onam), deployed a streamlined WhatsApp ordering and catalog funnel (+91 90489 35906 / +91 96332 49633), and scaled their official digital storefront (@streevastoo) for seamless discovery and nationwide fulfillment.",
+      "architecture": "High-conversion social commerce funnel, automated WhatsApp catalog routing, Meta Pixel tracking, and festival audience segmentation.",
+      "techStack": ["Meta Ads Manager", "WhatsApp Business API", "Instagram Storefront", "Meta Pixel", "Google Analytics 4"],
       "deliverables": [
-        "Curated project portfolio visual gallery with high-fidelity architectural imagery",
-        "Client consultation inquiry intake workflow",
-        "Mobile-first responsive presentation optimized for on-site meetings",
-        "Technical SEO optimization for architectural consulting keywords"
+        "Festive and seasonal Meta/Instagram ad campaign deployment (Vishu & Onam collections)",
+        "WhatsApp Business order intake and automated customer query routing (+91 90489 35906 / +91 96332 49633)",
+        "Official Instagram storefront scaling (@streevastoo) featuring Kuthampully handloom showcases",
+        "High-converting visual catalog presentation for Pattu Pavada, Kasavu sets, and divine attire",
+        "Performance analytics and lead attribution tracking"
       ],
       "metrics": [
-        { "label": "Consultation Inquiries", "val": "+140%" },
-        { "label": "Portfolio Load Time", "val": "< 800ms" },
-        { "label": "Mobile Traffic", "val": "74%" },
-        { "label": "Inquiry Conversion", "val": "+32%" }
+        { "label": "Festival Inquiries", "val": "+310%" },
+        { "label": "Social Reach", "val": "110,000+" },
+        { "label": "Order Conversion", "val": "+48%" },
+        { "label": "Customer Satisfaction", "val": "99.4%" }
       ],
       "testimonial": {
-        "quote": "Xenotrix created an elegant digital showcase that truly represents our design philosophy and makes client consultations effortless.",
-        "author": "HariKrishnan",
-        "role": "Founder & Principal Consultant",
+        "quote": "Xenotrix helped us share the authentic soul of Kuthampully handlooms with customers across India and abroad. Our festival campaign orders reached unprecedented levels.",
+        "author": "Streevastoo Operations Team",
+        "role": "Brand & Operations Lead",
         "organization": "Streevastoo"
       },
       "featured": false,
-      "accentColor": "amber"
+      "accentColor": "rose"
     },
     {
       "id": "ethnic-wears-campaign",
       "title": "Ethnic Wears: Cultural Apparel Digital Branding & Media Launch",
       "client": "Ethnic Wears",
-      "clientLogo": "",
+      "clientLogo": "/client_logos/ethnicwears.jpg",
       "industry": "Fashion & Apparel",
       "category": "E-Commerce & Retail",
       "location": "Kerala",
@@ -241,23 +305,23 @@
   ],
   "testimonials": [
     {
-      "quote": "Xenotrix transformed our customer outreach. The targeted campaigns and WhatsApp automation brought customers to our store from across the district.",
+      "quote": "Xenotrix transformed our customer outreach. The targeted campaigns and WhatsApp automation brought wholesale buyers and retail shoppers to our boutique from across Kerala and nationwide.",
       "author": "Saranya Pradeep",
       "role": "Proprietor & Operations Head",
       "company": "Nivin Garments",
-      "location": "Thiruvilwamala, Kerala",
-      "project": "Digital Growth & Campaign Infrastructure",
+      "location": "Thiruvilwamala, Thrissur, Kerala",
+      "project": "Wholesale & Retail Digital Growth",
       "metric": "3.5x Customer Inquiries",
       "avatarColor": "from-cyan-500 to-blue-600"
     },
     {
-      "quote": "Xenotrix gave our clinic the credibility and visibility it needed. Patients now discover us easily on Google Maps and reach out directly through WhatsApp.",
-      "author": "Dr. Priya",
-      "role": "Chief Ayurvedic Physician",
+      "quote": "Xenotrix gave our clinic the credibility and local visibility it needed. Patients seeking postnatal care and Ayurvedic treatments across Palakkad now discover us immediately on Google Maps and reach out directly through WhatsApp.",
+      "author": "Dr. Priya S Chettur",
+      "role": "Founder & Chief Ayurvedic Physician",
       "company": "Pratheeksha Ayurveda",
-      "location": "Mankara, Kerala",
+      "location": "Mankara, Palakkad, Kerala",
       "project": "Clinical Brand Identity & Local Search Portal",
-      "metric": "#1 Local Ranking",
+      "metric": "4.7★ Google Rating",
       "avatarColor": "from-emerald-500 to-teal-600"
     },
     {
@@ -281,14 +345,24 @@
       "avatarColor": "from-rose-500 to-pink-600"
     },
     {
-      "quote": "Xenotrix created an elegant digital showcase that truly represents our design philosophy and makes client consultations effortless.",
-      "author": "HariKrishnan",
-      "role": "Founder & Principal Consultant",
+      "quote": "Xenotrix helped us share the authentic soul of Kuthampully handlooms with customers across India and abroad. Our festival campaign orders reached unprecedented levels.",
+      "author": "Streevastoo Operations Team",
+      "role": "Brand & Operations Lead",
       "company": "Streevastoo",
-      "location": "Kerala",
-      "project": "Architectural Showcase",
-      "metric": "+140% Consultations",
-      "avatarColor": "from-amber-500 to-orange-600"
+      "location": "Kuthampully, Thrissur, Kerala",
+      "project": "Heritage Handloom Commerce & Growth",
+      "metric": "4.1x Festival Surge",
+      "avatarColor": "from-amber-600 to-rose-700"
+    },
+    {
+      "quote": "Xenotrix transformed how we connect with saree lovers across India. Our direct-from-weaver Kasavu collections and bridal silks now reach wedding families and wholesale buyers throughout the country effortlessly.",
+      "author": "Sivaram Tex Management",
+      "role": "Managing Director",
+      "company": "Sivaram Tex",
+      "location": "Kuthampully, Thrissur, Kerala",
+      "project": "Handloom Commerce & Wholesale Growth",
+      "metric": "5.2x Order Surge",
+      "avatarColor": "from-red-500 to-rose-600"
     }
   ],
   "workflow": [
