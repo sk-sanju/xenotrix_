@@ -4,18 +4,18 @@ import { ShieldCheck, Check, Terminal } from 'lucide-react';
 
 export const BeliefsSection = () => {
   return (
-    <section className="py-28 bg-[#050505] border-b border-white/10 relative overflow-hidden">
+    <section className="py-28 bg-white border-b border-slate-200/80 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-16">
         
         {/* Section Header */}
         <div className="text-center space-y-4 max-w-3xl mx-auto">
-          <span className="text-xs font-mono text-cyan-400 tracking-widest uppercase">
+          <span className="text-xs font-mono text-cyan-700 tracking-widest uppercase font-semibold">
             VERIFIED PROOF & ETHICS // WHAT WE BELIEVE
           </span>
-          <h2 className="font-display font-extrabold text-3xl sm:text-5xl text-white tracking-tight uppercase">
+          <h2 className="font-display font-extrabold text-3xl sm:text-5xl text-slate-900 tracking-tight uppercase">
             TRANSPARENT ENGINEERING INTEGRITY
           </h2>
-          <p className="text-base text-zinc-400">
+          <p className="text-base text-slate-600">
             We adhere to strict transparency standards. We publish zero fabricated statistics, zero fake testimonials, and zero artificial logos.
           </p>
         </div>
@@ -42,17 +42,17 @@ export const BeliefsSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: idx * 0.1 }}
-              className="p-8 rounded-2xl bg-[#0A0A0D] border border-white/10 space-y-4"
+              className="p-8 rounded-2xl bg-slate-50/70 border border-slate-200/80 shadow-sm hover:bg-white hover:shadow-md transition-all space-y-4"
             >
-              <div className="w-10 h-10 rounded-xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 font-mono text-sm font-bold">
+              <div className="w-10 h-10 rounded-xl bg-cyan-50 border border-cyan-200 flex items-center justify-center text-cyan-800 font-mono text-sm font-bold shadow-sm">
                 0{idx + 1}
               </div>
 
-              <h3 className="font-display font-bold text-xl text-white">
+              <h3 className="font-display font-bold text-xl text-slate-900">
                 {belief.title}
               </h3>
 
-              <p className="text-xs sm:text-sm text-zinc-400 leading-relaxed">
+              <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                 {belief.desc}
               </p>
             </motion.div>

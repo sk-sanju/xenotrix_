@@ -1,0 +1,4595 @@
+{
+ "url": "http://localhost:3001",
+ "at": "2026-10-23T09:57:51.259Z",
+ "allow": [],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 12,
+   "filled": [
+    1,
+    1,
+    1,
+    0.99,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "motion": {
+    "elements": 9,
+    "css": 5,
+    "transitions": 2,
+    "scripted": 2,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 14882,
+     "screens": 16.5,
+     "words": 550,
+     "img": 2,
+     "video": 0,
+     "canvas": 1,
+     "svg": 168,
+     "sections": 14,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 0,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [
+      "⚡"
+     ],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Building Technology That Moves Businesses Forward.",
+     "words": 6,
+     "chars": 50,
+     "lines": 4,
+     "size": 76,
+     "vw": 5.3,
+     "font": "-apple-system",
+     "weight": 800,
+     "tracking": -0.025,
+     "leading": 1.02,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "left",
+     "widthRatio": 0.48,
+     "top": 206,
+     "gradientText": true,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Building Technology That Moves Businesses Forward.",
+     "words": 6,
+     "lines": 4,
+     "size": 76,
+     "font": "-apple-system"
+    },
+    "headings": [
+     {
+      "text": "Building Technology That Moves Businesses Forward.",
+      "words": 6,
+      "chars": 50,
+      "lines": 4,
+      "size": 76,
+      "vw": 5.3,
+      "font": "-apple-system",
+      "weight": 800,
+      "tracking": -0.025,
+      "leading": 1.02,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.48,
+      "top": 206,
+      "gradientText": true,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "How Xenotrix Powers Digital Growth",
+      "words": 5,
+      "chars": 34,
+      "lines": 2,
+      "size": 48,
+      "vw": 3.3,
+      "font": "-apple-system",
+      "weight": 800,
+      "tracking": -0.025,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.53,
+      "top": 1109,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "We Build Products",
+      "words": 3,
+      "chars": 17,
+      "lines": 1,
+      "size": 30,
+      "vw": 2.1,
+      "font": "-apple-system",
+      "weight": 800,
+      "tracking": -0.025,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.35,
+      "top": 1454,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "We Build For Businesses",
+      "words": 4,
+      "chars": 23,
+      "lines": 1,
+      "size": 30,
+      "vw": 2.1,
+      "font": "-apple-system",
+      "weight": 800,
+      "tracking": -0.025,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.35,
+      "top": 1454,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Our Products",
+      "words": 2,
+      "chars": 12,
+      "lines": 1,
+      "size": 48,
+      "vw": 3.3,
+      "font": "-apple-system",
+      "weight": 800,
+      "tracking": -0.025,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.47,
+      "top": 2070,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "XenoCRM",
+      "words": 1,
+      "chars": 7,
+      "lines": 1,
+      "size": 36,
+      "vw": 2.5,
+      "font": "-apple-system",
+      "weight": 800,
+      "tracking": -0.025,
+      "leading": 1.11,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.38,
+      "top": 2497,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Technology Services",
+      "words": 2,
+      "chars": 19,
+      "lines": 1,
+      "size": 48,
+      "vw": 3.3,
+      "font": "-apple-system",
+      "weight": 800,
+      "tracking": -0.025,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.47,
+      "top": 3328,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Custom Software Development & Enterprise Architecture",
+      "words": 6,
+      "chars": 53,
+      "lines": 2,
+      "size": 30,
+      "vw": 2.1,
+      "font": "-apple-system",
+      "weight": 800,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.47,
+      "top": 3807,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Solutions Built Around Your Business",
+      "words": 5,
+      "chars": 36,
+      "lines": 2,
+      "size": 48,
+      "vw": 3.3,
+      "font": "-apple-system",
+      "weight": 800,
+      "tracking": -0.025,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.53,
+      "top": 4746,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Technology Across Industries",
+      "words": 3,
+      "chars": 28,
+      "lines": 1,
+      "size": 48,
+      "vw": 3.3,
+      "font": "-apple-system",
+      "weight": 800,
+      "tracking": -0.025,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.47,
+      "top": 6171,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Engineered Capabilities for Retail",
+      "words": 4,
+      "chars": 34,
+      "lines": 1,
+      "size": 30,
+      "vw": 2.1,
+      "font": "-apple-system",
+      "weight": 800,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.45,
+      "top": 6718,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Engineering With Modern Technology",
+      "words": 4,
+      "chars": 34,
+      "lines": 2,
+      "size": 48,
+      "vw": 3.3,
+      "font": "-apple-system",
+      "weight": 800,
+      "tracking": -0.025,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.53,
+      "top": 7219,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Why Xenotrix",
+      "words": 2,
+      "chars": 12,
+      "lines": 1,
+      "size": 48,
+      "vw": 3.3,
+      "font": "-apple-system",
+      "weight": 800,
+      "tracking": -0.025,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.53,
+      "top": 8263,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Selected Work",
+      "words": 2,
+      "chars": 13,
+      "lines": 1,
+      "size": 48,
+      "vw": 3.3,
+      "font": "-apple-system",
+      "weight": 800,
+      "tracking": -0.025,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.47,
+      "top": 9361,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "XenoCRM: Unified Business OS Architecture",
+      "words": 5,
+      "chars": 41,
+      "lines": 1,
+      "size": 30,
+      "vw": 2.1,
+      "font": "-apple-system",
+      "weight": 800,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.45,
+      "top": 9628,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Xenotune: Neural Generative Soundscapes",
+      "words": 4,
+      "chars": 39,
+      "lines": 1,
+      "size": 30,
+      "vw": 2.1,
+      "font": "-apple-system",
+      "weight": 800,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.43,
+      "top": 10070,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Multi-Channel Business Automation Engine",
+      "words": 4,
+      "chars": 40,
+      "lines": 1,
+      "size": 30,
+      "vw": 2.1,
+      "font": "-apple-system",
+      "weight": 800,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.44,
+      "top": 10512,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "From Idea to Impact",
+      "words": 4,
+      "chars": 19,
+      "lines": 1,
+      "size": 48,
+      "vw": 3.3,
+      "font": "-apple-system",
+      "weight": 800,
+      "tracking": -0.025,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.53,
+      "top": 11087,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Engineering Products & Systems for Modern Enterprises",
+      "words": 7,
+      "chars": 53,
+      "lines": 3,
+      "size": 48,
+      "vw": 3.3,
+      "font": "-apple-system",
+      "weight": 800,
+      "tracking": -0.025,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.48,
+      "top": 12233,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Frequently Asked Questions",
+      "words": 3,
+      "chars": 26,
+      "lines": 1,
+      "size": 48,
+      "vw": 3.3,
+      "font": "-apple-system",
+      "weight": 800,
+      "tracking": -0.025,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.58,
+      "top": 13107,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Let's Build What",
+      "words": 3,
+      "chars": 16,
+      "lines": 2,
+      "size": 72,
+      "vw": 5,
+      "font": "-apple-system",
+      "weight": 800,
+      "tracking": -0.025,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.67,
+      "top": 13835,
+      "gradientText": true,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 21,
+     "maxLines": 4,
+     "over2Lines": 2,
+     "statements": 0,
+     "centered": 7,
+     "medianWords": 4,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "-apple-system",
+       "share": 0.8,
+       "mono": false
+      },
+      {
+       "family": "ui-monospace",
+       "share": 0.2,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      9,
+      10,
+      11,
+      12,
+      14,
+      16,
+      18,
+      20,
+      24,
+      30,
+      36,
+      48,
+      72,
+      76
+     ],
+     "sizeCount": 14,
+     "notLoaded": [],
+     "body": {
+      "font": "-apple-system",
+      "size": 12,
+      "leading": 1.63,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 7.2
+     },
+     "measureChars": 86,
+     "max": {
+      "size": 76,
+      "vw": 5.3,
+      "font": "-apple-system",
+      "text": "Building Technology That"
+     },
+     "monoShare": 0.2,
+     "monoProseShare": 0.2,
+     "monoFamilies": [
+      "ui-monospace"
+     ],
+     "monoSamples": [
+      "TECHNOLOGIES",
+      "ENTERPRISE PRODUCTS • PLATFORMS • AI ENG",
+      "xenotrix-ecosystem // live",
+      "ONLINE",
+      "XenoCRM",
+      "XenoFin"
+     ],
+     "microLabels": 33,
+     "microLabelShare": 0.044,
+     "microSamples": [
+      "ENTERPRISE PRODUCTS • PLATFORMS • AI ENG",
+      "XENOTRIX CAPABILITIES",
+      "TWO CORE CAPABILITIES",
+      "PROPRIETARY ECOSYSTEM",
+      "Featured Proprietary Platforms:",
+      "CUSTOM ENGINEERING"
+     ],
+     "upperShare": 0.11,
+     "centerShare": 0.08,
+     "smallText": 250
+    },
+    "eyebrows": [
+     {
+      "text": "TWO CORE CAPABILITIES",
+      "above": "How Xenotrix Powers Digital Growth",
+      "upper": true,
+      "tracked": true,
+      "mono": true,
+      "pill": true,
+      "size": 11,
+      "top": 1071
+     },
+     {
+      "text": "PROPRIETARY ECOSYSTEM",
+      "above": "We Build Products",
+      "upper": true,
+      "tracked": true,
+      "mono": true,
+      "pill": true,
+      "size": 10,
+      "top": 1393
+     },
+     {
+      "text": "CUSTOM ENGINEERING",
+      "above": "We Build For Businesses",
+      "upper": true,
+      "tracked": true,
+      "mono": true,
+      "pill": true,
+      "size": 10,
+      "top": 1393
+     },
+     {
+      "text": "PROPRIETARY SOFTWARE ECOSYSTEM",
+      "above": "Our Products",
+      "upper": true,
+      "tracked": true,
+      "mono": true,
+      "pill": true,
+      "size": 11,
+      "top": 2033
+     },
+     {
+      "text": "CRM & Customer Operations",
+      "above": "XenoCRM",
+      "upper": true,
+      "tracked": true,
+      "mono": true,
+      "pill": true,
+      "size": 12,
+      "top": 2447
+     },
+     {
+      "text": "CUSTOM ENGINEERING CAPABILITIES",
+      "above": "Technology Services",
+      "upper": true,
+      "tracked": true,
+      "mono": true,
+      "pill": true,
+      "size": 11,
+      "top": 3290
+     },
+     {
+      "text": "SOFTWARE ENGINEERING",
+      "above": "Custom Software Development & Enterprise",
+      "upper": true,
+      "tracked": true,
+      "mono": true,
+      "pill": false,
+      "size": 12,
+      "top": 3790
+     },
+     {
+      "text": "BUSINESS IMPACT ARCHITECTURE",
+      "above": "Solutions Built Around Your Business",
+      "upper": true,
+      "tracked": true,
+      "mono": true,
+      "pill": true,
+      "size": 11,
+      "top": 4709
+     },
+     {
+      "text": "INDUSTRY DOMAIN EXPERTISE",
+      "above": "Technology Across Industries",
+      "upper": true,
+      "tracked": true,
+      "mono": true,
+      "pill": true,
+      "size": 11,
+      "top": 6133
+     },
+     {
+      "text": "Retail SECTOR",
+      "above": "Engineered Capabilities for Retail",
+      "upper": true,
+      "tracked": false,
+      "mono": true,
+      "pill": true,
+      "size": 12,
+      "top": 6672
+     },
+     {
+      "text": "MODERN STACK ARCHITECTURE",
+      "above": "Engineering With Modern Technology",
+      "upper": true,
+      "tracked": true,
+      "mono": true,
+      "pill": true,
+      "size": 11,
+      "top": 7182
+     },
+     {
+      "text": "THE XENOTRIX ADVANTAGE",
+      "above": "Why Xenotrix",
+      "upper": true,
+      "tracked": true,
+      "mono": true,
+      "pill": true,
+      "size": 11,
+      "top": 8225
+     },
+     {
+      "text": "AUTHENTIC ENGINEERING CASE STUDIES",
+      "above": "Selected Work",
+      "upper": true,
+      "tracked": true,
+      "mono": true,
+      "pill": true,
+      "size": 11,
+      "top": 9323
+     },
+     {
+      "text": "SaaS Platform Engineering",
+      "above": "XenoCRM: Unified Business OS Architectur",
+      "upper": true,
+      "tracked": false,
+      "mono": true,
+      "pill": false,
+      "size": 12,
+      "top": 9594
+     },
+     {
+      "text": "AI & Neural Audio Engineering",
+      "above": "Xenotune: Neural Generative Soundscapes",
+      "upper": true,
+      "tracked": false,
+      "mono": true,
+      "pill": false,
+      "size": 12,
+      "top": 10036
+     },
+     {
+      "text": "Workflow Automation & AI",
+      "above": "Multi-Channel Business Automation Engine",
+      "upper": true,
+      "tracked": false,
+      "mono": true,
+      "pill": false,
+      "size": 12,
+      "top": 10478
+     },
+     {
+      "text": "RIGOROUS METHODOLOGY",
+      "above": "From Idea to Impact",
+      "upper": true,
+      "tracked": true,
+      "mono": true,
+      "pill": true,
+      "size": 11,
+      "top": 11049
+     },
+     {
+      "text": "ABOUT XENOTRIX TECHNOLOGIES",
+      "above": "Engineering Products & Systems for Moder",
+      "upper": true,
+      "tracked": true,
+      "mono": true,
+      "pill": true,
+      "size": 11,
+      "top": 12187
+     },
+     {
+      "text": "FREQUENTLY ASKED QUESTIONS",
+      "above": "Frequently Asked Questions",
+      "upper": true,
+      "tracked": true,
+      "mono": true,
+      "pill": true,
+      "size": 12,
+      "top": 13070
+     },
+     {
+      "text": "START YOUR TECHNICAL ENGAGEMENT",
+      "above": "Let's Build What",
+      "upper": true,
+      "tracked": true,
+      "mono": true,
+      "pill": true,
+      "size": 12,
+      "top": 13772
+     }
+    ],
+    "numbered": [
+     {
+      "text": "01",
+      "size": 12,
+      "top": 3553
+     },
+     {
+      "text": "02",
+      "size": 12,
+      "top": 3553
+     },
+     {
+      "text": "03",
+      "size": 12,
+      "top": 3553
+     },
+     {
+      "text": "04",
+      "size": 12,
+      "top": 3553
+     },
+     {
+      "text": "01",
+      "size": 12,
+      "top": 8496
+     },
+     {
+      "text": "02",
+      "size": 12,
+      "top": 8496
+     },
+     {
+      "text": "03",
+      "size": 12,
+      "top": 8496
+     },
+     {
+      "text": "04",
+      "size": 12,
+      "top": 8835
+     },
+     {
+      "text": "05",
+      "size": 12,
+      "top": 8835
+     },
+     {
+      "text": "06",
+      "size": 12,
+      "top": 8835
+     },
+     {
+      "text": "PHASE 01",
+      "size": 12,
+      "top": 11315
+     },
+     {
+      "text": "01 — Discover",
+      "size": 20,
+      "top": 11368
+     }
+    ],
+    "color": {
+     "bodyBg": "#05070d",
+     "bodyBgHsl": {
+      "h": 225,
+      "s": 0.44,
+      "l": 0.04
+     },
+     "dark": true,
+     "sectionBgs": [
+      {
+       "color": "#05070d",
+       "top": 0,
+       "hsl": {
+        "h": 225,
+        "s": 0.44,
+        "l": 0.04
+       }
+      },
+      {
+       "color": "#f8fafc",
+       "top": 0,
+       "hsl": {
+        "h": 210,
+        "s": 0.4,
+        "l": 0.98
+       }
+      },
+      {
+       "color": "#ffffff",
+       "top": 1915,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 1
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#45556c",
+       "share": 0.41
+      },
+      {
+       "color": "#314158",
+       "share": 0.21
+      },
+      {
+       "color": "#62748e",
+       "share": 0.12
+      },
+      {
+       "color": "#0f172b",
+       "share": 0.1
+      },
+      {
+       "color": "#007595",
+       "share": 0.07
+      }
+     ],
+     "button": {
+      "bg": "#0f172b",
+      "hsl": {
+       "h": 223,
+       "s": 0.48,
+       "l": 0.11
+      },
+      "fg": "#ffffff"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 16,
+     "inHero": 5,
+     "radius": 12,
+     "height": 38,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 2,
+     "upper": 0,
+     "heroLabels": [
+      "Talk to Xenotrix",
+      "Explore Our Products",
+      "Build With Xenotrix",
+      "XenoCRM",
+      "Explore XenoCRM Details"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 79,
+     "shadowOverlay": 1,
+     "shadowSamples": [
+      "a.inline-flex.items-center → rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0",
+      "div.inline-flex.items-center → rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0",
+      "a.group.inline-flex → rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0",
+      "a.group.inline-flex → rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0"
+     ],
+     "gradients": 2,
+     "scrims": 0,
+     "gradientSamples": [
+      "div.p-4.rounded-xl → linear-gradient(to right, oklch(0.984 0.019 200.873) 0%, oklch(0.97 0.014 254.604) 100%)",
+      "div.absolute.top-1/2 → linear-gradient(to right top, oklab(0.789 -0.131264 -0.0805336 / 0.15) 0%, oklab(0.623 -0.0378409 -0.210628 / "
+     ],
+     "gradientText": 2,
+     "hairlines": 56,
+     "hairlineSamples": [
+      "div.grid.grid-cols-2 696px",
+      "div.flex.items-center 438px",
+      "div.pt-3.border-t 438px",
+      "section.py-6.bg-slate-100/70 1440px",
+      "section#products.py-28.bg-white 1440px"
+     ],
+     "outlinedBoxes": 88,
+     "dashed": 0,
+     "blurred": 1,
+     "roundedBoxes": 97,
+     "boxRadius": 16,
+     "squareMedia": 1,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 6,
+       "iconTopped": true,
+       "rounded": true,
+       "top": 2254
+      },
+      {
+       "count": 3,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 2578
+      }
+     ]
+    },
+    "heroMedia": [
+     {
+      "type": "bg-image",
+      "ratio": 1
+     }
+    ],
+    "nav": {
+     "links": 9,
+     "fixed": true,
+     "height": 96,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": []
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 14882,
+    "margins": {
+     "left": 112,
+     "right": 137
+    },
+    "sections": [
+     {
+      "sel": "section.relative.min-h-[95vh]",
+      "tag": "section",
+      "top": 0,
+      "height": 900,
+      "words": 102,
+      "media": 0,
+      "middle": 92,
+      "heading": {
+       "text": "Building Technology That",
+       "size": 76,
+       "tag": "h1"
+      },
+      "left": 112,
+      "right": 137,
+      "textLeft": 112,
+      "textRight": 137,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.optimize-render",
+      "tag": "div",
+      "top": 970,
+      "height": 945,
+      "words": 145,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "How Xenotrix Powers Digital Growth",
+       "size": 48,
+       "tag": "h2"
+      },
+      "left": 153,
+      "right": 155,
+      "textLeft": 153,
+      "textRight": 155,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.optimize-render",
+      "tag": "div",
+      "top": 1915,
+      "height": 1258,
+      "words": 208,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Our Products",
+       "size": 48,
+       "tag": "h2"
+      },
+      "left": 112,
+      "right": 112,
+      "textLeft": 112,
+      "textRight": 136,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.optimize-render",
+      "tag": "div",
+      "top": 3172,
+      "height": 1419,
+      "words": 226,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Technology Services",
+       "size": 48,
+       "tag": "h2"
+      },
+      "left": 112,
+      "right": 112,
+      "textLeft": 112,
+      "textRight": 136,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.optimize-render",
+      "tag": "div",
+      "top": 4591,
+      "height": 1425,
+      "words": 397,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Solutions Built Around Your Business",
+       "size": 48,
+       "tag": "h2"
+      },
+      "left": 145,
+      "right": 146,
+      "textLeft": 145,
+      "textRight": 146,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.optimize-render",
+      "tag": "div",
+      "top": 6015,
+      "height": 1049,
+      "words": 104,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Technology Across Industries",
+       "size": 48,
+       "tag": "h2"
+      },
+      "left": 112,
+      "right": 112,
+      "textLeft": 112,
+      "textRight": 136,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.optimize-render",
+      "tag": "div",
+      "top": 7064,
+      "height": 1044,
+      "words": 73,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Engineering With Modern Technology",
+       "size": 48,
+       "tag": "h2"
+      },
+      "left": 112,
+      "right": 112,
+      "textLeft": 129,
+      "textRight": 147,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.optimize-render",
+      "tag": "div",
+      "top": 8107,
+      "height": 1098,
+      "words": 193,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Why Xenotrix",
+       "size": 48,
+       "tag": "h2"
+      },
+      "left": 145,
+      "right": 145,
+      "textLeft": 145,
+      "textRight": 145,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.optimize-render",
+      "tag": "div",
+      "top": 9205,
+      "height": 1726,
+      "words": 362,
+      "media": 0,
+      "middle": 84,
+      "heading": {
+       "text": "Selected Work",
+       "size": 48,
+       "tag": "h2"
+      },
+      "left": 112,
+      "right": 132,
+      "textLeft": 112,
+      "textRight": 132,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.optimize-render",
+      "tag": "div",
+      "top": 10931,
+      "height": 1138,
+      "words": 227,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "From Idea to Impact",
+       "size": 48,
+       "tag": "h2"
+      },
+      "left": 145,
+      "right": 145,
+      "textLeft": 145,
+      "textRight": 145,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.optimize-render",
+      "tag": "div",
+      "top": 12069,
+      "height": 882,
+      "words": 167,
+      "media": 0,
+      "middle": 100,
+      "heading": {
+       "text": "Engineering Products & Systems for Modern Enterpri",
+       "size": 48,
+       "tag": "h2"
+      },
+      "left": 112,
+      "right": 145,
+      "textLeft": 112,
+      "textRight": 145,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.optimize-render",
+      "tag": "div",
+      "top": 12952,
+      "height": 700,
+      "words": 82,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Frequently Asked Questions",
+       "size": 48,
+       "tag": "h2"
+      },
+      "left": 305,
+      "right": 305,
+      "textLeft": 329,
+      "textRight": 334,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.optimize-render",
+      "tag": "div",
+      "top": 13652,
+      "height": 700,
+      "words": 39,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Let's Build What",
+       "size": 72,
+       "tag": "h2"
+      },
+      "left": 387,
+      "right": 387,
+      "textLeft": 387,
+      "textRight": 387,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.bg-slate-100/70.text-slate-600",
+      "tag": "footer",
+      "top": 14352,
+      "height": 530,
+      "words": 112,
+      "media": 0,
+      "middle": 61,
+      "heading": {
+       "text": "PROPRIETARY PRODUCTS",
+       "size": 12,
+       "tag": "h2"
+      },
+      "left": 112,
+      "right": 112,
+      "textLeft": 112,
+      "textRight": 112,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Building Technology That Moves Businesses Forward.",
+      "size": 76,
+      "top": 206,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 112,
+      "n": 14
+     },
+     {
+      "x": 137,
+      "n": 11
+     },
+     {
+      "x": 153,
+      "n": 11
+     },
+     {
+      "x": 560,
+      "n": 11
+     },
+     {
+      "x": 977,
+      "n": 10
+     },
+     {
+      "x": 199,
+      "n": 2
+     },
+     {
+      "x": 615,
+      "n": 2
+     },
+     {
+      "x": 777,
+      "n": 2
+     },
+     {
+      "x": 1031,
+      "n": 2
+     },
+     {
+      "x": 264,
+      "n": 1
+     },
+     {
+      "x": 445,
+      "n": 1
+     },
+     {
+      "x": 753,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 69,
+    "bodySize": 12,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 768,
+   "height": 1024,
+   "load": "load",
+   "screens": 12,
+   "filled": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "motion": {
+    "elements": 9,
+    "css": 5,
+    "transitions": 2,
+    "scripted": 2,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "page": {
+     "height": 18693,
+     "screens": 18.3,
+     "words": 342,
+     "img": 2,
+     "video": 0,
+     "canvas": 1,
+     "svg": 168,
+     "sections": 14,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 0,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Building Technology That Moves Businesses Forward.",
+     "words": 6,
+     "chars": 50,
+     "lines": 4,
+     "size": 68,
+     "vw": 8.9,
+     "font": "-apple-system",
+     "weight": 800,
+     "tracking": -0.025,
+     "leading": 1.02,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.94,
+     "top": 175,
+     "gradientText": true,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Building Technology That Moves Businesses Forward.",
+     "words": 6,
+     "lines": 4,
+     "size": 68,
+     "font": "-apple-system"
+    },
+    "headings": [
+     {
+      "text": "Building Technology That Moves Businesses Forward.",
+      "words": 6,
+      "chars": 50,
+      "lines": 4,
+      "size": 68,
+      "vw": 8.9,
+      "font": "-apple-system",
+      "weight": 800,
+      "tracking": -0.025,
+      "leading": 1.02,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.94,
+      "top": 175,
+      "gradientText": true,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "How Xenotrix Powers Digital Growth",
+      "words": 5,
+      "chars": 34,
+      "lines": 2,
+      "size": 48,
+      "vw": 6.3,
+      "font": "-apple-system",
+      "weight": 800,
+      "tracking": -0.025,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.94,
+      "top": 1712,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "We Build Products",
+      "words": 3,
+      "chars": 17,
+      "lines": 1,
+      "size": 30,
+      "vw": 3.9,
+      "font": "-apple-system",
+      "weight": 800,
+      "tracking": -0.025,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.34,
+      "top": 2057,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "We Build For Businesses",
+      "words": 4,
+      "chars": 23,
+      "lines": 2,
+      "size": 30,
+      "vw": 3.9,
+      "font": "-apple-system",
+      "weight": 800,
+      "tracking": -0.025,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.34,
+      "top": 2057,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Our Products",
+      "words": 2,
+      "chars": 12,
+      "lines": 1,
+      "size": 48,
+      "vw": 6.3,
+      "font": "-apple-system",
+      "weight": 800,
+      "tracking": -0.025,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.63,
+      "top": 2820,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "XenoCRM",
+      "words": 1,
+      "chars": 7,
+      "lines": 1,
+      "size": 36,
+      "vw": 4.7,
+      "font": "-apple-system",
+      "weight": 800,
+      "tracking": -0.025,
+      "leading": 1.11,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.83,
+      "top": 3371,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Technology Services",
+      "words": 2,
+      "chars": 19,
+      "lines": 1,
+      "size": 48,
+      "vw": 6.3,
+      "font": "-apple-system",
+      "weight": 800,
+      "tracking": -0.025,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.72,
+      "top": 4704,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Custom Software Development & Enterprise Architecture",
+      "words": 6,
+      "chars": 53,
+      "lines": 3,
+      "size": 30,
+      "vw": 3.9,
+      "font": "-apple-system",
+      "weight": 800,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.47,
+      "top": 5341,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Solutions Built Around Your Business",
+      "words": 5,
+      "chars": 36,
+      "lines": 2,
+      "size": 48,
+      "vw": 6.3,
+      "font": "-apple-system",
+      "weight": 800,
+      "tracking": -0.025,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.94,
+      "top": 6658,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Technology Across Industries",
+      "words": 3,
+      "chars": 28,
+      "lines": 2,
+      "size": 48,
+      "vw": 6.3,
+      "font": "-apple-system",
+      "weight": 800,
+      "tracking": -0.025,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.72,
+      "top": 8680,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Engineered Capabilities for Retail",
+      "words": 4,
+      "chars": 34,
+      "lines": 1,
+      "size": 30,
+      "vw": 3.9,
+      "font": "-apple-system",
+      "weight": 800,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.83,
+      "top": 9427,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Engineering With Modern Technology",
+      "words": 4,
+      "chars": 34,
+      "lines": 2,
+      "size": 48,
+      "vw": 6.3,
+      "font": "-apple-system",
+      "weight": 800,
+      "tracking": -0.025,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.94,
+      "top": 10199,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Why Xenotrix",
+      "words": 2,
+      "chars": 12,
+      "lines": 1,
+      "size": 48,
+      "vw": 6.3,
+      "font": "-apple-system",
+      "weight": 800,
+      "tracking": -0.025,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.94,
+      "top": 11370,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Selected Work",
+      "words": 2,
+      "chars": 13,
+      "lines": 1,
+      "size": 48,
+      "vw": 6.3,
+      "font": "-apple-system",
+      "weight": 800,
+      "tracking": -0.025,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.57,
+      "top": 12876,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "XenoCRM: Unified Business OS Architecture",
+      "words": 5,
+      "chars": 41,
+      "lines": 2,
+      "size": 30,
+      "vw": 3.9,
+      "font": "-apple-system",
+      "weight": 800,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.51,
+      "top": 13171,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Xenotune: Neural Generative Soundscapes",
+      "words": 4,
+      "chars": 39,
+      "lines": 2,
+      "size": 30,
+      "vw": 3.9,
+      "font": "-apple-system",
+      "weight": 800,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.51,
+      "top": 13815,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Multi-Channel Business Automation Engine",
+      "words": 4,
+      "chars": 40,
+      "lines": 2,
+      "size": 30,
+      "vw": 3.9,
+      "font": "-apple-system",
+      "weight": 800,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.51,
+      "top": 14460,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "From Idea to Impact",
+      "words": 4,
+      "chars": 19,
+      "lines": 1,
+      "size": 48,
+      "vw": 6.3,
+      "font": "-apple-system",
+      "weight": 800,
+      "tracking": -0.025,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.94,
+      "top": 15202,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Engineering Products & Systems for Modern Enterprises",
+      "words": 7,
+      "chars": 53,
+      "lines": 3,
+      "size": 48,
+      "vw": 6.3,
+      "font": "-apple-system",
+      "weight": 800,
+      "tracking": -0.025,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.94,
+      "top": 15910,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Frequently Asked Questions",
+      "words": 3,
+      "chars": 26,
+      "lines": 1,
+      "size": 48,
+      "vw": 6.3,
+      "font": "-apple-system",
+      "weight": 800,
+      "tracking": -0.025,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.94,
+      "top": 16601,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Let's Build What",
+      "words": 3,
+      "chars": 16,
+      "lines": 2,
+      "size": 60,
+      "vw": 7.8,
+      "font": "-apple-system",
+      "weight": 800,
+      "tracking": -0.025,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.94,
+      "top": 17329,
+      "gradientText": true,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 21,
+     "maxLines": 4,
+     "over2Lines": 3,
+     "statements": 0,
+     "centered": 7,
+     "medianWords": 4,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "-apple-system",
+       "share": 0.8,
+       "mono": false
+      },
+      {
+       "family": "ui-monospace",
+       "share": 0.2,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      9,
+      10,
+      11,
+      12,
+      14,
+      16,
+      18,
+      20,
+      24,
+      30,
+      36,
+      48,
+      60,
+      68
+     ],
+     "sizeCount": 14,
+     "notLoaded": [],
+     "body": {
+      "font": "-apple-system",
+      "size": 12,
+      "leading": 1.63,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 7.2
+     },
+     "measureChars": 90,
+     "max": {
+      "size": 68,
+      "vw": 8.9,
+      "font": "-apple-system",
+      "text": "Building Technology That"
+     },
+     "monoShare": 0.2,
+     "monoProseShare": 0.2,
+     "monoFamilies": [
+      "ui-monospace"
+     ],
+     "monoSamples": [
+      "TECHNOLOGIES",
+      "ENTERPRISE PRODUCTS • PLATFORMS • AI ENG",
+      "xenotrix-ecosystem // live",
+      "ONLINE",
+      "XenoCRM",
+      "XenoFin"
+     ],
+     "microLabels": 33,
+     "microLabelShare": 0.044,
+     "microSamples": [
+      "ENTERPRISE PRODUCTS • PLATFORMS • AI ENG",
+      "XENOTRIX CAPABILITIES",
+      "TWO CORE CAPABILITIES",
+      "PROPRIETARY ECOSYSTEM",
+      "Featured Proprietary Platforms:",
+      "CUSTOM ENGINEERING"
+     ],
+     "upperShare": 0.11,
+     "centerShare": 0.08,
+     "smallText": 248
+    },
+    "eyebrows": [
+     {
+      "text": "TWO CORE CAPABILITIES",
+      "above": "How Xenotrix Powers Digital Growth",
+      "upper": true,
+      "tracked": true,
+      "mono": true,
+      "pill": true,
+      "size": 11,
+      "top": 1675
+     },
+     {
+      "text": "PROPRIETARY ECOSYSTEM",
+      "above": "We Build Products",
+      "upper": true,
+      "tracked": true,
+      "mono": true,
+      "pill": true,
+      "size": 10,
+      "top": 1997
+     },
+     {
+      "text": "CUSTOM ENGINEERING",
+      "above": "We Build For Businesses",
+      "upper": true,
+      "tracked": true,
+      "mono": true,
+      "pill": true,
+      "size": 10,
+      "top": 1997
+     },
+     {
+      "text": "PROPRIETARY SOFTWARE ECOSYSTEM",
+      "above": "Our Products",
+      "upper": true,
+      "tracked": true,
+      "mono": true,
+      "pill": true,
+      "size": 11,
+      "top": 2782
+     },
+     {
+      "text": "CRM & Customer Operations",
+      "above": "XenoCRM",
+      "upper": true,
+      "tracked": true,
+      "mono": true,
+      "pill": true,
+      "size": 12,
+      "top": 3321
+     },
+     {
+      "text": "CUSTOM ENGINEERING CAPABILITIES",
+      "above": "Technology Services",
+      "upper": true,
+      "tracked": true,
+      "mono": true,
+      "pill": true,
+      "size": 11,
+      "top": 4666
+     },
+     {
+      "text": "SOFTWARE ENGINEERING",
+      "above": "Custom Software Development & Enterprise",
+      "upper": true,
+      "tracked": true,
+      "mono": true,
+      "pill": false,
+      "size": 12,
+      "top": 5324
+     },
+     {
+      "text": "BUSINESS IMPACT ARCHITECTURE",
+      "above": "Solutions Built Around Your Business",
+      "upper": true,
+      "tracked": true,
+      "mono": true,
+      "pill": true,
+      "size": 11,
+      "top": 6620
+     },
+     {
+      "text": "INDUSTRY DOMAIN EXPERTISE",
+      "above": "Technology Across Industries",
+      "upper": true,
+      "tracked": true,
+      "mono": true,
+      "pill": true,
+      "size": 11,
+      "top": 8642
+     },
+     {
+      "text": "Retail SECTOR",
+      "above": "Engineered Capabilities for Retail",
+      "upper": true,
+      "tracked": false,
+      "mono": true,
+      "pill": true,
+      "size": 12,
+      "top": 9381
+     },
+     {
+      "text": "MODERN STACK ARCHITECTURE",
+      "above": "Engineering With Modern Technology",
+      "upper": true,
+      "tracked": true,
+      "mono": true,
+      "pill": true,
+      "size": 11,
+      "top": 10161
+     },
+     {
+      "text": "THE XENOTRIX ADVANTAGE",
+      "above": "Why Xenotrix",
+      "upper": true,
+      "tracked": true,
+      "mono": true,
+      "pill": true,
+      "size": 11,
+      "top": 11333
+     },
+     {
+      "text": "AUTHENTIC ENGINEERING CASE STUDIES",
+      "above": "Selected Work",
+      "upper": true,
+      "tracked": true,
+      "mono": true,
+      "pill": true,
+      "size": 11,
+      "top": 12838
+     },
+     {
+      "text": "SaaS Platform Engineering",
+      "above": "XenoCRM: Unified Business OS Architectur",
+      "upper": true,
+      "tracked": false,
+      "mono": true,
+      "pill": false,
+      "size": 12,
+      "top": 13137
+     },
+     {
+      "text": "AI & Neural Audio Engineering",
+      "above": "Xenotune: Neural Generative Soundscapes",
+      "upper": true,
+      "tracked": false,
+      "mono": true,
+      "pill": false,
+      "size": 12,
+      "top": 13765
+     },
+     {
+      "text": "Workflow Automation & AI",
+      "above": "Multi-Channel Business Automation Engine",
+      "upper": true,
+      "tracked": false,
+      "mono": true,
+      "pill": false,
+      "size": 12,
+      "top": 14410
+     },
+     {
+      "text": "RIGOROUS METHODOLOGY",
+      "above": "From Idea to Impact",
+      "upper": true,
+      "tracked": true,
+      "mono": true,
+      "pill": true,
+      "size": 11,
+      "top": 15164
+     },
+     {
+      "text": "FREQUENTLY ASKED QUESTIONS",
+      "above": "Frequently Asked Questions",
+      "upper": true,
+      "tracked": true,
+      "mono": true,
+      "pill": true,
+      "size": 12,
+      "top": 16564
+     },
+     {
+      "text": "START YOUR TECHNICAL ENGAGEMENT",
+      "above": "Let's Build What",
+      "upper": true,
+      "tracked": true,
+      "mono": true,
+      "pill": true,
+      "size": 12,
+      "top": 17266
+     }
+    ],
+    "numbered": [
+     {
+      "text": "01",
+      "size": 12,
+      "top": 4929
+     },
+     {
+      "text": "02",
+      "size": 12,
+      "top": 4929
+     },
+     {
+      "text": "03",
+      "size": 12,
+      "top": 5103
+     },
+     {
+      "text": "04",
+      "size": 12,
+      "top": 5103
+     },
+     {
+      "text": "01",
+      "size": 12,
+      "top": 11603
+     },
+     {
+      "text": "02",
+      "size": 12,
+      "top": 11603
+     },
+     {
+      "text": "03",
+      "size": 12,
+      "top": 11965
+     },
+     {
+      "text": "04",
+      "size": 12,
+      "top": 11965
+     },
+     {
+      "text": "05",
+      "size": 12,
+      "top": 12327
+     },
+     {
+      "text": "06",
+      "size": 12,
+      "top": 12327
+     },
+     {
+      "text": "PHASE 01",
+      "size": 12,
+      "top": 15430
+     },
+     {
+      "text": "01 — Discover",
+      "size": 20,
+      "top": 15483
+     }
+    ],
+    "color": {
+     "bodyBg": "#05070d",
+     "bodyBgHsl": {
+      "h": 225,
+      "s": 0.44,
+      "l": 0.04
+     },
+     "dark": true,
+     "sectionBgs": [
+      {
+       "color": "#05070d",
+       "top": 0,
+       "hsl": {
+        "h": 225,
+        "s": 0.44,
+        "l": 0.04
+       }
+      },
+      {
+       "color": "#f8fafc",
+       "top": 0,
+       "hsl": {
+        "h": 210,
+        "s": 0.4,
+        "l": 0.98
+       }
+      },
+      {
+       "color": "#ffffff",
+       "top": 788,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 1
+       }
+      },
+      {
+       "color": "#0f172b",
+       "top": 3905,
+       "hsl": {
+        "h": 223,
+        "s": 0.48,
+        "l": 0.11
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#45556c",
+       "share": 0.41
+      },
+      {
+       "color": "#314158",
+       "share": 0.21
+      },
+      {
+       "color": "#62748e",
+       "share": 0.12
+      },
+      {
+       "color": "#0f172b",
+       "share": 0.1
+      },
+      {
+       "color": "#007595",
+       "share": 0.07
+      }
+     ],
+     "button": {
+      "bg": "#0f172b",
+      "hsl": {
+       "h": 223,
+       "s": 0.48,
+       "l": 0.11
+      },
+      "fg": "#ffffff"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 15,
+     "inHero": 3,
+     "radius": 12,
+     "height": 38,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 2,
+     "upper": 0,
+     "heroLabels": [
+      "Explore Our Products",
+      "Build With Xenotrix",
+      "XenoCRM"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 78,
+     "shadowOverlay": 1,
+     "shadowSamples": [
+      "div.inline-flex.items-center → rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0",
+      "a.group.inline-flex → rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0",
+      "a.group.inline-flex → rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0",
+      "div.relative.p-5 → rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0"
+     ],
+     "gradients": 2,
+     "scrims": 0,
+     "gradientSamples": [
+      "div.p-4.rounded-xl → linear-gradient(to right, oklch(0.984 0.019 200.873) 0%, oklch(0.97 0.014 254.604) 100%)",
+      "div.absolute.top-1/2 → linear-gradient(to right top, oklab(0.789 -0.131264 -0.0805336 / 0.15) 0%, oklab(0.623 -0.0378409 -0.210628 / "
+     ],
+     "gradientText": 2,
+     "hairlines": 56,
+     "hairlineSamples": [
+      "div.grid.grid-cols-2 720px",
+      "div.flex.items-center 670px",
+      "div.pt-3.border-t 670px",
+      "section.py-6.bg-slate-100/70 768px",
+      "section#products.py-28.bg-white 768px"
+     ],
+     "outlinedBoxes": 87,
+     "dashed": 0,
+     "blurred": 1,
+     "roundedBoxes": 96,
+     "boxRadius": 16,
+     "squareMedia": 1,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "bg-image",
+      "ratio": 1
+     }
+    ],
+    "nav": {
+     "links": 1,
+     "fixed": true,
+     "height": 100,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": []
+   },
+   "layout": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "pageH": 18693,
+    "margins": {
+     "left": 24,
+     "right": 24
+    },
+    "sections": [
+     {
+      "sel": "section.relative.min-h-[95vh]",
+      "tag": "section",
+      "top": 0,
+      "height": 1404,
+      "words": 102,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Building Technology That",
+       "size": 68,
+       "tag": "h1"
+      },
+      "left": 24,
+      "right": 49,
+      "textLeft": 24,
+      "textRight": 49,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.py-6.bg-slate-100/70",
+      "tag": "section",
+      "top": 1404,
+      "height": 170,
+      "words": 9,
+      "media": 0,
+      "middle": 94,
+      "heading": null,
+      "left": 40,
+      "right": 69,
+      "textLeft": 40,
+      "textRight": 69,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.optimize-render",
+      "tag": "div",
+      "top": 1574,
+      "height": 1091,
+      "words": 145,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "How Xenotrix Powers Digital Growth",
+       "size": 48,
+       "tag": "h2"
+      },
+      "left": 55,
+      "right": 55,
+      "textLeft": 55,
+      "textRight": 55,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.optimize-render",
+      "tag": "div",
+      "top": 2664,
+      "height": 1884,
+      "words": 208,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Our Products",
+       "size": 48,
+       "tag": "h2"
+      },
+      "left": 24,
+      "right": 24,
+      "textLeft": 24,
+      "textRight": 48,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.optimize-render",
+      "tag": "div",
+      "top": 4548,
+      "height": 1954,
+      "words": 226,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Technology Services",
+       "size": 48,
+       "tag": "h2"
+      },
+      "left": 24,
+      "right": 24,
+      "textLeft": 24,
+      "textRight": 48,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.optimize-render",
+      "tag": "div",
+      "top": 6502,
+      "height": 2022,
+      "words": 397,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Solutions Built Around Your Business",
+       "size": 48,
+       "tag": "h2"
+      },
+      "left": 32,
+      "right": 32,
+      "textLeft": 32,
+      "textRight": 32,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.optimize-render",
+      "tag": "div",
+      "top": 8524,
+      "height": 1519,
+      "words": 104,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Technology Across Industries",
+       "size": 48,
+       "tag": "h2"
+      },
+      "left": 24,
+      "right": 24,
+      "textLeft": 24,
+      "textRight": 48,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.optimize-render",
+      "tag": "div",
+      "top": 10043,
+      "height": 1172,
+      "words": 73,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Engineering With Modern Technology",
+       "size": 48,
+       "tag": "h2"
+      },
+      "left": 24,
+      "right": 24,
+      "textLeft": 41,
+      "textRight": 63,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.optimize-render",
+      "tag": "div",
+      "top": 11215,
+      "height": 1506,
+      "words": 193,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Why Xenotrix",
+       "size": 48,
+       "tag": "h2"
+      },
+      "left": 43,
+      "right": 43,
+      "textLeft": 43,
+      "textRight": 43,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.optimize-render",
+      "tag": "div",
+      "top": 12720,
+      "height": 2326,
+      "words": 362,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Selected Work",
+       "size": 48,
+       "tag": "h2"
+      },
+      "left": 24,
+      "right": 44,
+      "textLeft": 24,
+      "textRight": 44,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.optimize-render",
+      "tag": "div",
+      "top": 15046,
+      "height": 700,
+      "words": 94,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "From Idea to Impact",
+       "size": 48,
+       "tag": "h2"
+      },
+      "left": 33,
+      "right": 33,
+      "textLeft": 33,
+      "textRight": 33,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.optimize-render",
+      "tag": "div",
+      "top": 15746,
+      "height": 700,
+      "words": 104,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Engineering Products & Systems for Modern Enterpri",
+       "size": 48,
+       "tag": "h2"
+      },
+      "left": 24,
+      "right": 52,
+      "textLeft": 24,
+      "textRight": 52,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.optimize-render",
+      "tag": "div",
+      "top": 16446,
+      "height": 700,
+      "words": 76,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Frequently Asked Questions",
+       "size": 48,
+       "tag": "h2"
+      },
+      "left": 25,
+      "right": 25,
+      "textLeft": 49,
+      "textRight": 69,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.optimize-render",
+      "tag": "div",
+      "top": 17146,
+      "height": 700,
+      "words": 39,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Let's Build What",
+       "size": 60,
+       "tag": "h2"
+      },
+      "left": 51,
+      "right": 51,
+      "textLeft": 51,
+      "textRight": 51,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.bg-slate-100/70.text-slate-600",
+      "tag": "footer",
+      "top": 17846,
+      "height": 847,
+      "words": 112,
+      "media": 0,
+      "middle": 54,
+      "heading": {
+       "text": "PROPRIETARY PRODUCTS",
+       "size": 12,
+       "tag": "h2"
+      },
+      "left": 24,
+      "right": 24,
+      "textLeft": 24,
+      "textRight": 24,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Building Technology That Moves Businesses Forward.",
+      "size": 68,
+      "top": 175,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 49,
+      "n": 17
+     },
+     {
+      "x": 433,
+      "n": 17
+     },
+     {
+      "x": 24,
+      "n": 14
+     },
+     {
+      "x": 65,
+      "n": 11
+     },
+     {
+      "x": 111,
+      "n": 3
+     },
+     {
+      "x": 487,
+      "n": 3
+     },
+     {
+      "x": 417,
+      "n": 2
+     },
+     {
+      "x": 176,
+      "n": 1
+     },
+     {
+      "x": 472,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 69,
+    "bodySize": 12,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 12,
+   "filled": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "motion": {
+    "elements": 9,
+    "css": 5,
+    "transitions": 2,
+    "scripted": 2,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 18679,
+     "screens": 22.1,
+     "words": 337,
+     "img": 2,
+     "video": 0,
+     "canvas": 1,
+     "svg": 168,
+     "sections": 14,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 0,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Building Technology That Moves Businesses Forward.",
+     "words": 6,
+     "chars": 50,
+     "lines": 3,
+     "size": 32,
+     "vw": 8.2,
+     "font": "-apple-system",
+     "weight": 800,
+     "tracking": -0.025,
+     "leading": 1.05,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.92,
+     "top": 191,
+     "gradientText": true,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Building Technology That Moves Businesses Forward.",
+     "words": 6,
+     "lines": 3,
+     "size": 32,
+     "font": "-apple-system"
+    },
+    "headings": [
+     {
+      "text": "Building Technology That Moves Businesses Forward.",
+      "words": 6,
+      "chars": 50,
+      "lines": 3,
+      "size": 32,
+      "vw": 8.2,
+      "font": "-apple-system",
+      "weight": 800,
+      "tracking": -0.025,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 191,
+      "gradientText": true,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "How Xenotrix Powers Digital Growth",
+      "words": 5,
+      "chars": 34,
+      "lines": 2,
+      "size": 30,
+      "vw": 7.7,
+      "font": "-apple-system",
+      "weight": 800,
+      "tracking": -0.025,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 1662,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "We Build Products",
+      "words": 3,
+      "chars": 17,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "-apple-system",
+      "weight": 800,
+      "tracking": -0.025,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.75,
+      "top": 2015,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "We Build For Businesses",
+      "words": 4,
+      "chars": 23,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "-apple-system",
+      "weight": 800,
+      "tracking": -0.025,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.75,
+      "top": 2573,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Our Products",
+      "words": 2,
+      "chars": 12,
+      "lines": 1,
+      "size": 30,
+      "vw": 7.7,
+      "font": "-apple-system",
+      "weight": 800,
+      "tracking": -0.025,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 3245,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "XenoCRM",
+      "words": 1,
+      "chars": 7,
+      "lines": 1,
+      "size": 30,
+      "vw": 7.7,
+      "font": "-apple-system",
+      "weight": 800,
+      "tracking": -0.025,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.79,
+      "top": 3968,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Technology Services",
+      "words": 2,
+      "chars": 19,
+      "lines": 1,
+      "size": 30,
+      "vw": 7.7,
+      "font": "-apple-system",
+      "weight": 800,
+      "tracking": -0.025,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 5547,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Custom Software Development & Enterprise Architecture",
+      "words": 6,
+      "chars": 53,
+      "lines": 3,
+      "size": 24,
+      "vw": 6.2,
+      "font": "-apple-system",
+      "weight": 800,
+      "tracking": 0,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.75,
+      "top": 6564,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Solutions Built Around Your Business",
+      "words": 5,
+      "chars": 36,
+      "lines": 2,
+      "size": 30,
+      "vw": 7.7,
+      "font": "-apple-system",
+      "weight": 800,
+      "tracking": -0.025,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 8540,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Technology Across Industries",
+      "words": 3,
+      "chars": 28,
+      "lines": 2,
+      "size": 30,
+      "vw": 7.7,
+      "font": "-apple-system",
+      "weight": 800,
+      "tracking": -0.025,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 11926,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Engineering With Modern Technology",
+      "words": 4,
+      "chars": 34,
+      "lines": 2,
+      "size": 30,
+      "vw": 7.7,
+      "font": "-apple-system",
+      "weight": 800,
+      "tracking": -0.025,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 12626,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Engineered Capabilities for Retail",
+      "words": 4,
+      "chars": 34,
+      "lines": 2,
+      "size": 24,
+      "vw": 6.2,
+      "font": "-apple-system",
+      "weight": 800,
+      "tracking": 0,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.75,
+      "top": 13061,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Frontend Infrastructure",
+      "words": 2,
+      "chars": 23,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "-apple-system",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.75,
+      "top": 13283,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Why Xenotrix",
+      "words": 2,
+      "chars": 12,
+      "lines": 1,
+      "size": 30,
+      "vw": 7.7,
+      "font": "-apple-system",
+      "weight": 800,
+      "tracking": -0.025,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 13326,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Selected Work",
+      "words": 2,
+      "chars": 13,
+      "lines": 1,
+      "size": 30,
+      "vw": 7.7,
+      "font": "-apple-system",
+      "weight": 800,
+      "tracking": -0.025,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 14026,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "XenoCRM: Unified Business OS Architecture",
+      "words": 5,
+      "chars": 41,
+      "lines": 3,
+      "size": 24,
+      "vw": 6.2,
+      "font": "-apple-system",
+      "weight": 800,
+      "tracking": 0,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.75,
+      "top": 14355,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "From Idea to Impact",
+      "words": 4,
+      "chars": 19,
+      "lines": 1,
+      "size": 30,
+      "vw": 7.7,
+      "font": "-apple-system",
+      "weight": 800,
+      "tracking": -0.025,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 14726,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Xenotune: Neural Generative Soundscapes",
+      "words": 4,
+      "chars": 39,
+      "lines": 2,
+      "size": 24,
+      "vw": 6.2,
+      "font": "-apple-system",
+      "weight": 800,
+      "tracking": 0,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.75,
+      "top": 15395,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Engineering Products & Systems for Modern Enterprises",
+      "words": 7,
+      "chars": 53,
+      "lines": 3,
+      "size": 30,
+      "vw": 7.7,
+      "font": "-apple-system",
+      "weight": 800,
+      "tracking": -0.025,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 15434,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Frequently Asked Questions",
+      "words": 3,
+      "chars": 26,
+      "lines": 2,
+      "size": 30,
+      "vw": 7.7,
+      "font": "-apple-system",
+      "weight": 800,
+      "tracking": -0.025,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 16125,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Multi-Channel Business Automation Engine",
+      "words": 4,
+      "chars": 40,
+      "lines": 2,
+      "size": 24,
+      "vw": 6.2,
+      "font": "-apple-system",
+      "weight": 800,
+      "tracking": 0,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.75,
+      "top": 16367,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Let's Build What",
+      "words": 3,
+      "chars": 16,
+      "lines": 2,
+      "size": 36,
+      "vw": 9.2,
+      "font": "-apple-system",
+      "weight": 800,
+      "tracking": -0.025,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 16853,
+      "gradientText": true,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 22,
+     "maxLines": 3,
+     "over2Lines": 4,
+     "statements": 0,
+     "centered": 7,
+     "medianWords": 4,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "-apple-system",
+       "share": 0.8,
+       "mono": false
+      },
+      {
+       "family": "ui-monospace",
+       "share": 0.2,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      9,
+      10,
+      11,
+      12,
+      14,
+      16,
+      20,
+      24,
+      30,
+      32,
+      36
+     ],
+     "sizeCount": 11,
+     "notLoaded": [],
+     "body": {
+      "font": "-apple-system",
+      "size": 12,
+      "leading": 1.63,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 7.2
+     },
+     "measureChars": 51,
+     "max": {
+      "size": 36,
+      "vw": 9.2,
+      "font": "-apple-system",
+      "text": "Let's Build What"
+     },
+     "monoShare": 0.2,
+     "monoProseShare": 0.2,
+     "monoFamilies": [
+      "ui-monospace"
+     ],
+     "monoSamples": [
+      "TECHNOLOGIES",
+      "ENTERPRISE PRODUCTS • PLATFORMS • AI ENG",
+      "xenotrix-ecosystem // live",
+      "ONLINE",
+      "XenoCRM",
+      "XenoFin"
+     ],
+     "microLabels": 33,
+     "microLabelShare": 0.044,
+     "microSamples": [
+      "ENTERPRISE PRODUCTS • PLATFORMS • AI ENG",
+      "XENOTRIX CAPABILITIES",
+      "TWO CORE CAPABILITIES",
+      "PROPRIETARY ECOSYSTEM",
+      "Featured Proprietary Platforms:",
+      "CUSTOM ENGINEERING"
+     ],
+     "upperShare": 0.11,
+     "centerShare": 0.08,
+     "smallText": 255
+    },
+    "eyebrows": [
+     {
+      "text": "TWO CORE CAPABILITIES",
+      "above": "How Xenotrix Powers Digital Growth",
+      "upper": true,
+      "tracked": true,
+      "mono": true,
+      "pill": true,
+      "size": 11,
+      "top": 1625
+     },
+     {
+      "text": "PROPRIETARY ECOSYSTEM",
+      "above": "We Build Products",
+      "upper": true,
+      "tracked": true,
+      "mono": true,
+      "pill": true,
+      "size": 10,
+      "top": 1955
+     },
+     {
+      "text": "CUSTOM ENGINEERING",
+      "above": "We Build For Businesses",
+      "upper": true,
+      "tracked": true,
+      "mono": true,
+      "pill": true,
+      "size": 10,
+      "top": 2513
+     },
+     {
+      "text": "PROPRIETARY SOFTWARE ECOSYSTEM",
+      "above": "Our Products",
+      "upper": true,
+      "tracked": true,
+      "mono": true,
+      "pill": true,
+      "size": 11,
+      "top": 3208
+     },
+     {
+      "text": "CRM & Customer Operations",
+      "above": "XenoCRM",
+      "upper": true,
+      "tracked": true,
+      "mono": true,
+      "pill": true,
+      "size": 12,
+      "top": 3902
+     },
+     {
+      "text": "CUSTOM ENGINEERING CAPABILITIES",
+      "above": "Technology Services",
+      "upper": true,
+      "tracked": true,
+      "mono": true,
+      "pill": true,
+      "size": 11,
+      "top": 5509
+     },
+     {
+      "text": "SOFTWARE ENGINEERING",
+      "above": "Custom Software Development & Enterprise",
+      "upper": true,
+      "tracked": true,
+      "mono": true,
+      "pill": false,
+      "size": 12,
+      "top": 6547
+     },
+     {
+      "text": "BUSINESS IMPACT ARCHITECTURE",
+      "above": "Solutions Built Around Your Business",
+      "upper": true,
+      "tracked": true,
+      "mono": true,
+      "pill": true,
+      "size": 11,
+      "top": 8503
+     },
+     {
+      "text": "INDUSTRY DOMAIN EXPERTISE",
+      "above": "Technology Across Industries",
+      "upper": true,
+      "tracked": true,
+      "mono": true,
+      "pill": true,
+      "size": 11,
+      "top": 11888
+     },
+     {
+      "text": "MODERN STACK ARCHITECTURE",
+      "above": "Engineering With Modern Technology",
+      "upper": true,
+      "tracked": true,
+      "mono": true,
+      "pill": true,
+      "size": 11,
+      "top": 12588
+     },
+     {
+      "text": "Retail SECTOR",
+      "above": "Engineered Capabilities for Retail",
+      "upper": true,
+      "tracked": false,
+      "mono": true,
+      "pill": true,
+      "size": 12,
+      "top": 12999
+     },
+     {
+      "text": "CATEGORY 01",
+      "above": "Frontend Infrastructure",
+      "upper": true,
+      "tracked": true,
+      "mono": true,
+      "pill": false,
+      "size": 12,
+      "top": 13266
+     },
+     {
+      "text": "THE XENOTRIX ADVANTAGE",
+      "above": "Why Xenotrix",
+      "upper": true,
+      "tracked": true,
+      "mono": true,
+      "pill": true,
+      "size": 11,
+      "top": 13288
+     },
+     {
+      "text": "AUTHENTIC ENGINEERING CASE STUDIES",
+      "above": "Selected Work",
+      "upper": true,
+      "tracked": true,
+      "mono": true,
+      "pill": true,
+      "size": 11,
+      "top": 13988
+     },
+     {
+      "text": "SaaS Platform Engineering",
+      "above": "XenoCRM: Unified Business OS Architectur",
+      "upper": true,
+      "tracked": false,
+      "mono": true,
+      "pill": false,
+      "size": 12,
+      "top": 14305
+     },
+     {
+      "text": "RIGOROUS METHODOLOGY",
+      "above": "From Idea to Impact",
+      "upper": true,
+      "tracked": true,
+      "mono": true,
+      "pill": true,
+      "size": 11,
+      "top": 14688
+     },
+     {
+      "text": "AI & Neural Audio Engineering",
+      "above": "Xenotune: Neural Generative Soundscapes",
+      "upper": true,
+      "tracked": false,
+      "mono": true,
+      "pill": false,
+      "size": 12,
+      "top": 15329
+     },
+     {
+      "text": "ABOUT XENOTRIX TECHNOLOGIES",
+      "above": "Engineering Products & Systems for Moder",
+      "upper": true,
+      "tracked": true,
+      "mono": true,
+      "pill": true,
+      "size": 11,
+      "top": 15388
+     },
+     {
+      "text": "04 // OUTCOME",
+      "above": "Frequently Asked Questions",
+      "upper": true,
+      "tracked": false,
+      "mono": true,
+      "pill": false,
+      "size": 12,
+      "top": 16094
+     },
+     {
+      "text": "Workflow Automation & AI",
+      "above": "Multi-Channel Business Automation Engine",
+      "upper": true,
+      "tracked": false,
+      "mono": true,
+      "pill": false,
+      "size": 12,
+      "top": 16317
+     },
+     {
+      "text": "START YOUR TECHNICAL ENGAGEMENT",
+      "above": "Let's Build What",
+      "upper": true,
+      "tracked": true,
+      "mono": true,
+      "pill": true,
+      "size": 12,
+      "top": 16790
+     }
+    ],
+    "numbered": [
+     {
+      "text": "01",
+      "size": 12,
+      "top": 5820
+     },
+     {
+      "text": "02",
+      "size": 12,
+      "top": 5994
+     },
+     {
+      "text": "03",
+      "size": 12,
+      "top": 6168
+     },
+     {
+      "text": "04",
+      "size": 12,
+      "top": 6342
+     },
+     {
+      "text": "01",
+      "size": 12,
+      "top": 13587
+     },
+     {
+      "text": "02",
+      "size": 12,
+      "top": 13918
+     },
+     {
+      "text": "03",
+      "size": 12,
+      "top": 14249
+     },
+     {
+      "text": "04",
+      "size": 12,
+      "top": 14603
+     },
+     {
+      "text": "05",
+      "size": 12,
+      "top": 14957
+     },
+     {
+      "text": "06",
+      "size": 12,
+      "top": 15289
+     },
+     {
+      "text": "PHASE 01",
+      "size": 12,
+      "top": 14958
+     },
+     {
+      "text": "01 — Discover",
+      "size": 20,
+      "top": 15011
+     }
+    ],
+    "color": {
+     "bodyBg": "#05070d",
+     "bodyBgHsl": {
+      "h": 225,
+      "s": 0.44,
+      "l": 0.04
+     },
+     "dark": true,
+     "sectionBgs": [
+      {
+       "color": "#05070d",
+       "top": 0,
+       "hsl": {
+        "h": 225,
+        "s": 0.44,
+        "l": 0.04
+       }
+      },
+      {
+       "color": "#f8fafc",
+       "top": 0,
+       "hsl": {
+        "h": 210,
+        "s": 0.4,
+        "l": 0.98
+       }
+      },
+      {
+       "color": "#ffffff",
+       "top": 735,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 1
+       }
+      },
+      {
+       "color": "#0f172b",
+       "top": 4698,
+       "hsl": {
+        "h": 223,
+        "s": 0.48,
+        "l": 0.11
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#45556c",
+       "share": 0.41
+      },
+      {
+       "color": "#314158",
+       "share": 0.21
+      },
+      {
+       "color": "#62748e",
+       "share": 0.12
+      },
+      {
+       "color": "#0f172b",
+       "share": 0.1
+      },
+      {
+       "color": "#007595",
+       "share": 0.07
+      }
+     ],
+     "button": {
+      "bg": "#0f172b",
+      "hsl": {
+       "h": 223,
+       "s": 0.48,
+       "l": 0.11
+      },
+      "fg": "#ffffff"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 15,
+     "inHero": 3,
+     "radius": 12,
+     "height": 38,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 2,
+     "upper": 0,
+     "heroLabels": [
+      "Explore Our Products",
+      "Build With Xenotrix",
+      "XenoCRM"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 78,
+     "shadowOverlay": 1,
+     "shadowSamples": [
+      "div.inline-flex.items-center → rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0",
+      "a.group.inline-flex → rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0",
+      "a.group.inline-flex → rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0",
+      "div.relative.p-5 → rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0"
+     ],
+     "gradients": 2,
+     "scrims": 0,
+     "gradientSamples": [
+      "div.p-4.rounded-xl → linear-gradient(to right, oklch(0.984 0.019 200.873) 0%, oklch(0.97 0.014 254.604) 100%)",
+      "div.absolute.top-1/2 → linear-gradient(to right top, oklab(0.789 -0.131264 -0.0805336 / 0.15) 0%, oklab(0.623 -0.0378409 -0.210628 / "
+     ],
+     "gradientText": 2,
+     "hairlines": 55,
+     "hairlineSamples": [
+      "div.grid.grid-cols-2 358px",
+      "div.flex.items-center 316px",
+      "div.pt-3.border-t 316px",
+      "section.py-6.bg-slate-100/70 390px",
+      "section#products.py-28.bg-white 390px"
+     ],
+     "outlinedBoxes": 92,
+     "dashed": 0,
+     "blurred": 1,
+     "roundedBoxes": 101,
+     "boxRadius": 16,
+     "squareMedia": 1,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "bg-image",
+      "ratio": 1
+     }
+    ],
+    "nav": {
+     "links": 1,
+     "fixed": true,
+     "height": 100,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": []
+   },
+   "layout": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "pageH": 18679,
+    "margins": {
+     "left": 16,
+     "right": 16
+    },
+    "sections": [
+     {
+      "sel": "div.absolute.top-1/4",
+      "tag": "div",
+      "top": 344,
+      "height": 500,
+      "words": 0,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": null,
+      "right": null,
+      "textLeft": null,
+      "textRight": null,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.absolute.bottom-10",
+      "tag": "div",
+      "top": 738,
+      "height": 600,
+      "words": 0,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": null,
+      "right": null,
+      "textLeft": null,
+      "textRight": null,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.max-w-7xl.mx-auto",
+      "tag": "div",
+      "top": 112,
+      "height": 1202,
+      "words": 102,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Building Technology That",
+       "size": 32,
+       "tag": "h1"
+      },
+      "left": 16,
+      "right": 28,
+      "textLeft": 16,
+      "textRight": 28,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.py-6.bg-slate-100/70",
+      "tag": "section",
+      "top": 1378,
+      "height": 146,
+      "words": 9,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 32,
+      "right": 34,
+      "textLeft": 32,
+      "textRight": 34,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.optimize-render",
+      "tag": "div",
+      "top": 1524,
+      "height": 1566,
+      "words": 145,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "How Xenotrix Powers Digital Growth",
+       "size": 30,
+       "tag": "h2"
+      },
+      "left": 23,
+      "right": 23,
+      "textLeft": 23,
+      "textRight": 23,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.optimize-render",
+      "tag": "div",
+      "top": 3090,
+      "height": 2302,
+      "words": 208,
+      "media": 0,
+      "middle": 7,
+      "heading": {
+       "text": "Our Products",
+       "size": 30,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 0,
+      "textLeft": 16,
+      "textRight": -51,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.optimize-render",
+      "tag": "div",
+      "top": 5391,
+      "height": 2994,
+      "words": 226,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Technology Services",
+       "size": 30,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 16,
+      "textLeft": 16,
+      "textRight": 47,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.optimize-render",
+      "tag": "div",
+      "top": 8385,
+      "height": 3386,
+      "words": 397,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Solutions Built Around Your Business",
+       "size": 30,
+       "tag": "h2"
+      },
+      "left": 21,
+      "right": 21,
+      "textLeft": 21,
+      "textRight": 21,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.optimize-render",
+      "tag": "div",
+      "top": 11770,
+      "height": 700,
+      "words": 36,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Technology Across Industries",
+       "size": 30,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 16,
+      "textLeft": 16,
+      "textRight": 35,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.optimize-render",
+      "tag": "div",
+      "top": 12470,
+      "height": 700,
+      "words": 43,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Engineering With Modern Technology",
+       "size": 30,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 16,
+      "textLeft": 22,
+      "textRight": 22,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.optimize-render",
+      "tag": "div",
+      "top": 13170,
+      "height": 700,
+      "words": 59,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Why Xenotrix",
+       "size": 30,
+       "tag": "h2"
+      },
+      "left": 27,
+      "right": 27,
+      "textLeft": 27,
+      "textRight": 27,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.optimize-render",
+      "tag": "div",
+      "top": 13870,
+      "height": 700,
+      "words": 47,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Selected Work",
+       "size": 30,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 35,
+      "textLeft": 16,
+      "textRight": 35,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.optimize-render",
+      "tag": "div",
+      "top": 14570,
+      "height": 700,
+      "words": 60,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "From Idea to Impact",
+       "size": 30,
+       "tag": "h2"
+      },
+      "left": 22,
+      "right": 22,
+      "textLeft": 22,
+      "textRight": 22,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.optimize-render",
+      "tag": "div",
+      "top": 15270,
+      "height": 700,
+      "words": 90,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Engineering Products & Systems for Modern Enterpri",
+       "size": 30,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 20,
+      "textLeft": 16,
+      "textRight": 20,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.optimize-render",
+      "tag": "div",
+      "top": 15970,
+      "height": 700,
+      "words": 63,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Frequently Asked Questions",
+       "size": 30,
+       "tag": "h2"
+      },
+      "left": 17,
+      "right": 17,
+      "textLeft": 27,
+      "textRight": 27,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.optimize-render",
+      "tag": "div",
+      "top": 16670,
+      "height": 700,
+      "words": 39,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Let's Build What",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 22,
+      "right": 22,
+      "textLeft": 22,
+      "textRight": 22,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.bg-slate-100/70.text-slate-600",
+      "tag": "footer",
+      "top": 17370,
+      "height": 1309,
+      "words": 112,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "PROPRIETARY PRODUCTS",
+       "size": 12,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 16,
+      "textLeft": 16,
+      "textRight": 16,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Building Technology That Moves Businesses Forward.",
+      "size": 32,
+      "top": 191,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 41,
+      "n": 47
+     },
+     {
+      "x": 16,
+      "n": 14
+     },
+     {
+      "x": 103,
+      "n": 6
+     },
+     {
+      "x": 92,
+      "n": 1
+     },
+     {
+      "x": 152,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 69,
+    "bodySize": 12,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "FAIL",
+   "id": "headline-lines",
+   "width": 1440,
+   "message": "2 headline(s) wrap past two lines at 1440px: \"Building Technology That Moves Businesses Forwar\" → 4 lines (6 words, 76px); \"Engineering Products & Systems for Modern Enterp\" → 3 lines (7 words, 48px)",
+   "fix": "Cut words first (a headline is a title, not a sentence). Then give it a wider measure. Lower the size only as a last resort and never below the scale you chose. A real statement paragraph belongs in a <p> or <blockquote> at 36px or less."
+  },
+  {
+   "level": "FAIL",
+   "id": "eyebrow",
+   "width": 1440,
+   "message": "20 eyebrow/kicker label(s) above headings: \"TWO CORE CAPABILITIES\" (pill) above \"How Xenotrix Powers Digital Growth\"; \"PROPRIETARY ECOSYSTEM\" (pill) above \"We Build Products\"; \"CUSTOM ENGINEERING\" (pill) above \"We Build For Businesses\"; \"PROPRIETARY SOFTWARE ECOSYSTEM\" (pill) above \"Our Products\"; \"CRM & Customer Operations\" (pill) above \"XenoCRM\"",
+   "fix": "Delete them. If the label carried real information, fold it into the headline or the supporting sentence.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "mono",
+   "width": 1440,
+   "message": "Monospace type outside code: ui-monospace — e.g. \"TECHNOLOGIES\", \"ENTERPRISE PRODUCTS • PLATFORMS • AI ENG\", \"xenotrix-ecosystem // live\", \"ONLINE\"",
+   "fix": "Set it in the text face. Monospace is for literal code inside <pre>/<code> only.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "numbering",
+   "width": 1440,
+   "message": "Decorative index numbers: \"01\", \"02\", \"03\", \"04\", \"01\", \"02\"",
+   "fix": "Remove them. If order truly matters, write it into the words (\"First, …\") or use a real <ol>.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "micro-label",
+   "width": 1440,
+   "message": "33 tiny uppercase letter-spaced labels (e.g. \"ENTERPRISE PRODUCTS • PLATFORMS • AI ENG\", \"XENOTRIX CAPABILITIES\", \"TWO CORE CAPABILITIES\", \"PROPRIETARY ECOSYSTEM\").",
+   "fix": "Use sentence-case text at a readable size, or delete the label.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "emoji",
+   "width": 1440,
+   "message": "Emoji in the page: ⚡",
+   "fix": "Remove. Use words or real imagery."
+  },
+  {
+   "level": "FAIL",
+   "id": "gradient",
+   "width": 1440,
+   "message": "2 gradient fill(s): div.p-4.rounded-xl → linear-gradient(to right, oklch(0.984 0.019 200.873) 0%, oklch(0.97 0.014 254.604) 100%) | div.absolute.top-1/2 → linear-gradient(to right top, oklab(0.789 -0.131264 -0.0805336 / 0.15) 0%, oklab(0.623 -0.0378409 -0.210628 / ",
+   "fix": "Use a flat colour or a real image. The only gradient allowed by default is a neutral scrim over a photo for legibility.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "gradient-text",
+   "width": 1440,
+   "message": "2 gradient-filled text element(s).",
+   "fix": "Solid colour text.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "shadow",
+   "width": 1440,
+   "message": "79 box-shadow(s) on elements at rest: a.inline-flex.items-center → rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0 | div.inline-flex.items-center → rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0 | a.group.inline-flex → rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0",
+   "fix": "Remove. Separate surfaces with a tone step or space. Shadows are for things that really float (menus, dialogs, sticky bars).",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "hairline",
+   "width": 1440,
+   "message": "56 thin rule(s)/divider line(s): div.grid.grid-cols-2 696px | div.flex.items-center 438px | div.pt-3.border-t 438px | section.py-6.bg-slate-100/70 1440px",
+   "fix": "Delete. Separate with space, a tone change, or scale. Lines are only for real tables and form fields.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "outlined-box",
+   "width": 1440,
+   "message": "88 boxes drawn with a 1px outline.",
+   "fix": "Define a surface by its fill (one tone step from the page) or leave the content unboxed.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "icon-cards",
+   "width": 1440,
+   "message": "1 row(s) of identical cards each topped with a small icon (6 cards).",
+   "fix": "Replace with one composed section from the direction: a narrative split, a list set in large type, or real imagery per item."
+  },
+  {
+   "level": "WARN",
+   "id": "size-count",
+   "width": 1440,
+   "message": "14 different font sizes (9, 10, 11, 12, 14, 16, 18, 20, 24, 30, 36, 48, 72, 76).",
+   "fix": "A page needs about five: display, heading, lead, body, small.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "body-size",
+   "width": 1440,
+   "message": "Body text is 12px (the size most of the running text is set in).",
+   "fix": "Body copy 16–20px. Map small sizes from blueprints onto your body step.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "few-pictures",
+   "width": 1440,
+   "message": "Only 0 picture(s) on the page (0 photographs, footage or raster images, 0 interface fragments). Drawings in SVG do not count.",
+   "fix": "Find real pictures of the subject's world with scripts/assets.mjs (photographs, archival images, maps, engravings, footage), download them to assets/ and give them room: a hero picture, one per section that has a subject, a full-width band. At least four, usually six to twelve."
+  },
+  {
+   "level": "WARN",
+   "id": "no-footage",
+   "width": 1440,
+   "message": "No video anywhere on the page.",
+   "fix": "Look for one honest clip with scripts/assets.mjs --video (the place, the material, the process) and use it as a muted loop with a poster frame. Defend its absence only if no clip fits the subject."
+  },
+  {
+   "level": "FAIL",
+   "id": "small-text",
+   "width": 1440,
+   "message": "250 text blocks under 13px.",
+   "fix": "Nothing meant to be read goes below 13px.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "font-not-dealt",
+   "width": 1440,
+   "message": "The sheet dealt EB Garamond and EB Garamond, but the page renders -apple-system, ui-monospace.",
+   "fix": "Load the dealt face (the link on the sheet) and put it first in font-family. A build that falls back to a default face lands on the default look."
+  },
+  {
+   "level": "WARN",
+   "id": "off-centre",
+   "width": 1440,
+   "message": "The margins differ: 112px on the left, 137px on the right, at 1440px.",
+   "fix": "Put the navigation and the content on one pair of margins; check for padding on one side only, a scrollbar gutter, or a header on another inset than the page."
+  },
+  {
+   "level": "WARN",
+   "id": "ragged-edges",
+   "width": 1440,
+   "message": "Left-aligned text starts at 12 different lines (112px, 137px, 153px, 560px, 977px, 199px, 615px); the three most used hold only 52% of it.",
+   "fix": "Pick two or three anchor lines from the grid and start every heading and paragraph on one of them."
+  },
+  {
+   "level": "WARN",
+   "id": "still-page",
+   "width": 1440,
+   "message": "Little motion: 9 element(s) moved while the page loaded and scrolled.",
+   "fix": "Give every section an entrance for its parts (not one fade of the whole block) and add one moving picture: a looping clip or a slow move on a photograph."
+  },
+  {
+   "level": "FAIL",
+   "id": "headline-lines",
+   "width": 768,
+   "message": "3 headline(s) wrap past two lines at 768px: \"Building Technology That Moves Businesses Forwar\" → 4 lines (6 words, 68px); \"Custom Software Development & Enterprise Archite\" → 3 lines (6 words, 30px); \"Engineering Products & Systems for Modern Enterp\" → 3 lines (7 words, 48px)",
+   "fix": "Cut words first (a headline is a title, not a sentence). Then give it a wider measure. Lower the size only as a last resort and never below the scale you chose. A real statement paragraph belongs in a <p> or <blockquote> at 32px or less."
+  },
+  {
+   "level": "WARN",
+   "id": "measure",
+   "width": 768,
+   "message": "Longest paragraph runs about 90 characters per line.",
+   "fix": "Cap paragraphs at 45–75 characters (max-width: 60ch)."
+  },
+  {
+   "level": "FAIL",
+   "id": "headline-lines",
+   "width": 390,
+   "message": "4 headline(s) wrap past two lines at 390px: \"Building Technology That Moves Businesses Forwar\" → 3 lines (6 words, 32px); \"Custom Software Development & Enterprise Archite\" → 3 lines (6 words, 24px); \"XenoCRM: Unified Business OS Architecture\" → 3 lines (5 words, 24px); \"Engineering Products & Systems for Modern Enterp\" → 3 lines (7 words, 30px)",
+   "fix": "Cut words first (a headline is a title, not a sentence). Then give it a wider measure. Lower the size only as a last resort and never below the scale you chose. A real statement paragraph belongs in a <p> or <blockquote> at 24px or less."
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "D:\\GitHub\\xenotrix_\\.taste-skill\\before\\desktop-fold.jpg",
+   "pages": [
+    "D:\\GitHub\\xenotrix_\\.taste-skill\\before\\desktop-page-01.jpg",
+    "D:\\GitHub\\xenotrix_\\.taste-skill\\before\\desktop-page-02.jpg",
+    "D:\\GitHub\\xenotrix_\\.taste-skill\\before\\desktop-page-03.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "tablet",
+   "width": 768,
+   "fold": "D:\\GitHub\\xenotrix_\\.taste-skill\\before\\tablet-fold.jpg",
+   "pages": [
+    "D:\\GitHub\\xenotrix_\\.taste-skill\\before\\tablet-page-01.jpg",
+    "D:\\GitHub\\xenotrix_\\.taste-skill\\before\\tablet-page-02.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "D:\\GitHub\\xenotrix_\\.taste-skill\\before\\mobile-fold.jpg",
+   "pages": [
+    "D:\\GitHub\\xenotrix_\\.taste-skill\\before\\mobile-page-01.jpg",
+    "D:\\GitHub\\xenotrix_\\.taste-skill\\before\\mobile-page-02.jpg"
+   ],
+   "film": []
+  }
+ ]
+}

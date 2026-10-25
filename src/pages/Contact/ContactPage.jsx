@@ -1,9 +1,19 @@
 import React, { useState } from 'react';
+import { motion } from 'framer-motion';
+import { 
+  Mail, 
+  MessageSquare, 
+  Calendar, 
+  Send, 
+  CheckCircle2, 
+  Loader2, 
+  MapPin, 
+  ShieldCheck, 
+  Clock 
+} from 'lucide-react';
+import confetti from 'canvas-confetti';
 import { SEO } from '../../components/common/SEO';
 import { COMPANY_INFO } from '../../data/companyData';
-import { motion } from 'framer-motion';
-import { Mail, Phone, MessageSquare, Calendar, Send, CheckCircle2, Terminal, Loader2, AlertCircle } from 'lucide-react';
-import confetti from 'canvas-confetti';
 import { trackFormSubmission, trackWhatsAppClick, trackContactClick } from '../../utils/analytics';
 
 export const ContactPage = () => {
@@ -46,7 +56,6 @@ export const ContactPage = () => {
     setErrorMessage('');
 
     try {
-      // Send directly via FormSubmit AJAX service to info@xenotrix.in
       const response = await fetch('https://formsubmit.co/ajax/info@xenotrix.in', {
         method: 'POST',
         headers: {
@@ -75,13 +84,12 @@ export const ContactPage = () => {
         setStatus('success');
         trackFormSubmission(formData.service, formData.budget);
         confetti({
-          particleCount: 90,
-          spread: 70,
+          particleCount: 80,
+          spread: 60,
           origin: { y: 0.6 },
-          colors: ['#06b6d4', '#8b5cf6', '#10b981', '#ffffff']
+          colors: ['#0d7480', '#1f3038', '#5d6b72']
         });
       } else {
-        // Fallback open mailto directly
         const emailSubject = `Project Inquiry: ${formData.service}`;
         const emailBody = `Name: ${formData.name}\nEmail: ${formData.email}\nCompany: ${formData.company}\nPhone: ${formData.phone}\nMessage: ${formData.message}`;
         window.location.href = `mailto:info@xenotrix.in?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
@@ -134,48 +142,42 @@ export const ContactPage = () => {
         breadcrumbs={breadcrumbs}
         schema={contactSchema}
       />
-      <div className="pt-32 pb-28 bg-[#050505] relative overflow-hidden">
-        
-        {/* Ambient Glow */}
-        <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[700px] h-[350px] bg-cyan-900/10 rounded-full blur-[160px] pointer-events-none" />
-
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-16">
+      <div className="pt-32 pb-24 bg-[#f7f9fa] text-[#1f3038]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
           
           {/* Header */}
           <div className="space-y-6 max-w-3xl">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-cyan-950/80 border border-cyan-800/40 text-xs font-mono text-cyan-300">
-              <Terminal className="w-3.5 h-3.5" />
-              <span>PROJECT SCOPING INQUIRY</span>
-            </div>
-
-            <h1 className="font-display font-extrabold text-4xl sm:text-6xl text-white tracking-tight uppercase">
-              LET'S BUILD SOMETHING USEFUL.
+            <h1 className="font-normal text-4xl sm:text-5xl lg:text-6xl text-[#1f3038] tracking-tight leading-[1.06]">
+              Let's build something <br />that works.
             </h1>
 
-            <p className="text-base sm:text-xl text-zinc-400 leading-relaxed font-normal">
-              Tell us what you're trying to build, improve or automate. We typically respond within 24 hours with an initial technical scoping roadmap.
+            <p className="text-lg sm:text-xl text-[#5d6b72] leading-relaxed">
+              Tell us what you're trying to build, improve or automate. Our senior engineering leads typically respond within 24 hours with an initial technical scoping roadmap.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 pt-8 border-t border-white/10">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10">
             
             {/* Direct Contact Options Left Column */}
-            <div className="lg:col-span-5 space-y-8">
-              <div className="p-8 rounded-2xl bg-[#0A0A0D] border border-white/10 space-y-6">
-                <h3 className="font-display font-bold text-xl text-white">Direct Channels</h3>
+            <div className="lg:col-span-5 space-y-6">
+              <div className="p-8 rounded-xl bg-[#ecf0f2] space-y-6">
+                <div>
+                  <h3 className="font-semibold text-xl text-[#1f3038]">Direct Channels</h3>
+                  <p className="text-sm text-[#5d6b72] mt-1">Connect directly with our engineering office.</p>
+                </div>
                 
-                <div className="space-y-4">
+                <div className="space-y-3">
                   <a
                     href="mailto:info@xenotrix.in"
                     onClick={() => trackContactClick('email')}
-                    className="flex items-center gap-4 p-4 rounded-xl bg-white/[0.03] border border-white/5 hover:border-cyan-500/40 text-zinc-300 hover:text-white transition-all group"
+                    className="flex items-center gap-4 p-4 rounded-lg bg-[#f7f9fa] hover:bg-[#e2e8eb] transition-colors group"
                   >
-                    <div className="w-10 h-10 rounded-lg bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 shrink-0">
+                    <div className="w-10 h-10 rounded bg-[#1f3038] text-white flex items-center justify-center shrink-0">
                       <Mail className="w-5 h-5" />
                     </div>
                     <div>
-                      <div className="text-[10px] font-mono text-zinc-400 uppercase">OFFICIAL EMAIL</div>
-                      <div className="text-sm font-semibold">info@xenotrix.in</div>
+                      <div className="text-xs text-[#5d6b72]">Official Email</div>
+                      <div className="text-sm font-semibold text-[#1f3038]">info@xenotrix.in</div>
                     </div>
                   </a>
 
@@ -184,25 +186,36 @@ export const ContactPage = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => trackWhatsAppClick('Contact Page')}
-                    className="flex items-center gap-4 p-4 rounded-xl bg-white/[0.03] border border-white/5 hover:border-emerald-500/40 text-zinc-300 hover:text-white transition-all group"
+                    className="flex items-center gap-4 p-4 rounded-lg bg-[#f7f9fa] hover:bg-[#e2e8eb] transition-colors group"
                   >
-                    <div className="w-10 h-10 rounded-lg bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 shrink-0">
+                    <div className="w-10 h-10 rounded bg-[#1f3038] text-white flex items-center justify-center shrink-0">
                       <MessageSquare className="w-5 h-5" />
                     </div>
                     <div>
-                      <div className="text-[10px] font-mono text-zinc-400 uppercase">WHATSAPP DIRECT</div>
-                      <div className="text-sm font-semibold">+91 9995544316</div>
+                      <div className="text-xs text-[#5d6b72]">WhatsApp Direct</div>
+                      <div className="text-sm font-semibold text-[#1f3038]">+91 9995544316</div>
                     </div>
                   </a>
 
-                  <div className="flex items-center gap-4 p-4 rounded-xl bg-white/[0.03] border border-white/5 text-zinc-300">
-                    <div className="w-10 h-10 rounded-lg bg-violet-500/10 border border-violet-500/30 flex items-center justify-center text-violet-400 shrink-0">
-                      <Calendar className="w-5 h-5" />
+                  <div className="flex items-center gap-4 p-4 rounded-lg bg-[#f7f9fa]">
+                    <div className="w-10 h-10 rounded bg-[#1f3038] text-white flex items-center justify-center shrink-0">
+                      <MapPin className="w-5 h-5" />
                     </div>
                     <div>
-                      <div className="text-[10px] font-mono text-zinc-400 uppercase">DISCOVERY CALL</div>
-                      <div className="text-sm font-semibold">30-Min Technical Scoping</div>
+                      <div className="text-xs text-[#5d6b72]">Headquarters</div>
+                      <div className="text-sm font-semibold text-[#1f3038]">Thrissur, Kerala (680594)</div>
                     </div>
+                  </div>
+                </div>
+
+                <div className="pt-4 border-t border-[#d8e0e4] space-y-2 text-xs text-[#5d6b72]">
+                  <div className="flex items-center gap-2">
+                    <ShieldCheck className="w-4 h-4 text-[#0d7480]" />
+                    <span>Non-Disclosure Agreement (NDA) on request</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Clock className="w-4 h-4 text-[#0d7480]" />
+                    <span>Guaranteed response within 24 business hours</span>
                   </div>
                 </div>
               </div>
@@ -210,90 +223,90 @@ export const ContactPage = () => {
 
             {/* Form Right Column */}
             <div className="lg:col-span-7">
-              <div className="p-8 rounded-2xl bg-[#0A0A0D] border border-white/10 shadow-2xl">
+              <div className="p-8 sm:p-10 rounded-xl bg-[#ecf0f2]">
                 {status === 'success' ? (
                   <motion.div
-                    initial={{ opacity: 0, scale: 0.95 }}
+                    initial={{ opacity: 0, scale: 0.98 }}
                     animate={{ opacity: 1, scale: 1 }}
-                    className="py-12 text-center space-y-6"
+                    className="py-12 text-center space-y-4"
                   >
-                    <div className="w-16 h-16 rounded-full bg-emerald-500/20 border border-emerald-500/40 text-emerald-400 flex items-center justify-center mx-auto">
-                      <CheckCircle2 className="w-8 h-8" />
+                    <div className="w-12 h-12 rounded bg-[#0d7480] text-white flex items-center justify-center mx-auto">
+                      <CheckCircle2 className="w-6 h-6" />
                     </div>
-                    <h3 className="font-display font-extrabold text-3xl text-white">INQUIRY TRANSMITTED</h3>
-                    <p className="text-sm text-zinc-400 max-w-md mx-auto leading-relaxed">
-                      Thank you for reaching out! Your project inquiry has been sent to <strong className="text-white">info@xenotrix.in</strong>. Our engineering team will review your requirements and respond within 24 hours.
+                    <h3 className="font-semibold text-2xl text-[#1f3038]">Inquiry Received</h3>
+                    <p className="text-sm text-[#5d6b72] max-w-md mx-auto leading-relaxed">
+                      Thank you for reaching out! Your project inquiry has been transmitted to <strong className="text-[#1f3038]">info@xenotrix.in</strong>. Our engineering leads will review your requirements and respond within 24 hours.
                     </p>
-                    <div className="pt-2 flex justify-center gap-3">
+                    <div className="pt-2">
                       <button
                         onClick={() => setStatus('idle')}
-                        className="px-6 py-2.5 rounded-xl bg-white/[0.05] border border-white/10 text-xs font-mono text-cyan-300 hover:text-white transition-colors"
+                        className="px-5 py-2.5 rounded bg-[#1f3038] text-white text-xs font-semibold hover:bg-[#0d7480] transition-colors"
                       >
                         Submit Another Inquiry
                       </button>
                     </div>
                   </motion.div>
                 ) : (
-                  <form onSubmit={handleSubmit} className="space-y-6">
+                  <form onSubmit={handleSubmit} className="space-y-5">
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                      <div className="space-y-2">
-                        <label className="text-xs font-mono text-zinc-400 uppercase">Name *</label>
+                      <div className="space-y-1.5">
+                        <label className="text-xs font-semibold text-[#1f3038]">Your Name *</label>
                         <input
                           type="text"
                           required
                           value={formData.name}
                           onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                           placeholder="Jane Doe"
-                          className="w-full px-4 py-3 rounded-xl bg-[#111116] border border-white/10 text-white text-xs focus:border-cyan-500 focus:outline-none transition-colors"
+                          className="w-full px-3.5 py-2.5 rounded-lg bg-white border border-[#d8e0e4] text-[#1f3038] text-sm focus:outline-none focus:ring-1 focus:ring-[#0d7480]"
                         />
                       </div>
-                      <div className="space-y-2">
-                        <label className="text-xs font-mono text-zinc-400 uppercase">Company *</label>
+                      <div className="space-y-1.5">
+                        <label className="text-xs font-semibold text-[#1f3038]">Company / Entity *</label>
                         <input
                           type="text"
                           required
                           value={formData.company}
                           onChange={(e) => setFormData({ ...formData, company: e.target.value })}
                           placeholder="Acme Corp"
-                          className="w-full px-4 py-3 rounded-xl bg-[#111116] border border-white/10 text-white text-xs focus:border-cyan-500 focus:outline-none transition-colors"
+                          className="w-full px-3.5 py-2.5 rounded-lg bg-white border border-[#d8e0e4] text-[#1f3038] text-sm focus:outline-none focus:ring-1 focus:ring-[#0d7480]"
                         />
                       </div>
                     </div>
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                      <div className="space-y-2">
-                        <label className="text-xs font-mono text-zinc-400 uppercase">Email *</label>
+                      <div className="space-y-1.5">
+                        <label className="text-xs font-semibold text-[#1f3038]">Email Address *</label>
                         <input
                           type="email"
                           required
                           value={formData.email}
                           onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                          placeholder="jane@acme.com"
-                          className="w-full px-4 py-3 rounded-xl bg-[#111116] border border-white/10 text-white text-xs focus:border-cyan-500 focus:outline-none transition-colors"
+                          placeholder="jane@company.com"
+                          className="w-full px-3.5 py-2.5 rounded-lg bg-white border border-[#d8e0e4] text-[#1f3038] text-sm focus:outline-none focus:ring-1 focus:ring-[#0d7480]"
                         />
                       </div>
-                      <div className="space-y-2">
-                        <label className="text-xs font-mono text-zinc-400 uppercase">Phone / WhatsApp</label>
+                      <div className="space-y-1.5">
+                        <label className="text-xs font-semibold text-[#1f3038]">Phone / WhatsApp</label>
                         <input
                           type="tel"
                           value={formData.phone}
                           onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                           placeholder="+91 9995544316"
-                          className="w-full px-4 py-3 rounded-xl bg-[#111116] border border-white/10 text-white text-xs focus:border-cyan-500 focus:outline-none transition-colors"
+                          className="w-full px-3.5 py-2.5 rounded-lg bg-white border border-[#d8e0e4] text-[#1f3038] text-sm focus:outline-none focus:ring-1 focus:ring-[#0d7480]"
                         />
                       </div>
                     </div>
 
                     {/* What do you need? */}
-                    <div className="space-y-2">
-                      <label className="text-xs font-mono text-zinc-400 uppercase">What do you need?</label>
+                    <div className="space-y-1.5">
+                      <label className="text-xs font-semibold text-[#1f3038]">Primary Area of Interest</label>
                       <select
                         value={formData.service}
                         onChange={(e) => setFormData({ ...formData, service: e.target.value })}
-                        className="w-full px-4 py-3 rounded-xl bg-[#111116] border border-white/10 text-white text-xs focus:border-cyan-500 focus:outline-none transition-colors"
+                        className="w-full px-3.5 py-2.5 rounded-lg bg-white border border-[#d8e0e4] text-[#1f3038] text-sm focus:outline-none focus:ring-1 focus:ring-[#0d7480]"
                       >
                         {serviceOptions.map((opt) => (
-                          <option key={opt} value={opt} className="bg-[#050505] text-white">
+                          <option key={opt} value={opt}>
                             {opt}
                           </option>
                         ))}
@@ -301,18 +314,18 @@ export const ContactPage = () => {
                     </div>
 
                     {/* Budget Range Selection Chips */}
-                    <div className="space-y-2">
-                      <label className="text-xs font-mono text-zinc-400 uppercase">Budget Range</label>
+                    <div className="space-y-1.5">
+                      <label className="text-xs font-semibold text-[#1f3038]">Estimated Investment Scope</label>
                       <div className="flex flex-wrap gap-2">
                         {budgetOptions.map((b) => (
                           <button
                             key={b}
                             type="button"
                             onClick={() => setFormData({ ...formData, budget: b })}
-                            className={`px-3 py-2 rounded-lg text-xs font-mono transition-colors cursor-pointer ${
+                            className={`px-3 py-1.5 rounded-lg text-xs font-medium transition-colors cursor-pointer ${
                               formData.budget === b
-                                ? 'bg-cyan-500 text-black font-bold'
-                                : 'bg-[#111116] text-zinc-400 border border-white/10 hover:text-white'
+                                ? 'bg-[#1f3038] text-white'
+                                : 'bg-white text-[#1f3038] border border-[#d8e0e4] hover:bg-[#f7f9fa]'
                             }`}
                           >
                             {b}
@@ -322,22 +335,22 @@ export const ContactPage = () => {
                     </div>
 
                     {/* Message */}
-                    <div className="space-y-2">
-                      <label className="text-xs font-mono text-zinc-400 uppercase">Project Overview *</label>
+                    <div className="space-y-1.5">
+                      <label className="text-xs font-semibold text-[#1f3038]">Project Brief / Objectives *</label>
                       <textarea
                         required
                         rows={4}
                         value={formData.message}
                         onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                        placeholder="Briefly describe your objectives, core requirements, or technical challenges..."
-                        className="w-full px-4 py-3 rounded-xl bg-[#111116] border border-white/10 text-white text-xs focus:border-cyan-500 focus:outline-none transition-colors resize-none"
+                        placeholder="Briefly outline what you are building, the existing bottlenecks, or expected timelines..."
+                        className="w-full px-3.5 py-2.5 rounded-lg bg-white border border-[#d8e0e4] text-[#1f3038] text-sm focus:outline-none focus:ring-1 focus:ring-[#0d7480] resize-none"
                       />
                     </div>
 
                     <button
                       type="submit"
                       disabled={status === 'submitting'}
-                      className="w-full py-4 rounded-xl bg-gradient-to-r from-cyan-500 to-violet-600 text-white font-bold text-xs tracking-wider uppercase hover:opacity-90 transition-opacity flex items-center justify-center gap-2 shadow-lg shadow-cyan-500/20 cursor-pointer disabled:opacity-50"
+                      className="w-full py-3.5 rounded-lg bg-[#1f3038] hover:bg-[#0d7480] text-white font-medium text-sm transition-colors flex items-center justify-center gap-2 cursor-pointer disabled:opacity-50"
                     >
                       {status === 'submitting' ? (
                         <>
@@ -347,7 +360,7 @@ export const ContactPage = () => {
                       ) : (
                         <>
                           <Send className="w-4 h-4" />
-                          <span>Transmit Project Scoping Inquiry</span>
+                          <span>Submit Project Scoping Request</span>
                         </>
                       )}
                     </button>
@@ -363,3 +376,5 @@ export const ContactPage = () => {
     </>
   );
 };
+
+export default ContactPage;

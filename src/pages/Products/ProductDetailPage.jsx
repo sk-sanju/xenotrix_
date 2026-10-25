@@ -1,21 +1,17 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
+import { 
+  ArrowRight, 
+  Check, 
+  Lock, 
+  Zap, 
+  Globe2, 
+  MessageSquare,
+  ShieldCheck,
+  Cpu
+} from 'lucide-react';
 import { SEO } from '../../components/common/SEO';
 import { PRODUCTS } from '../../data/companyData';
-import { 
-  ShieldCheck, 
-  Check, 
-  ArrowRight, 
-  Sparkles, 
-  Terminal, 
-  Radio, 
-  Cpu, 
-  Layers,
-  CheckCircle2,
-  Lock,
-  Zap,
-  Globe2
-} from 'lucide-react';
 import { NotFoundPage } from '../NotFoundPage';
 
 export const ProductDetailPage = () => {
@@ -39,59 +35,62 @@ export const ProductDetailPage = () => {
     }
   };
 
-    const canonicalUrl = `https://xenotrix.in/products/${product.id}`;
-    const breadcrumbs = [
-      { name: 'Home', item: '/' },
-      { name: 'Products', item: '/products' },
-      { name: product.name, item: `/products/${product.id}` }
-    ];
+  const canonicalUrl = `https://xenotrix.in/products/${product.id}`;
+  const breadcrumbs = [
+    { name: 'Home', item: '/' },
+    { name: 'Products', item: '/products' },
+    { name: product.name, item: `/products/${product.id}` }
+  ];
 
-    return (
-      <>
-        <SEO
-          title={`${product.name} — ${product.tagline} | Xenotrix Technologies`}
-          description={product.description}
-          canonical={canonicalUrl}
-          breadcrumbs={breadcrumbs}
-          schema={schema}
-        />
-      <div className="pt-32 pb-28 bg-[#05070D] relative overflow-hidden min-h-screen">
-        {/* Ambient Glows */}
-        <div className="absolute top-1/4 left-1/4 w-[600px] h-[600px] bg-cyan-500/10 rounded-full blur-[160px] pointer-events-none" />
-
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16 relative z-10">
+  return (
+    <>
+      <SEO
+        title={`${product.name} — ${product.tagline} | Xenotrix Technologies`}
+        description={product.description}
+        canonical={canonicalUrl}
+        breadcrumbs={breadcrumbs}
+        schema={schema}
+      />
+      <div className="pt-32 pb-24 bg-[#f7f9fa] text-[#1f3038]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-20">
           
-          {/* Breadcrumb & Badges */}
-          <div className="space-y-6 max-w-4xl">
-            <div className="flex flex-wrap items-center gap-3">
-              <Link to="/products" className="text-xs font-mono text-cyan-400 hover:text-cyan-300">
-                ← PRODUCTS ECOSYSTEM
-              </Link>
-              <span className="text-zinc-600">/</span>
-              <span className="text-xs font-mono text-zinc-400 uppercase">{product.category}</span>
+          {/* Breadcrumb */}
+          <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-xs text-[#5d6b72]">
+            <Link to="/" className="hover:text-[#0d7480] transition-colors">Home</Link>
+            <span>/</span>
+            <Link to="/products" className="hover:text-[#0d7480] transition-colors">Products</Link>
+            <span>/</span>
+            <span className="text-[#1f3038] font-medium">{product.name}</span>
+          </nav>
+
+          {/* Product Header */}
+          <div className="space-y-6 max-w-3xl">
+            <div className="flex items-center gap-3">
+              <span className="text-xs font-semibold text-[#0d7480]">
+                {product.category}
+              </span>
+              <span className="text-xs text-[#5d6b72]">•</span>
+              <span className="text-xs font-medium text-[#1f3038] bg-[#ecf0f2] px-2.5 py-0.5 rounded">
+                {product.statusLabel}
+              </span>
             </div>
 
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-cyan-950/80 border border-cyan-800/40 text-xs font-mono text-cyan-300 font-semibold">
-              <ShieldCheck className="w-3.5 h-3.5" />
-              <span>PROPRIETARY PLATFORM // {product.statusLabel}</span>
-            </div>
-
-            <h1 className="font-display font-extrabold text-4xl sm:text-6xl md:text-7xl text-white tracking-tight leading-[1.02]">
+            <h1 className="font-normal text-4xl sm:text-5xl lg:text-6xl text-[#1f3038] tracking-tight leading-[1.06]">
               {product.name}
             </h1>
 
-            <p className="text-lg sm:text-2xl text-cyan-300 font-medium leading-relaxed">
+            <p className="text-lg sm:text-xl text-[#1f3038] font-medium leading-relaxed">
               {product.tagline}
             </p>
 
-            <p className="text-sm sm:text-base text-zinc-300 leading-relaxed max-w-3xl">
+            <p className="text-base sm:text-lg text-[#5d6b72] leading-relaxed">
               {product.description}
             </p>
 
             <div className="pt-2 flex flex-wrap items-center gap-4">
               <Link
                 to="/contact"
-                className="inline-flex items-center gap-3 px-8 py-4 rounded-xl bg-white text-zinc-950 font-bold text-sm hover:bg-cyan-300 hover:text-black transition-all shadow-xl shadow-cyan-500/10"
+                className="inline-flex items-center gap-2 px-6 py-3.5 rounded bg-[#1f3038] hover:bg-[#0d7480] text-white font-medium text-sm transition-colors"
               >
                 <span>Request Enterprise Demo</span>
                 <ArrowRight className="w-4 h-4" />
@@ -101,81 +100,81 @@ export const ProductDetailPage = () => {
                 href={`https://wa.me/+919995544316?text=${encodeURIComponent(`Hello Xenotrix team, I'd like more information about ${product.name}.`)}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-6 py-4 rounded-xl bg-white/[0.05] hover:bg-white/[0.1] text-white font-semibold text-sm border border-white/10 transition-all"
+                className="inline-flex items-center gap-2 px-6 py-3.5 rounded bg-[#ecf0f2] hover:bg-[#e2e8eb] text-[#1f3038] font-medium text-sm transition-colors"
               >
+                <MessageSquare className="w-4 h-4 text-[#0d7480]" />
                 <span>Inquire on WhatsApp</span>
               </a>
             </div>
           </div>
 
           {/* Key Metrics Strip */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-10 border-t border-white/10">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {product.metrics.map((m, idx) => (
-              <div key={idx} className="p-6 sm:p-8 rounded-3xl bg-[#090D18] border border-white/10 space-y-2 shadow-xl">
-                <div className="text-xs font-mono text-zinc-400 uppercase tracking-wider">{m.label}</div>
-                <div className="text-2xl sm:text-3xl font-display font-extrabold text-white">{m.value}</div>
+              <div key={idx} className="p-6 sm:p-8 rounded-xl bg-[#ecf0f2] space-y-2">
+                <div className="text-xs text-[#5d6b72] font-medium">{m.label}</div>
+                <div className="text-2xl sm:text-3xl font-semibold text-[#1f3038]">{m.value}</div>
               </div>
             ))}
           </div>
 
-          {/* SaaS UI Mockup View */}
-          <div className="p-6 sm:p-10 rounded-3xl bg-[#080B14] border border-white/12 shadow-2xl space-y-6">
-            <div className="flex items-center justify-between border-b border-white/10 pb-4">
+          {/* System Console Fragment */}
+          <div data-ui="product-console" className="p-6 sm:p-10 rounded-xl bg-[#ecf0f2] space-y-6">
+            <div className="flex items-center justify-between border-b border-[#d8e0e4] pb-4">
               <div className="flex items-center gap-2">
-                <div className="w-3 h-3 rounded-full bg-red-500/80" />
-                <div className="w-3 h-3 rounded-full bg-amber-500/80" />
-                <div className="w-3 h-3 rounded-full bg-emerald-500/80" />
-                <span className="text-xs font-mono text-zinc-400 ml-2">
+                <div className="w-3 h-3 rounded-full bg-[#d8e0e4]" />
+                <div className="w-3 h-3 rounded-full bg-[#d8e0e4]" />
+                <div className="w-3 h-3 rounded-full bg-[#d8e0e4]" />
+                <span className="text-xs text-[#5d6b72] font-medium ml-2">
                   app.xenotrix.in/{product.id}/console
                 </span>
               </div>
-              <div className="flex items-center gap-2 text-xs font-mono text-emerald-400">
-                <Radio className="w-3 h-3 animate-pulse" />
-                <span>OPERATIONAL NODE</span>
+              <div className="text-xs font-semibold text-[#0d7480]">
+                Active Production Runtime
               </div>
             </div>
 
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center py-4">
-              <div className="lg:col-span-6 space-y-4">
-                <h3 className="text-2xl font-bold text-white">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center py-2">
+              <div className="lg:col-span-7 space-y-4">
+                <h3 className="text-2xl font-semibold text-[#1f3038]">
                   Enterprise System Architecture
                 </h3>
-                <p className="text-sm text-zinc-300 leading-relaxed">
+                <p className="text-sm sm:text-base text-[#5d6b72] leading-relaxed">
                   {product.overview}
                 </p>
                 <div className="space-y-2.5 pt-2">
-                  <div className="flex items-center gap-2 text-xs text-zinc-300">
-                    <Lock className="w-4 h-4 text-cyan-400" />
+                  <div className="flex items-center gap-2 text-sm text-[#1f3038]">
+                    <Lock className="w-4 h-4 text-[#0d7480]" />
                     <span>Role-Based Access Control (RBAC) & AES-256 Encryption</span>
                   </div>
-                  <div className="flex items-center gap-2 text-xs text-zinc-300">
-                    <Zap className="w-4 h-4 text-cyan-400" />
+                  <div className="flex items-center gap-2 text-sm text-[#1f3038]">
+                    <Zap className="w-4 h-4 text-[#0d7480]" />
                     <span>Sub-Second Realtime Synchronization over WebSockets</span>
                   </div>
-                  <div className="flex items-center gap-2 text-xs text-zinc-300">
-                    <Globe2 className="w-4 h-4 text-cyan-400" />
+                  <div className="flex items-center gap-2 text-sm text-[#1f3038]">
+                    <Globe2 className="w-4 h-4 text-[#0d7480]" />
                     <span>Multi-Region Cloud Hosting with 99.98% High Availability</span>
                   </div>
                 </div>
               </div>
 
-              <div className="lg:col-span-6 p-6 rounded-2xl bg-black/60 border border-white/8 space-y-4 font-mono text-xs">
-                <div className="text-zinc-400 border-b border-white/5 pb-2 flex justify-between">
-                  <span>RUNTIME TELEMETRY</span>
-                  <span className="text-cyan-400">LIVE FEED</span>
+              <div className="lg:col-span-5 p-6 rounded-lg bg-[#f7f9fa] space-y-3 text-xs">
+                <div className="text-[#5d6b72] border-b border-[#ecf0f2] pb-2 flex justify-between font-medium">
+                  <span>Runtime Telemetry</span>
+                  <span className="text-[#0d7480]">Live Node</span>
                 </div>
-                <div className="space-y-2 text-zinc-300">
-                  <div className="flex justify-between p-2 rounded bg-white/5">
-                    <span>DATABASE CLUSTER:</span>
-                    <span className="text-emerald-400">HEALTHY (100%)</span>
+                <div className="space-y-2 text-[#1f3038]">
+                  <div className="flex justify-between p-2 rounded bg-[#ecf0f2]">
+                    <span className="font-medium">Database Cluster:</span>
+                    <span className="font-semibold text-[#0d7480]">Healthy (100%)</span>
                   </div>
-                  <div className="flex justify-between p-2 rounded bg-white/5">
-                    <span>API GATEWAY LATENCY:</span>
-                    <span className="text-cyan-300">&lt; 35ms</span>
+                  <div className="flex justify-between p-2 rounded bg-[#ecf0f2]">
+                    <span className="font-medium">API Gateway Latency:</span>
+                    <span className="font-semibold text-[#1f3038]">&lt; 35ms</span>
                   </div>
-                  <div className="flex justify-between p-2 rounded bg-white/5">
-                    <span>MULTI-TENANCY ISOLATION:</span>
-                    <span className="text-violet-300">ENFORCED</span>
+                  <div className="flex justify-between p-2 rounded bg-[#ecf0f2]">
+                    <span className="font-medium">Multi-Tenancy Isolation:</span>
+                    <span className="font-semibold text-[#1f3038]">Enforced</span>
                   </div>
                 </div>
               </div>
@@ -183,27 +182,27 @@ export const ProductDetailPage = () => {
           </div>
 
           {/* Features Grid */}
-          <div className="pt-10 border-t border-white/10 space-y-8">
+          <div className="space-y-8">
             <div className="space-y-2">
-              <span className="text-xs font-mono text-cyan-400 uppercase tracking-widest font-semibold">
-                SYSTEM CAPABILITIES
-              </span>
-              <h2 className="font-display font-extrabold text-3xl sm:text-4xl text-white">
-                Engineered Capabilities of {product.name}
+              <h2 className="font-normal text-3xl sm:text-4xl text-[#1f3038] tracking-tight">
+                System Capabilities
               </h2>
+              <p className="text-sm sm:text-base text-[#5d6b72] max-w-xl">
+                Core operational features built into {product.name} to maximize automation and team output.
+              </p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {product.features.map((feat, idx) => (
                 <div
                   key={idx}
-                  className="p-6 rounded-2xl bg-[#090D18] border border-white/8 hover:border-cyan-500/30 transition-all space-y-3 shadow-lg"
+                  className="p-6 rounded-xl bg-[#ecf0f2] space-y-3"
                 >
-                  <div className="w-8 h-8 rounded-xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400">
+                  <div className="w-8 h-8 rounded bg-[#1f3038] text-white flex items-center justify-center font-bold text-xs">
                     <Check className="w-4 h-4" />
                   </div>
-                  <h4 className="font-bold text-base text-white">{feat}</h4>
-                  <p className="text-xs text-zinc-400">
+                  <h4 className="font-semibold text-base text-[#1f3038]">{feat}</h4>
+                  <p className="text-sm text-[#5d6b72] leading-relaxed">
                     Built for enterprise workflows with automated edge case handling and data validation.
                   </p>
                 </div>
@@ -212,15 +211,15 @@ export const ProductDetailPage = () => {
           </div>
 
           {/* Underlying Architecture Tech Stack */}
-          <div className="pt-10 border-t border-white/10 space-y-6">
-            <h3 className="font-display font-bold text-2xl text-white">
+          <div className="space-y-6">
+            <h3 className="font-normal text-2xl sm:text-3xl text-[#1f3038] tracking-tight">
               Underlying Technology Architecture
             </h3>
-            <div className="flex flex-wrap gap-2.5">
+            <div className="flex flex-wrap gap-2">
               {product.techStack.map((tech, idx) => (
                 <span
                   key={idx}
-                  className="px-4 py-2 rounded-xl bg-[#0D121F] border border-white/10 text-xs font-mono text-cyan-300"
+                  className="px-4 py-2 rounded-lg bg-[#ecf0f2] text-sm font-medium text-[#1f3038]"
                 >
                   {tech}
                 </span>
@@ -228,28 +227,29 @@ export const ProductDetailPage = () => {
             </div>
           </div>
 
-          {/* CTA Box */}
-          <div className="p-8 sm:p-12 rounded-3xl bg-gradient-to-r from-cyan-950/40 via-blue-950/40 to-violet-950/40 border border-cyan-500/30 text-center space-y-6">
-            <h3 className="font-display font-extrabold text-3xl sm:text-4xl text-white">
-              Ready to Deploy {product.name} for Your Business?
-            </h3>
-            <p className="text-base text-zinc-300 max-w-xl mx-auto">
-              Schedule a direct consultation with our engineering team to assess integration blueprints and pricing models.
-            </p>
-            <div>
-              <Link
-                to="/contact"
-                className="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-white text-zinc-950 font-bold text-sm hover:bg-cyan-300 hover:text-black transition-all"
-              >
-                <span>Start Deployment Consultation</span>
-                <ArrowRight className="w-4 h-4" />
-              </Link>
+          {/* Bottom CTA Box */}
+          <div className="p-8 sm:p-12 rounded-xl bg-[#ecf0f2] flex flex-col md:flex-row items-center justify-between gap-6">
+            <div className="space-y-2 max-w-xl">
+              <h3 className="font-normal text-2xl sm:text-3xl text-[#1f3038]">
+                Ready to deploy {product.name}?
+              </h3>
+              <p className="text-sm sm:text-base text-[#5d6b72]">
+                Schedule a direct consultation with our engineering team to assess integration blueprints, customization scopes, and deployment timelines.
+              </p>
             </div>
+            <Link
+              to="/contact"
+              className="inline-flex items-center gap-2 px-6 py-3.5 rounded bg-[#1f3038] hover:bg-[#0d7480] text-white font-medium text-sm transition-colors shrink-0"
+            >
+              <span>Start Deployment Consultation</span>
+              <ArrowRight className="w-4 h-4" />
+            </Link>
           </div>
 
         </div>
-
       </div>
     </>
   );
 };
+
+export default ProductDetailPage;

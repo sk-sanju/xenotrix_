@@ -7,7 +7,7 @@ import { AppRoutes } from './routes/AppRoutes';
 export function App() {
   return (
     <BrowserRouter>
-      <div className="relative min-h-screen bg-[#05070D] text-[#F8FAFC] font-sans bg-noise overflow-x-hidden selection:bg-cyan-500/30 selection:text-cyan-200">
+      <div className="relative min-h-screen bg-[#f7f9fa] text-[#1f3038] font-sans overflow-x-hidden selection:bg-[#0d7480]/20 selection:text-[#0d7480]">
         <Navbar />
         <AppRoutes />
         <Footer />

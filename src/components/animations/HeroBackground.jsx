@@ -88,7 +88,7 @@ export const HeroBackground = () => {
       draw() {
         ctx.beginPath();
         ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
-        ctx.fillStyle = `rgba(56, 189, 248, ${this.alpha})`;
+        ctx.fillStyle = `rgba(2, 132, 199, ${this.alpha * 0.8})`;
         ctx.fill();
       }
     }
@@ -127,11 +127,11 @@ export const HeroBackground = () => {
           const dist = Math.sqrt(dx * dx + dy * dy);
 
           if (dist < maxDistance) {
-            const lineAlpha = (1 - dist / maxDistance) * 0.18;
+            const lineAlpha = (1 - dist / maxDistance) * 0.16;
             ctx.beginPath();
             ctx.moveTo(particles[i].x, particles[i].y);
             ctx.lineTo(particles[j].x, particles[j].y);
-            ctx.strokeStyle = `rgba(6, 182, 212, ${lineAlpha})`;
+            ctx.strokeStyle = `rgba(2, 132, 199, ${lineAlpha})`;
             ctx.stroke();
           }
         }

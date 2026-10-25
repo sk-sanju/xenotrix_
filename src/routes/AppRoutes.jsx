@@ -37,8 +37,8 @@ export const ScrollToTop = () => {
 
 // Lightweight Suspense Fallback
 const LoadingFallback = () => (
-  <div className="min-h-[60vh] flex items-center justify-center bg-[#05070D]">
-    <div className="w-6 h-6 rounded-full border-2 border-cyan-400 border-t-transparent animate-spin" />
+  <div className="min-h-[60vh] flex items-center justify-center bg-[#f7f9fa]">
+    <div className="w-6 h-6 rounded-full border-2 border-[#0d7480] border-t-transparent animate-spin" />
   </div>
 );
 
