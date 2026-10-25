@@ -56,20 +56,14 @@ export const Navbar = () => {
             {/* Wordmark Logo */}
             <Link
               to="/"
-              className="flex items-center gap-3 focus:outline-none shrink-0"
+              className="flex items-center focus:outline-none shrink-0"
               aria-label="Xenotrix Technologies Home"
             >
-              <div className="w-8 h-8 rounded bg-[#1f3038] text-white flex items-center justify-center font-bold text-sm tracking-tight">
-                X
-              </div>
-              <div className="flex flex-col">
-                <span className="font-semibold text-base tracking-tight text-[#1f3038]">
-                  XENOTRIX
-                </span>
-                <span className="text-sm text-[#5d6b72] leading-none">
-                  Technologies
-                </span>
-              </div>
+              <img
+                src="/logo.jpeg"
+                alt="Xenotrix Technologies"
+                className="h-8 md:h-9 w-auto object-contain"
+              />
             </Link>
 
             {/* Desktop Navigation Links */}

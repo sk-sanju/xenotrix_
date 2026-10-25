@@ -15,18 +15,12 @@ export const Footer = () => {
           
           {/* Brand Col */}
           <div className="lg:col-span-4 space-y-6">
-            <Link to="/" className="flex items-center gap-3">
-              <div className="w-8 h-8 rounded bg-[#1f3038] text-white flex items-center justify-center font-bold text-sm">
-                X
-              </div>
-              <div className="flex flex-col">
-                <span className="font-semibold text-base tracking-tight text-[#1f3038]">
-                  XENOTRIX
-                </span>
-                <span className="text-sm text-[#5d6b72]">
-                  Technologies
-                </span>
-              </div>
+            <Link to="/" className="inline-block focus:outline-none" aria-label="Xenotrix Technologies Home">
+              <img
+                src="/apple-touch-icon.png"
+                alt="Xenotrix Technologies"
+                className="h-10 w-auto object-contain"
+              />
             </Link>
 
             <p className="text-base text-[#1f3038] leading-relaxed max-w-sm">
@@ -135,22 +129,11 @@ export const Footer = () => {
 
         </div>
 
-        {/* Photography & Architectural Media Attribution */}
-        <div className="pt-10 text-sm text-[#1f3038] max-w-4xl space-y-2">
-          <div>
-            Photography: <a href="https://commons.wikimedia.org/wiki/File:Faculty_of_Civil_Engineering_and_Architecture_in_Szczecin,_2016.jpg" target="_blank" rel="noopener noreferrer" className="underline hover:text-[#0d7480]">“Faculty of Civil Engineering and Architecture in Szczecin, 2016”</a> by Szczecinolog, <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener noreferrer" className="underline hover:text-[#0d7480]">CC BY-SA 4.0</a>; <a href="https://commons.wikimedia.org/wiki/File:Faculty_of_Civil_Engineering_and_Architecture_in_Szczecin,_2017.jpg" target="_blank" rel="noopener noreferrer" className="underline hover:text-[#0d7480]">“Faculty of Civil Engineering and Architecture in Szczecin, 2017”</a> by Szczecinolog, <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener noreferrer" className="underline hover:text-[#0d7480]">CC BY-SA 4.0</a>; <a href="https://commons.wikimedia.org/wiki/File:Bryansk_State_Engineering_and_Technical_University.jpg" target="_blank" rel="noopener noreferrer" className="underline hover:text-[#0d7480]">“Bryansk State Engineering and Technical University”</a> by Андрей Осиновский, <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener noreferrer" className="underline hover:text-[#0d7480]">CC BY-SA 4.0</a>; <a href="https://commons.wikimedia.org/wiki/File:Bangladesh_University_of_Engineering_and_Technology,_Dhaka,_Bangladesh.jpg" target="_blank" rel="noopener noreferrer" className="underline hover:text-[#0d7480]">“Bangladesh University of Engineering and Technology, Dhaka, Bangladesh”</a> by Tanvir Rahat, <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener noreferrer" className="underline hover:text-[#0d7480]">CC BY-SA 4.0</a> via Wikimedia Commons.
-          </div>
-        </div>
 
         {/* Bottom Bar */}
-        <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-[#1f3038]">
+        <div className="pt-6 text-sm text-[#1f3038]">
           <div>
             © {currentYear} Xenotrix Technologies. Founded in Thrissur, Kerala. All rights reserved.
-          </div>
-
-          <div className="flex items-center gap-2">
-            <span className="w-2 h-2 rounded-full bg-emerald-500" />
-            <span>{COMPANY_INFO.systemStatus}</span>
           </div>
         </div>
 
