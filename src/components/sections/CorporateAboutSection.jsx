@@ -25,18 +25,6 @@ export const CorporateAboutSection = () => {
               Founded by engineers and product builders in Thiruvilwamala, Thrissur, Kerala with distributed global remote operations, our team merges full-stack microservices, autonomous AI models, mobile engineering, and commercial product operations to solve real business bottlenecks at scale.
             </p>
 
-            {/* Real Architectural Engineering Campus Photograph */}
-            <div className="pt-2">
-              <img
-                src="/assets/faculty-of-civil-engineering-and-architecture-in.jpg"
-                width="1920"
-                height="1080"
-                alt="Modern engineering architecture facility"
-                loading="lazy"
-                decoding="async"
-                className="w-full h-56 sm:h-72 object-cover rounded-xl"
-              />
-            </div>
 
             {/* Verification Items */}
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 pt-4">

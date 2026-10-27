@@ -19,21 +19,19 @@ export const WhyXenotrix = () => {
         {/* Differentiators Split Layout */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
           
-          {/* Architectural Image Feature */}
-          <div className="lg:col-span-4 rounded-xl overflow-hidden bg-[#ecf0f2] flex flex-col justify-between">
+          {/* Feature Image */}
+          <div className="lg:col-span-5 rounded-xl overflow-hidden bg-[#ecf0f2] flex flex-col justify-between">
             <img
-              src="/assets/bangladesh-university-of-engineering-and-technology-dhaka.jpg"
-              width="1280"
-              height="2274"
-              alt="Engineering university architecture and technical campus"
+              src="/assets/choose1.jpg"
+              alt="Why Choose Xenotrix — Customer satisfaction, engineering quality, operational efficiency, dedicated service, and system reliability"
               loading="lazy"
               decoding="async"
-              className="w-full h-80 lg:h-full object-cover"
+              className="w-full h-80 lg:h-full object-cover object-center"
             />
           </div>
 
           {/* Differentiators Grid */}
-          <div className="lg:col-span-8 grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-6">
             {WHY_XENOTRIX.map((item, idx) => (
               <div
                 key={idx}

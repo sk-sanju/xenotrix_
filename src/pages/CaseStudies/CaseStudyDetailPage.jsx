@@ -93,6 +93,17 @@ export const CaseStudyDetailPage = () => {
             </div>
           </div>
 
+          {/* Featured Visual Architecture / Blueprint Banner */}
+          {caseStudy.image && (
+            <div className="rounded-xl overflow-hidden">
+              <img
+                src={caseStudy.image}
+                alt={`${caseStudy.title} system architecture overview`}
+                className="w-full h-64 sm:h-80 md:h-[440px] object-cover object-center"
+              />
+            </div>
+          )}
+
           {/* Breakdown Sequence */}
           <div className="space-y-8">
             

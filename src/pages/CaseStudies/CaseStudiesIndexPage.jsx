@@ -56,6 +56,19 @@ export const CaseStudiesIndexPage = () => {
                   </Link>
                 </div>
 
+                {/* Case Study Feature Image */}
+                {cs.image && (
+                  <div className="rounded-lg overflow-hidden">
+                    <img
+                      src={cs.image}
+                      alt={`${cs.title} architecture`}
+                      loading="lazy"
+                      decoding="async"
+                      className="w-full h-56 sm:h-72 md:h-80 object-cover object-center"
+                    />
+                  </div>
+                )}
+
                 {/* 4-Step Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
                   <div className="p-5 rounded-lg bg-[#f7f9fa] space-y-2">
