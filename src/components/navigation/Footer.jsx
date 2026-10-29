@@ -6,6 +6,10 @@ import { COMPANY_INFO, PRODUCTS } from '../../data/companyData';
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
 
+  const handleScrollTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
     <footer className="bg-[#ecf0f2] text-[#5d6b72] pt-20 pb-12 font-sans relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
@@ -15,7 +19,12 @@ export const Footer = () => {
           
           {/* Brand Col */}
           <div className="lg:col-span-4 space-y-6">
-            <Link to="/" className="inline-block focus:outline-none" aria-label="Xenotrix Technologies Home">
+            <Link
+              to="/"
+              onClick={handleScrollTop}
+              className="inline-block focus:outline-none"
+              aria-label="Xenotrix Technologies Home"
+            >
               <img
                 src="/apple-touch-icon.png"
                 alt="Xenotrix Technologies"
@@ -27,31 +36,55 @@ export const Footer = () => {
               Xenotrix Technologies develops software products, digital platforms, and intelligent automation solutions for modern businesses.
             </p>
 
-            <div className="space-y-2 text-sm text-[#1f3038]">
-              <div className="flex items-center gap-2">
-                <MapPin className="w-3.5 h-3.5 text-[#0d7480]" />
+            <div className="space-y-2.5 text-sm text-[#1f3038]">
+              <a
+                href="https://maps.google.com/?q=Thiruvilwamala,+Thrissur,+Kerala,+India+680594"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 hover:text-[#0d7480] transition-colors"
+                title="View location on Google Maps"
+              >
+                <MapPin className="w-3.5 h-3.5 text-[#0d7480] shrink-0" />
                 <span>Thiruvilwamala, Thrissur, Kerala, India (680594)</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <Mail className="w-3.5 h-3.5 text-[#0d7480]" />
+              </a>
+
+              <a
+                href={`mailto:${COMPANY_INFO.email}`}
+                className="flex items-center gap-2 hover:text-[#0d7480] transition-colors"
+                title={`Send email to ${COMPANY_INFO.email}`}
+              >
+                <Mail className="w-3.5 h-3.5 text-[#0d7480] shrink-0" />
                 <span>{COMPANY_INFO.email}</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <Phone className="w-3.5 h-3.5 text-[#0d7480]" />
+              </a>
+
+              <a
+                href={`tel:${COMPANY_INFO.phone.replace(/\s+/g, '')}`}
+                className="flex items-center gap-2 hover:text-[#0d7480] transition-colors"
+                title={`Call ${COMPANY_INFO.phone}`}
+              >
+                <Phone className="w-3.5 h-3.5 text-[#0d7480] shrink-0" />
                 <span>{COMPANY_INFO.phone}</span>
-              </div>
+              </a>
             </div>
           </div>
 
           {/* Proprietary Products Col */}
           <div className="lg:col-span-3 space-y-4">
-            <div className="text-sm font-semibold text-[#1f3038]">
+            <Link
+              to="/products"
+              onClick={handleScrollTop}
+              className="text-sm font-semibold text-[#1f3038] hover:text-[#0d7480] transition-colors inline-block"
+            >
               Proprietary Products
-            </div>
+            </Link>
             <ul className="space-y-2 text-sm">
               {PRODUCTS.map((prod) => (
                 <li key={prod.id}>
-                  <Link to={prod.ctaLink} className="hover:text-[#0d7480] transition-colors">
+                  <Link
+                    to={prod.ctaLink}
+                    onClick={handleScrollTop}
+                    className="hover:text-[#0d7480] transition-colors"
+                  >
                     {prod.name}
                   </Link>
                 </li>
@@ -61,27 +94,47 @@ export const Footer = () => {
 
           {/* Engineering Services Col */}
           <div className="lg:col-span-3 space-y-4">
-            <div className="text-sm font-semibold text-[#1f3038]">
+            <Link
+              to="/services"
+              onClick={handleScrollTop}
+              className="text-sm font-semibold text-[#1f3038] hover:text-[#0d7480] transition-colors inline-block"
+            >
               Engineering Services
-            </div>
+            </Link>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link to="/services/custom-software" className="hover:text-[#0d7480] transition-colors">
+                <Link
+                  to="/services/custom-software-development"
+                  onClick={handleScrollTop}
+                  className="hover:text-[#0d7480] transition-colors"
+                >
                   Custom Software Development
                 </Link>
               </li>
               <li>
-                <Link to="/services/ai-automation" className="hover:text-[#0d7480] transition-colors">
+                <Link
+                  to="/services/ai-automation"
+                  onClick={handleScrollTop}
+                  className="hover:text-[#0d7480] transition-colors"
+                >
                   AI & Workflow Automation
                 </Link>
               </li>
               <li>
-                <Link to="/services/web-mobile" className="hover:text-[#0d7480] transition-colors">
+                <Link
+                  to="/services/web-application-development"
+                  onClick={handleScrollTop}
+                  className="hover:text-[#0d7480] transition-colors"
+                >
                   Web & Mobile Applications
                 </Link>
               </li>
               <li>
-                <Link to="/services/cloud-platforms" className="hover:text-[#0d7480] transition-colors">
+                <Link
+                  to="/services/cloud-deployment"
+                  onClick={handleScrollTop}
+                  className="hover:text-[#0d7480] transition-colors"
+                >
                   Cloud & High-Scale Systems
                 </Link>
               </li>
@@ -90,37 +143,65 @@ export const Footer = () => {
 
           {/* Quick Links Col */}
           <div className="lg:col-span-2 space-y-4">
-            <div className="text-sm font-semibold text-[#1f3038]">
+            <Link
+              to="/about"
+              onClick={handleScrollTop}
+              className="text-sm font-semibold text-[#1f3038] hover:text-[#0d7480] transition-colors inline-block"
+            >
               Company
-            </div>
+            </Link>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link to="/about" className="hover:text-[#0d7480] transition-colors">
+                <Link
+                  to="/about"
+                  onClick={handleScrollTop}
+                  className="hover:text-[#0d7480] transition-colors"
+                >
                   About Xenotrix
                 </Link>
               </li>
               <li>
-                <Link to="/portfolio" className="hover:text-[#0d7480] transition-colors">
+                <Link
+                  to="/portfolio"
+                  onClick={handleScrollTop}
+                  className="hover:text-[#0d7480] transition-colors"
+                >
                   Client Portfolio
                 </Link>
               </li>
               <li>
-                <Link to="/case-studies" className="hover:text-[#0d7480] transition-colors">
+                <Link
+                  to="/case-studies"
+                  onClick={handleScrollTop}
+                  className="hover:text-[#0d7480] transition-colors"
+                >
                   Selected Work
                 </Link>
               </li>
               <li>
-                <Link to="/solutions" className="hover:text-[#0d7480] transition-colors">
+                <Link
+                  to="/solutions"
+                  onClick={handleScrollTop}
+                  className="hover:text-[#0d7480] transition-colors"
+                >
                   Solutions
                 </Link>
               </li>
               <li>
-                <Link to="/industries" className="hover:text-[#0d7480] transition-colors">
+                <Link
+                  to="/industries"
+                  onClick={handleScrollTop}
+                  className="hover:text-[#0d7480] transition-colors"
+                >
                   Industries
                 </Link>
               </li>
               <li>
-                <Link to="/contact" className="hover:text-[#0d7480] transition-colors">
+                <Link
+                  to="/contact"
+                  onClick={handleScrollTop}
+                  className="hover:text-[#0d7480] transition-colors"
+                >
                   Contact
                 </Link>
               </li>
@@ -131,9 +212,26 @@ export const Footer = () => {
 
 
         {/* Bottom Bar */}
-        <div className="pt-6 text-sm text-[#1f3038]">
+        <div className="pt-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 text-sm text-[#1f3038]">
           <div>
             © {currentYear} Xenotrix Technologies. Founded in Thrissur, Kerala. All rights reserved.
+          </div>
+          <div className="flex items-center gap-6 text-xs text-[#5d6b72]">
+            <Link
+              to="/privacy"
+              onClick={handleScrollTop}
+              className="hover:text-[#0d7480] transition-colors"
+            >
+              Privacy Policy
+            </Link>
+            <span className="text-[#d8e0e4]">•</span>
+            <Link
+              to="/terms"
+              onClick={handleScrollTop}
+              className="hover:text-[#0d7480] transition-colors"
+            >
+              Terms of Service
+            </Link>
           </div>
         </div>
 

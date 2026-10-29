@@ -902,11 +902,27 @@ export const DEDICATED_SERVICES = [
 
 export const ALL_SERVICES = [...SERVICE_CATEGORIES, ...DEDICATED_SERVICES];
 
+export const SERVICE_ALIASES = {
+  'custom-software': 'custom-software-development',
+  'web-mobile': 'web-application-development',
+  'web-applications': 'web-application-development',
+  'mobile-applications': 'mobile-app-development',
+  'mobile-app': 'mobile-app-development',
+  'cloud-platforms': 'cloud-deployment',
+  'cloud-systems': 'cloud-deployment',
+  'cloud': 'cloud-deployment',
+  'ai-workflow-automation': 'ai-automation',
+  'crm-erp': 'crm-erp-development',
+  'ecommerce': 'ecommerce-development',
+  'seo': 'digital-marketing-seo'
+};
+
 export const getServiceBySlug = (slug) => {
   if (!slug) return null;
   const cleanSlug = slug.toLowerCase().trim();
+  const targetSlug = SERVICE_ALIASES[cleanSlug] || cleanSlug;
   return ALL_SERVICES.find(
-    (s) => s.slug === cleanSlug || s.id === cleanSlug
+    (s) => s.slug === targetSlug || s.id === targetSlug || s.slug === cleanSlug || s.id === cleanSlug
   ) || null;
 };
 
